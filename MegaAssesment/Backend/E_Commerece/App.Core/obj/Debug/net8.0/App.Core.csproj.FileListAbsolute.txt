@@ -1,0 +1,15 @@
+D:\Sdfolder\SmartData\ECommereceApplication\MegaAssesment\Backend\E_Commerece\App.Core\bin\Debug\net8.0\App.Core.deps.json
+D:\Sdfolder\SmartData\ECommereceApplication\MegaAssesment\Backend\E_Commerece\App.Core\bin\Debug\net8.0\App.Core.dll
+D:\Sdfolder\SmartData\ECommereceApplication\MegaAssesment\Backend\E_Commerece\App.Core\bin\Debug\net8.0\App.Core.pdb
+D:\Sdfolder\SmartData\ECommereceApplication\MegaAssesment\Backend\E_Commerece\App.Core\bin\Debug\net8.0\Domain.dll
+D:\Sdfolder\SmartData\ECommereceApplication\MegaAssesment\Backend\E_Commerece\App.Core\bin\Debug\net8.0\Domain.pdb
+D:\Sdfolder\SmartData\ECommereceApplication\MegaAssesment\Backend\E_Commerece\App.Core\obj\Debug\net8.0\App.Core.csproj.AssemblyReference.cache
+D:\Sdfolder\SmartData\ECommereceApplication\MegaAssesment\Backend\E_Commerece\App.Core\obj\Debug\net8.0\App.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sdfolder\SmartData\ECommereceApplication\MegaAssesment\Backend\E_Commerece\App.Core\obj\Debug\net8.0\App.Core.AssemblyInfoInputs.cache
+D:\Sdfolder\SmartData\ECommereceApplication\MegaAssesment\Backend\E_Commerece\App.Core\obj\Debug\net8.0\App.Core.AssemblyInfo.cs
+D:\Sdfolder\SmartData\ECommereceApplication\MegaAssesment\Backend\E_Commerece\App.Core\obj\Debug\net8.0\App.Core.csproj.CoreCompileInputs.cache
+D:\Sdfolder\SmartData\ECommereceApplication\MegaAssesment\Backend\E_Commerece\App.Core\obj\Debug\net8.0\App.Core.csproj.Up2Date
+D:\Sdfolder\SmartData\ECommereceApplication\MegaAssesment\Backend\E_Commerece\App.Core\obj\Debug\net8.0\App.Core.dll
+D:\Sdfolder\SmartData\ECommereceApplication\MegaAssesment\Backend\E_Commerece\App.Core\obj\Debug\net8.0\refint\App.Core.dll
+D:\Sdfolder\SmartData\ECommereceApplication\MegaAssesment\Backend\E_Commerece\App.Core\obj\Debug\net8.0\App.Core.pdb
+D:\Sdfolder\SmartData\ECommereceApplication\MegaAssesment\Backend\E_Commerece\App.Core\obj\Debug\net8.0\ref\App.Core.dll

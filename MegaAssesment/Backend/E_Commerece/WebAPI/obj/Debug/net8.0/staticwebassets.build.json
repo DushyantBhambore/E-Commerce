@@ -1,0 +1,640 @@
+{
+  "Version": 1,
+  "Hash": "hgukSdez3VGzjSL/SDNH9YzT6hcdJ/x1VCOPtHFhgIQ=",
+  "Source": "WebAPI",
+  "BasePath": "_content/WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebAPI\\wwwroot",
+      "Source": "WebAPI",
+      "ContentRoot": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\4c3a7a07-cc89-48b7-a399-8143c0fb4872.png",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Uploads/4c3a7a07-cc89-48b7-a399-8143c0fb4872#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ihlcxxui0a",
+      "Integrity": "xjwSbLxBZSxqo4LREoWZKXSa1+2udqiqzaOI9Gn058Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\4c3a7a07-cc89-48b7-a399-8143c0fb4872.png"
+    },
+    {
+      "Identity": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\4c7c7ccf-ccee-4a9e-b62a-428324c6efaa.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Uploads/4c7c7ccf-ccee-4a9e-b62a-428324c6efaa#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jo4bxyjr9p",
+      "Integrity": "c2W715pvb4wudy+hMzXd4VE6TWkkqQ+SYGr4JByjssQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\4c7c7ccf-ccee-4a9e-b62a-428324c6efaa.jpg"
+    },
+    {
+      "Identity": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\94d11593-4457-41a9-873e-6765f0a5d9ec.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Uploads/94d11593-4457-41a9-873e-6765f0a5d9ec#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "utxkld6blu",
+      "Integrity": "QpFnNwT34KlPv0LiDj2fHrFP+46PzrLGml20wZcknBo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\94d11593-4457-41a9-873e-6765f0a5d9ec.jpg"
+    },
+    {
+      "Identity": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\e73dc996-5b65-46ef-b23f-2f94e9389795.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Uploads/e73dc996-5b65-46ef-b23f-2f94e9389795#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "a516skt3ip",
+      "Integrity": "srgjq/lnaXbJmm7r0riqENnZcvz9kcVm/1DdE+XAUFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\e73dc996-5b65-46ef-b23f-2f94e9389795.jpg"
+    },
+    {
+      "Identity": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\f1f37293-54e0-4436-9f24-75bdfc3bb4b0.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Uploads/f1f37293-54e0-4436-9f24-75bdfc3bb4b0#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "awllmyq7tl",
+      "Integrity": "GmC5FRrpR4MicK1PMm/AoV4O+iIR3mSP651xVrwy8zw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\f1f37293-54e0-4436-9f24-75bdfc3bb4b0.jpg"
+    },
+    {
+      "Identity": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\ironman1.png",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Uploads/ironman1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6gckq817e8",
+      "Integrity": "Bsa+sH+pg+A8IJpoWm4TKyc9exTK+3wGGdLaQuEXIv4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\ironman1.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "Uploads/4c3a7a07-cc89-48b7-a399-8143c0fb4872.ihlcxxui0a.png",
+      "AssetFile": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\4c3a7a07-cc89-48b7-a399-8143c0fb4872.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4985"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xjwSbLxBZSxqo4LREoWZKXSa1+2udqiqzaOI9Gn058Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 13:41:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ihlcxxui0a"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/4c3a7a07-cc89-48b7-a399-8143c0fb4872.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xjwSbLxBZSxqo4LREoWZKXSa1+2udqiqzaOI9Gn058Y="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/4c3a7a07-cc89-48b7-a399-8143c0fb4872.png",
+      "AssetFile": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\4c3a7a07-cc89-48b7-a399-8143c0fb4872.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4985"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xjwSbLxBZSxqo4LREoWZKXSa1+2udqiqzaOI9Gn058Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 13:41:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xjwSbLxBZSxqo4LREoWZKXSa1+2udqiqzaOI9Gn058Y="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/4c7c7ccf-ccee-4a9e-b62a-428324c6efaa.jo4bxyjr9p.jpg",
+      "AssetFile": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\4c7c7ccf-ccee-4a9e-b62a-428324c6efaa.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2059860"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c2W715pvb4wudy+hMzXd4VE6TWkkqQ+SYGr4JByjssQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 10:58:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jo4bxyjr9p"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/4c7c7ccf-ccee-4a9e-b62a-428324c6efaa.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-c2W715pvb4wudy+hMzXd4VE6TWkkqQ+SYGr4JByjssQ="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/4c7c7ccf-ccee-4a9e-b62a-428324c6efaa.jpg",
+      "AssetFile": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\4c7c7ccf-ccee-4a9e-b62a-428324c6efaa.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2059860"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c2W715pvb4wudy+hMzXd4VE6TWkkqQ+SYGr4JByjssQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 10:58:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-c2W715pvb4wudy+hMzXd4VE6TWkkqQ+SYGr4JByjssQ="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/94d11593-4457-41a9-873e-6765f0a5d9ec.jpg",
+      "AssetFile": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\94d11593-4457-41a9-873e-6765f0a5d9ec.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3256051"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QpFnNwT34KlPv0LiDj2fHrFP+46PzrLGml20wZcknBo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 11:49:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QpFnNwT34KlPv0LiDj2fHrFP+46PzrLGml20wZcknBo="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/94d11593-4457-41a9-873e-6765f0a5d9ec.utxkld6blu.jpg",
+      "AssetFile": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\94d11593-4457-41a9-873e-6765f0a5d9ec.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3256051"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QpFnNwT34KlPv0LiDj2fHrFP+46PzrLGml20wZcknBo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 11:49:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "utxkld6blu"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/94d11593-4457-41a9-873e-6765f0a5d9ec.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QpFnNwT34KlPv0LiDj2fHrFP+46PzrLGml20wZcknBo="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/e73dc996-5b65-46ef-b23f-2f94e9389795.a516skt3ip.jpg",
+      "AssetFile": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\e73dc996-5b65-46ef-b23f-2f94e9389795.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6591399"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"srgjq/lnaXbJmm7r0riqENnZcvz9kcVm/1DdE+XAUFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 13:08:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a516skt3ip"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/e73dc996-5b65-46ef-b23f-2f94e9389795.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-srgjq/lnaXbJmm7r0riqENnZcvz9kcVm/1DdE+XAUFU="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/e73dc996-5b65-46ef-b23f-2f94e9389795.jpg",
+      "AssetFile": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\e73dc996-5b65-46ef-b23f-2f94e9389795.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6591399"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"srgjq/lnaXbJmm7r0riqENnZcvz9kcVm/1DdE+XAUFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 13:08:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-srgjq/lnaXbJmm7r0riqENnZcvz9kcVm/1DdE+XAUFU="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/f1f37293-54e0-4436-9f24-75bdfc3bb4b0.awllmyq7tl.jpg",
+      "AssetFile": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\f1f37293-54e0-4436-9f24-75bdfc3bb4b0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "608643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GmC5FRrpR4MicK1PMm/AoV4O+iIR3mSP651xVrwy8zw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 12:21:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "awllmyq7tl"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/f1f37293-54e0-4436-9f24-75bdfc3bb4b0.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GmC5FRrpR4MicK1PMm/AoV4O+iIR3mSP651xVrwy8zw="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/f1f37293-54e0-4436-9f24-75bdfc3bb4b0.jpg",
+      "AssetFile": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\f1f37293-54e0-4436-9f24-75bdfc3bb4b0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "608643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GmC5FRrpR4MicK1PMm/AoV4O+iIR3mSP651xVrwy8zw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 12:21:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GmC5FRrpR4MicK1PMm/AoV4O+iIR3mSP651xVrwy8zw="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/ironman1.6gckq817e8.png",
+      "AssetFile": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\ironman1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17679"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bsa+sH+pg+A8IJpoWm4TKyc9exTK+3wGGdLaQuEXIv4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 06:43:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6gckq817e8"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/ironman1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bsa+sH+pg+A8IJpoWm4TKyc9exTK+3wGGdLaQuEXIv4="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/ironman1.png",
+      "AssetFile": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\ironman1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17679"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bsa+sH+pg+A8IJpoWm4TKyc9exTK+3wGGdLaQuEXIv4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 06:43:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bsa+sH+pg+A8IJpoWm4TKyc9exTK+3wGGdLaQuEXIv4="
+        }
+      ]
+    }
+  ]
+}
