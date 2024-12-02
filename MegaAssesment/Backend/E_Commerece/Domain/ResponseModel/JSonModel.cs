@@ -11,11 +11,20 @@ namespace Domain.ResponseModel
         public int StatusCode { get; set; }
         public string message { get; set; }
         public object Data { get; set; }
+
+        public string token { get; set; }
         public JSonModel(int statusCode, string message, object data)
         {
             this.StatusCode = statusCode;
             this.message = message;
             this.Data = data;
+        }
+        public JSonModel(int statusCode, string message, object data,string token)
+        {
+            this.StatusCode = statusCode;
+            this.message = message;
+            this.Data = data;
+            this.token = token;
         }
     }
 }

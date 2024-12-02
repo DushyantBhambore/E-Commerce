@@ -11,7 +11,7 @@ namespace Domain
     public class CartMaster
     {
         [Key]
-        public int Id { get; set; }
+        public int CardMasterId { get; set; }
 
         public int UserId { get; set; }
 

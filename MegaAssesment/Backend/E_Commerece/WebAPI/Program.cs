@@ -10,7 +10,6 @@ var configuration = builder.Configuration;
 // Add services to the container.
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(configuration);
-
 // JWt Authentication 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
@@ -25,7 +24,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Key"]))
     };
 });
-
 // Cores
 builder.Services.AddCors(options =>
 {

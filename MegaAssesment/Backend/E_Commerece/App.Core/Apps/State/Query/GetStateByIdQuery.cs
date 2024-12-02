@@ -33,7 +33,7 @@ namespace App.Core.Apps.State.Query
         {
             //var list = await _appDbContext.Set<Domain.State>().Where(x => x.CountryId == request.id).AsTracking().ToListAsync();  
             using var connection = _appDbContext.GetConnection();
-            var query = "SELECT * FROM State Where CountryId = @Id";
+            var query = "SELECT * FROM State Where CountryId = @Id ";
             var data = await connection.QueryAsync<StateDto>(query,new { Id = request.id });
             return data.AsList() ;
         }

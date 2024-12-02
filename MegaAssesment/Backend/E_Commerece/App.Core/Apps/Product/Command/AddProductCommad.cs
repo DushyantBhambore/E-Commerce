@@ -1,6 +1,7 @@
 ﻿using App.Core.Dtos;
 using App.Core.Interface;
 using Domain.ResponseModel;
+using Mapster;
 using MediatR;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -23,7 +24,8 @@ namespace App.Core.Apps.Product.Command
 
 
         private readonly IFileService _fileservice;
-        public AddProductCommandHandller(IAppDbContext appDbContext, IWebHostEnvironment environment,  IFileService fileservice)
+        public AddProductCommandHandller(IAppDbContext appDbContext, 
+           IFileService fileservice)
         {
             _appDbContext = appDbContext;
             _fileservice = fileservice;
@@ -31,16 +33,15 @@ namespace App.Core.Apps.Product.Command
 
         public async Task<JSonModel> Handle(AddProductCommad request, CancellationToken cancellationToken)
         {
-           ;
+           
 
             var imageFile = request.prodcutDto.ProductImage;
 
             var allowedFileExtensions = new string[] { ".jpg", ".jpeg", ".png" };
             var filePath = await _fileservice.SaveFileAsync(imageFile, allowedFileExtensions);
             var fileUrl = $"https://localhost:7295/Uploads/{Path.GetFileName(filePath)}";
-
-
-            string prodcutcode = $"PC_{request.prodcutDto.ProductName.ToUpper()[2]}{request.prodcutDto.Id.ToString().PadLeft(3, '1')}";
+            string prodcutcode = $"PC_{request.prodcutDto.ProductName.ToUpper()[2]}" +
+                $"{request.prodcutDto.ProdcutId.ToString().PadLeft(3, '1')}";
 
             var product = new Domain.Product
             {
@@ -52,7 +53,11 @@ namespace App.Core.Apps.Product.Command
                 SellingPrice = request.prodcutDto.SellingPrice,
                 PurchasePrice = request.prodcutDto.PurchasePrice,
                 PurchaseDate = request.prodcutDto.PurchaseDate,
-                Stock = request.prodcutDto.Stock
+                Stock = request.prodcutDto.Stock,
+                CreatedBy = "Admin",
+                CreatedOn = DateTime.Now,
+                IsActive= true,
+                IsDeletd= false,
             };
             await _appDbContext.Set<Domain.Product>().AddAsync(product);
             await _appDbContext.SaveChangesAsync(cancellationToken);

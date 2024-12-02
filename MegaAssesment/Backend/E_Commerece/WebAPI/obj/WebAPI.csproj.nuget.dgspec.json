@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\WebAPI.csproj": {}
+    "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\App.Core.csproj": {
+    "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\App.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\App.Core.csproj",
+        "projectUniqueName": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\App.Core.csproj",
         "projectName": "App.Core",
-        "projectPath": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\App.Core.csproj",
-        "packagesPath": "C:\\Users\\91997\\.nuget\\packages\\",
-        "outputPath": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\obj\\",
+        "projectPath": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\App.Core.csproj",
+        "packagesPath": "C:\\Users\\dushyantbhambore\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\91997\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\dushyantbhambore\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,14 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Domain.csproj"
+              "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Domain.csproj"
               }
             }
           }
@@ -46,9 +43,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -95,25 +91,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Domain.csproj": {
+    "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\91997\\.nuget\\packages\\",
-        "outputPath": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\dushyantbhambore\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\91997\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\dushyantbhambore\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -121,6 +113,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -137,9 +130,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -160,25 +152,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\91997\\.nuget\\packages\\",
-        "outputPath": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\dushyantbhambore\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\91997\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\dushyantbhambore\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -186,17 +174,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\App.Core.csproj": {
-                "projectPath": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\App.Core.csproj"
+              "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\App.Core.csproj": {
+                "projectPath": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\App.Core.csproj"
               },
-              "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Domain.csproj"
+              "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Domain.csproj"
               }
             }
           }
@@ -209,9 +198,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -248,25 +236,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\WebAPI.csproj": {
+    "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\WebAPI.csproj",
-        "packagesPath": "C:\\Users\\91997\\.nuget\\packages\\",
-        "outputPath": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\obj\\",
+        "projectPath": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\WebAPI.csproj",
+        "packagesPath": "C:\\Users\\dushyantbhambore\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\91997\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\dushyantbhambore\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -274,17 +258,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\App.Core.csproj": {
-                "projectPath": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\App.Core.csproj"
+              "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\App.Core.csproj": {
+                "projectPath": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\App.Core.csproj"
               },
-              "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\Sdfolder\\SmartData\\ECommereceApplication\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -297,9 +282,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -355,7 +339,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

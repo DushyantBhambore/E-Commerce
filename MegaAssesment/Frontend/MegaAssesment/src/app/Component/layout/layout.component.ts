@@ -12,9 +12,16 @@ export class LayoutComponent {
 
   router = inject(Router)
 
+  dropdownOpen = false;
+  profile = localStorage.getItem('profileimage');
+
+
+ 
+
   onLogOut(){
     localStorage.removeItem('token');
     this.router.navigateByUrl('login');
   }
+  toggleDropdown() { this.dropdownOpen = !this.dropdownOpen; }
 
 }

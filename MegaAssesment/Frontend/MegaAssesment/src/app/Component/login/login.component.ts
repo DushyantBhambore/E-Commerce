@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, OnInit, signal } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { LoginService } from '../../Service/login.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -20,7 +20,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonModule,
     MatInputModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+    RouterLink
   ],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
@@ -57,10 +58,70 @@ export class LoginComponent implements OnInit {
     });
   }
 
+  
+
+  // onLogin() {
+  //   this.service.onLogin(this.loginform.value).subscribe({
+  //     next: (res) => {
+  //       console.log(res);
+  //       this.setOtpForm();
+  //       this.isLoginSuccessful = true; 
+  //       this.toastr.success('OTP sent successfully', 'Success', {
+  //         timeOut: 3000,
+  //         progressBar: true,
+  //         progressAnimation: 'increasing',
+  //         positionClass: 'toast-top-right',
+  //       });
+  //     },
+  //     error: (err) => {
+  //       console.log(err);
+  //       this.toastr.error('Login failed', 'Error', {
+  //         timeOut: 3000,
+  //         progressBar: true,
+  //         progressAnimation: 'increasing',
+  //         positionClass: 'toast-top-right'
+  //       });
+  //     }
+  //   });
+  // }
+
+  // onOTP() {
+  //   this.service.onVerifyOtp(this.verifytform.value).subscribe({
+  //     next: (res:any) => {
+  //       console.log(res);
+  //       localStorage.setItem('token', res.token);
+  //       localStorage.setItem('profileimage ',res.data.imageFile);
+  //       this.router.navigateByUrl('/dashboard');
+  //       this.toastr.success('Login successful', 'Success', {
+  //         timeOut: 3000,
+  //         progressBar: true,
+  //         progressAnimation: 'increasing',
+  //         positionClass: 'toast-top-right'
+  //       });
+  //     },
+  //     error: (err) => {
+  //       console.log(err);
+  //       this.toastr.error('OTP verification failed', 'Error', {
+  //         timeOut: 3000,
+  //         progressBar: true,
+  //         progressAnimation: 'increasing',
+  //         positionClass: 'toast-top-right'
+  //       });
+  //     }
+  //   });
+  // }
+
+
   onLogin() {
+    this.toastr.info('Logging in...', 'Please wait', {
+      timeOut: 2000,
+      progressBar: true,
+      progressAnimation: 'increasing',
+      positionClass: 'toast-top-right',
+    });
+  
     this.service.onLogin(this.loginform.value).subscribe({
       next: (res) => {
-        console.log(res);
         this.setOtpForm();
         this.isLoginSuccessful = true; 
         this.toastr.success('OTP sent successfully', 'Success', {
@@ -71,7 +132,6 @@ export class LoginComponent implements OnInit {
         });
       },
       error: (err) => {
-        console.log(err);
         this.toastr.error('Login failed', 'Error', {
           timeOut: 3000,
           progressBar: true,
@@ -81,12 +141,19 @@ export class LoginComponent implements OnInit {
       }
     });
   }
-
+  
   onOTP() {
+    this.toastr.info('Verifying OTP...', 'Please wait', {
+      timeOut: 2000,
+      progressBar: true,
+      progressAnimation: 'increasing',
+      positionClass: 'toast-top-right',
+    });
+  
     this.service.onVerifyOtp(this.verifytform.value).subscribe({
-      next: (res:any) => {
-        console.log(res);
-        localStorage.setItem('token', res.data);
+      next: (res: any) => {
+        localStorage.setItem('token', res.token);
+        localStorage.setItem('profileimage', res.data.imageFile);
         this.router.navigateByUrl('/dashboard');
         this.toastr.success('Login successful', 'Success', {
           timeOut: 3000,
@@ -96,7 +163,6 @@ export class LoginComponent implements OnInit {
         });
       },
       error: (err) => {
-        console.log(err);
         this.toastr.error('OTP verification failed', 'Error', {
           timeOut: 3000,
           progressBar: true,
@@ -106,6 +172,7 @@ export class LoginComponent implements OnInit {
       }
     });
   }
+  
 
 
   hide = signal(true);

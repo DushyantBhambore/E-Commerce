@@ -1,6 +1,7 @@
 ﻿using App.Core.Dtos;
 using App.Core.Interface;
 using Domain.ResponseModel;
+using Mapster;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -37,7 +38,7 @@ namespace App.Core.Apps.Role.Command
             }
             checkroleid.RoleName = request.RoleDto.RoleName;
             await _appDbContext.SaveChangesAsync();
-            return new JSonModel((int)HttpStatusCode.OK, "Role updated successfully", checkroleid);
+            return new JSonModel((int)HttpStatusCode.OK, "Role updated successfully", checkroleid.Adapt<RoleDto>());
         }
     }
 }

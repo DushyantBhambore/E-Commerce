@@ -1,17 +1,17 @@
 <div class="parent">
-    <nav>
-      <ul>
-        <li class="nav-item dropdown">
-          <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Menu</button>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><button routerLink="/profile">Profile</button></li>
-            <li><button routerLink="/dashboard">Dashboard</button></li>
-          </ul>
-        </li>
-        <li><button routerLink="product">Product</button></li>
-        <li><button class="text-dark" (click)="onLogOut()">LogOff</button></li>
-      </ul>
-    </nav>
-  </div>
-  <router-outlet></router-outlet>
-  
+  <nav>
+    <ul class="navbar">
+      <li class="nav-item dropdown">
+        <img src="{{profile}}" class="profile-circle" alt="Profile" (click)="toggleDropdown()">
+        <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" (click)="toggleDropdown()">Menu</button>
+        <ul class="dropdown-menu" [class.show]="dropdownOpen" aria-labelledby="navbarDropdown">
+          <li><button routerLink="/profile" class="dropdown-item">Profile</button></li>
+          <li><button routerLink="/dashboard" class="dropdown-item">Dashboard</button></li>
+        </ul>
+      </li>
+      <li><button routerLink="product" class="navbar-button">Product</button></li>
+      <li><button class="navbar-button" (click)="onLogOut()">LogOff</button></li>
+    </ul>
+  </nav>
+</div>
+<router-outlet></router-outlet>

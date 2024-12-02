@@ -11,7 +11,7 @@ namespace Domain
     public class CartDetail
     {
         [Key]
-        public int Id { get; set; }
+        public int CardDetailId { get; set; }
 
         // Master Cart Table PK 
         public int CartId { get; set; }

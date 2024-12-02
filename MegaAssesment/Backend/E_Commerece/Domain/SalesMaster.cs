@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class SalesMaster
+    public class SalesMaster :AuditableEntity
     {
         [Key]
-        public int Id { get; set; }
+        public int SaleMasterId { get; set; }
 
         public string InvoiceId { get; set; }
         public int UserId { get; set; }

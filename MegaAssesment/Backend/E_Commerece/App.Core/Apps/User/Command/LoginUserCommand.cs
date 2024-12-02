@@ -43,7 +43,6 @@ namespace App.Core.Apps.User.Command
             {
                 return new JSonModel((int)HttpStatusCode.BadRequest, "Username  and Password is  Invalid", null);
             }
-
             // Generate OTP
             var otp = new Random().Next(100000, 999999).ToString();
             // Store OTP in database or cache with expiration time
@@ -52,7 +51,6 @@ namespace App.Core.Apps.User.Command
             // Send OTP to user's email
             await _emailService.SendEmailAsync(checkuser.Email, "Your OTP Code", $"Your OTP code is {otp}");
             return new JSonModel((int)HttpStatusCode.OK, "Otp is Send Successfully", null);
-
 
         }
 

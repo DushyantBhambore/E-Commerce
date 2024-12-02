@@ -27,7 +27,7 @@ namespace App.Core.Apps.Role.Query
         {
             //var list = await _appDbContext.Set<Domain.Role>().AsTracking().ToListAsync();
             using var connection = _appDbContext.GetConnection();
-            var query = "SELECT * FROM Role";
+            var query = "SELECT * FROM Role ";
             var data = await connection.QueryAsync<RoleDto>(query);
             return data.AsList();
 

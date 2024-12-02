@@ -11,6 +11,7 @@ export class LoginService {
   registerurl = 'https://localhost:7295/api/User/RegisterUser' 
 
   getallcountryurl ='https://localhost:7295/api/Country/GetAllCountry'
+  
 
   getstatebyidurl = 'https://localhost:7295/api/State'
   

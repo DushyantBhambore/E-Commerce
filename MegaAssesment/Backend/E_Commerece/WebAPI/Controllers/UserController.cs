@@ -1,4 +1,5 @@
 ﻿using App.Core.Apps.User.Command;
+using App.Core.Apps.User.Query;
 using App.Core.Dtos;
 using App.Core.Interface;
 using MediatR;
@@ -12,16 +13,15 @@ namespace WebAPI.Controllers
     public class UserController : ControllerBase
     {
         private readonly IMediator _mediator;
-        private readonly IFileService _fileService;
 
 
-        public UserController(IMediator mediator, IFileService fileService)
+        public UserController(IMediator mediator)
         {
             _mediator = mediator;
-            _fileService = fileService;
+    
         }
         [HttpPost("RegisterUser")]
-        public async Task<IActionResult> RegisterUser(RegisterDto registerDto)
+        public async Task<IActionResult> RegisterUser([FromForm]RegisterDto registerDto)
         {
             var result = await _mediator.Send(new AddRegisterCommand { registerDto = registerDto });
             return Ok(result);
@@ -38,13 +38,12 @@ namespace WebAPI.Controllers
             var result = await _mediator.Send(new VerifyOtpCommand { VerifyOtp = verifyOtpDto });
             return Ok(result);
         }
-        [HttpPost("upload")]
-        public async Task<IActionResult> UploadFile(IFormFile file)
+        [HttpGet("GetById")]
+        public async Task<IActionResult> GetUserById(int id)
         {
-            var allowedFileExtensions = new string[] { ".jpg", ".jpeg", ".png" };
-            var filePath = await _fileService.SaveFileAsync(file, allowedFileExtensions);
-            var fileUrl = $"{Request.Scheme}://{Request.Host}/{filePath.Replace('\\', '/')}";
-            return Ok(new { FilePath = filePath, FileUrl = fileUrl });
+            var result = await _mediator.Send(new GetUserByIdQuery { id = id });
+            return Ok(result);
         }
+    
     }
 }

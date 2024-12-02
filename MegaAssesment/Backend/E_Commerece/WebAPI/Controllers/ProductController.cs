@@ -1,4 +1,5 @@
 ﻿using App.Core.Apps.Product.Command;
+using App.Core.Apps.Product.Query;
 using App.Core.Apps.User.Command;
 using App.Core.Dtos;
 using App.Core.Interface;
@@ -23,6 +24,20 @@ namespace WebAPI.Controllers
             var result = await _mediator.Send(new AddProductCommad { prodcutDto = prodcutDto });
             return Ok(result);
         }
+
+        [HttpGet("GetAllProduct")]
+        public async Task<IActionResult> GetAllProduct()
+        {
+            var result = await _mediator.Send(new GetAllProdcutQuery() );
+            return Ok(result);
+        }
+
+        //[HttpPut("AddProduct")]
+        //public async Task<IActionResult> AddProdcut([FromForm] ProdcutDto prodcutDto)
+        //{
+        //    var result = await _mediator.Send(new AddProductCommad { prodcutDto = prodcutDto });
+        //    return Ok(result);
+        //}
 
     }
 }

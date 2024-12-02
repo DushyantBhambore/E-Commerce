@@ -1,6 +1,7 @@
 ﻿using App.Core.Dtos;
 using App.Core.Interface;
 using Domain.ResponseModel;
+using Mapster;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -40,10 +41,12 @@ namespace App.Core.Apps.Role.Command
                 RoleName = request.RoleDto.RoleName,
                 IsActive = true,
                 IsDeleted = false,
+                CreatedBy = "Admmin",
+                CreatedOn= DateTime.Now,
             };
             await _appDbContext.Set<Domain.Role>().AddAsync(role);
             await _appDbContext.SaveChangesAsync();
-             return new JSonModel((int)HttpStatusCode.OK, "Role added successfully", role); ;
+             return new JSonModel((int)HttpStatusCode.OK, "Role added successfully", role.Adapt<RoleDto>()); ;
         }
     }
 }

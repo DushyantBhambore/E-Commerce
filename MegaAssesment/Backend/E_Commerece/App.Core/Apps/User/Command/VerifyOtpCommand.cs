@@ -60,7 +60,7 @@ namespace App.Core.Apps.User.Command
                 expires: DateTime.Now.AddMinutes(30),
                 signingCredentials: signIn);
             var jwt = new JwtSecurityTokenHandler().WriteToken(token);
-            return new JSonModel((int)HttpStatusCode.OK, "Login Successfully", jwt);
+            return new JSonModel((int)HttpStatusCode.OK, "Login Successfully", userExist,jwt);
 
         }
     }

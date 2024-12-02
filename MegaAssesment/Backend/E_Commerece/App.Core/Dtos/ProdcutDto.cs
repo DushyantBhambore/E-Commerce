@@ -9,7 +9,7 @@ namespace App.Core.Dtos
 {
     public class ProdcutDto
     {
-        public int Id { get; set; }
+        public int ProdcutId { get; set; }
 
         public string ProductName { get; set; }
 

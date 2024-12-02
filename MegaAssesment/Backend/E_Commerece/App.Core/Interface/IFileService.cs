@@ -12,4 +12,4 @@ namespace App.Core.Interface
         Task<string> SaveFileAsync(IFormFile imageFile, string[] allowedFileExtensions);
 
     }
-}
+}   

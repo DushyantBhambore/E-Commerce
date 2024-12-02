@@ -29,9 +29,9 @@ namespace App.Core.Apps.Role.Query
         {
             //var list = await _appDbContext.Set<Domain.State>().Where(x => x.CountryId == request.id).AsTracking().ToListAsync();
             using var connection = _appDbContext.GetConnection();
-            var query = "SELECT * FROM Role Where RoleId = @Id";
+            var query = "SELECT * FROM Role WHERE RoleId = @Id AND IsActive=1";
             var data = await connection.QueryAsync<RoleDto>(query, new { Id = request.id });
-            return data.AsList();
+            return data.AsList(); ;
 
         }
     }

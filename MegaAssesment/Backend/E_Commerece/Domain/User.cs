@@ -2,7 +2,7 @@
 
 namespace Domain
 {
-    public class User
+    public class User : AuditableEntity
     {
         [Key]
         public int UserId { get; set; }

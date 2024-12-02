@@ -1,6 +1,7 @@
 ﻿using App.Core.Dtos;
 using App.Core.Interface;
 using Domain.ResponseModel;
+using Mapster;
 using MediatR;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -27,7 +28,8 @@ namespace App.Core.Apps.User.Command
         private readonly IEmailService _emailService;
 
         private readonly IFileService _fileservice;
-        public AddRegisterCommandHandler(IAppDbContext appDbContext, IWebHostEnvironment environment, IEmailService emailService, IFileService fileservice)
+        public AddRegisterCommandHandler(IAppDbContext appDbContext,
+            IWebHostEnvironment environment, IEmailService emailService, IFileService fileservice)
         {
             _appDbContext = appDbContext;
             _emailService = emailService;
@@ -37,7 +39,8 @@ namespace App.Core.Apps.User.Command
         public async Task<JSonModel> Handle(AddRegisterCommand request, CancellationToken cancellationToken)
         {
 
-            var checkemail = await _appDbContext.Set<Domain.User>().Where(x => x.Email == request.registerDto.Email).FirstOrDefaultAsync();
+            var checkemail = await _appDbContext.Set<Domain.User>().Where(x => x.Email ==
+            request.registerDto.Email).FirstOrDefaultAsync();
 
             if (checkemail != null)
             {
@@ -52,10 +55,14 @@ namespace App.Core.Apps.User.Command
 
 
             string formattedDOB = request.registerDto.DOB.ToString("ddMMyy");
-            string username = $"EC_{request.registerDto.LastName.ToUpper()}{request.registerDto.FirstName.ToUpper()[0]}{formattedDOB}";
-
+            string username = $"EC_{request.registerDto.LastName.
+                ToUpper()}{request.registerDto.FirstName.ToUpper()[0]}{formattedDOB}";
+            
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-            string password = new string(Enumerable.Repeat(chars, 8).Select(s => s[new Random().Next(s.Length)]).ToArray());
+            string password = new string(Enumerable.Repeat(chars, 8)
+                .Select(s => s[new Random().Next(s.Length)]).ToArray());
+
+            //string password =Password()
 
             //string encryptedPassword = Encrypt(password);
             var encryptedPassword = BCrypt.Net.BCrypt.HashPassword(password);
@@ -81,7 +88,10 @@ namespace App.Core.Apps.User.Command
 
             await _appDbContext.Set<Domain.User>().AddAsync(user);
             await _appDbContext.SaveChangesAsync();
-            await _emailService.SendEmailAsync(request.registerDto.Email, "Welcome to Our Application", $"Hello {request.registerDto.FirstName},\n\nYour account has been created successfully.\n\nUsername: {username}\nPassword: {password}\n\nRegards,\nTeam");
+            await _emailService.SendEmailAsync(request.registerDto.Email,
+                "Welcome to Our Application", $"Hello {request.registerDto.FirstName}" +
+                $",\n\nYour account has been created successfully.\n\nUsername: " +
+                $"{username}\nPassword: {password}\n\nRegards,\nTeam");
             return new JSonModel((int)HttpStatusCode.OK, "User Added Successfully", user);
         }
     }

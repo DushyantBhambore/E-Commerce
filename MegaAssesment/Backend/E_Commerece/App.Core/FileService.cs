@@ -42,8 +42,7 @@ namespace App.Core
             var fileNameWithPath = Path.Combine(path, fileName);
             using var stream = new FileStream(fileNameWithPath, FileMode.Create);
             await imageFile.CopyToAsync(stream);
-
-            return Path.Combine("Uploads", fileName); // Return relative path to access file via URL
+            return Path.Combine("Uploads", fileName); 
         }
     }
 }

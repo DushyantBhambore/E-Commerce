@@ -52,6 +52,7 @@ export class RegisterComponent implements OnInit {
       address: ['', [Validators.required]],
       stateId: ['', [Validators.required]],
       countryId: ['', [Validators.required]],
+      zipcode: ['', [Validators.required]],
       imageFile: [null, [Validators.required]]
     });
   }

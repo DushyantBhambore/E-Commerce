@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class SalesDetail
+    public class SalesDetail :AuditableEntity
     {
         [Key]
-        public int Id { get; set; }
+        public int SaleDetailId { get; set; }
 
         public int InvoiceId { get; set; }
 
