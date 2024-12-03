@@ -32,7 +32,7 @@ namespace App.Core.Apps.Role.Query
             var query = "SELECT * FROM Role WHERE RoleId = @Id AND IsActive=1";
             var data = await connection.QueryAsync<RoleDto>(query, new { Id = request.id });
             return data.AsList(); ;
-
+                
         }
     }
 }

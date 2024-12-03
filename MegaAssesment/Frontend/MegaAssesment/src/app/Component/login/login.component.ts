@@ -154,6 +154,7 @@ export class LoginComponent implements OnInit {
       next: (res: any) => {
         localStorage.setItem('token', res.token);
         localStorage.setItem('profileimage', res.data.imageFile);
+        sessionStorage.setItem('logindata', JSON.stringify(res.data));
         this.router.navigateByUrl('/dashboard');
         this.toastr.success('Login successful', 'Success', {
           timeOut: 3000,

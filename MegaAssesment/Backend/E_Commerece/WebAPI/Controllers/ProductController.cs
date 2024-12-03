@@ -31,13 +31,18 @@ namespace WebAPI.Controllers
             var result = await _mediator.Send(new GetAllProdcutQuery() );
             return Ok(result);
         }
-
-        //[HttpPut("AddProduct")]
-        //public async Task<IActionResult> AddProdcut([FromForm] ProdcutDto prodcutDto)
-        //{
-        //    var result = await _mediator.Send(new AddProductCommad { prodcutDto = prodcutDto });
-        //    return Ok(result);
-        //}
+        [HttpPut("UpdateProduct")]
+        public async Task<IActionResult> UpdateProduct([FromForm] ProdcutDto prodcutDto)
+        {
+            var result = await _mediator.Send(new UpdateProductCommand { prodcutDto = prodcutDto });
+            return Ok(result);
+        }
+        [HttpDelete("[action]/{id}")]
+        public async Task<IActionResult> DeleteProduct(int id)
+        {
+            var result = await _mediator.Send(new DeleteProductCommand { id = id });
+            return Ok(result);
+        }
 
     }
 }

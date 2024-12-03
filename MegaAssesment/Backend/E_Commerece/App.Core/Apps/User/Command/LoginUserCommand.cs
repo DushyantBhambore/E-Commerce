@@ -21,12 +21,13 @@ namespace App.Core.Apps.User.Command
     public class LoginUserCommandHandler : IRequestHandler<LoginUserCommand, JSonModel>
     {
         private readonly IAppDbContext _appDbContext;
-
+        private readonly ISmsService _smsService;
         private readonly IEmailService _emailService;
-        public LoginUserCommandHandler(IAppDbContext appDbContext, IEmailService emailService)
+        public LoginUserCommandHandler(IAppDbContext appDbContext, IEmailService emailService, ISmsService smsService)
         {
             _appDbContext = appDbContext;
             _emailService = emailService;
+            _smsService = smsService;
         }
 
         public async Task<JSonModel> Handle(LoginUserCommand request, CancellationToken cancellationToken)
@@ -51,6 +52,14 @@ namespace App.Core.Apps.User.Command
             // Send OTP to user's email
             await _emailService.SendEmailAsync(checkuser.Email, "Your OTP Code", $"Your OTP code is {otp}");
             return new JSonModel((int)HttpStatusCode.OK, "Otp is Send Successfully", null);
+
+            //var isSmsSent = await _smsService.SendSmsAsync(checkuser.Mobile, $"Your OTP code is {otp}");
+            //if (!isSmsSent)
+            //{
+            //    return new JSonModel((int)HttpStatusCode.InternalServerError, "Failed to send OTP", null);
+            //}
+
+            //return new JSonModel((int)HttpStatusCode.OK, "OTP sent successfully via SMS", null);
 
         }
 

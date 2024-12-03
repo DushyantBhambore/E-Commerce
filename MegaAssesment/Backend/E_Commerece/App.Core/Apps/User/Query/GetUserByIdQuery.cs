@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace App.Core.Apps.User.Query
 {
-    public class GetUserByIdQuery : IRequest<RegisterDto>
+    public class GetUserByIdQuery : IRequest<Domain.User>
     {
         public int id { get; set; }
     }
-    public class GetUserByIdQueryHandller : IRequestHandler<GetUserByIdQuery, RegisterDto>
+    public class GetUserByIdQueryHandller : IRequestHandler<GetUserByIdQuery, Domain.User>
     {
         private readonly IAppDbContext _appDbContext;
 
@@ -23,12 +23,13 @@ namespace App.Core.Apps.User.Query
         {
             _appDbContext = appDbContext;
         }
-        public async Task<RegisterDto> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
+        public async Task<Domain.User> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
         {
             using var connection = _appDbContext.GetConnection();
-            var query = "SELECT * FROM [User] Where UserId = @Id And IsActive = true,";
-            var data = await connection.QueryAsync<RegisterDto>(query, new { Id = request.id });
-            return data.Adapt<RegisterDto>();
+            var query = "SELECT * FROM [User] Where UserId = @Id And IsActive=1";
+            var data = await connection.QueryFirstOrDefaultAsync<Domain.User>(query, new { Id = request.id });
+            return data;
+
         }
     }
 

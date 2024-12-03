@@ -38,8 +38,8 @@ namespace WebAPI.Controllers
             var result = await _mediator.Send(new VerifyOtpCommand { VerifyOtp = verifyOtpDto });
             return Ok(result);
         }
-        [HttpGet("GetById")]
-        public async Task<IActionResult> GetUserById(int id)
+        [HttpGet("[action]")]
+        public async Task<IActionResult> GetUserById([FromQuery] int id )
         {
             var result = await _mediator.Send(new GetUserByIdQuery { id = id });
             return Ok(result);

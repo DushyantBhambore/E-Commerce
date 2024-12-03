@@ -73,6 +73,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.11, )"
+            },
+            "Twilio": {
+              "target": "Package",
+              "version": "[7.7.0, )"
             }
           },
           "imports": [
@@ -318,6 +322,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "Twilio": {
+              "target": "Package",
+              "version": "[7.7.0, )"
             }
           },
           "imports": [

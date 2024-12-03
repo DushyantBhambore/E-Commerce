@@ -317,3 +317,5 @@ C:\Users\dushyantbhambore\Desktop\E-Commerce\MegaAssesment\Backend\E_Commerece\W
 C:\Users\dushyantbhambore\Desktop\E-Commerce\MegaAssesment\Backend\E_Commerece\WebAPI\obj\Debug\net8.0\WebAPI.pdb
 C:\Users\dushyantbhambore\Desktop\E-Commerce\MegaAssesment\Backend\E_Commerece\WebAPI\obj\Debug\net8.0\WebAPI.genruntimeconfig.cache
 C:\Users\dushyantbhambore\Desktop\E-Commerce\MegaAssesment\Backend\E_Commerece\WebAPI\obj\Debug\net8.0\ref\WebAPI.dll
+C:\Users\dushyantbhambore\Desktop\E-Commerce\MegaAssesment\Backend\E_Commerece\WebAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\dushyantbhambore\Desktop\E-Commerce\MegaAssesment\Backend\E_Commerece\WebAPI\bin\Debug\net8.0\Twilio.dll

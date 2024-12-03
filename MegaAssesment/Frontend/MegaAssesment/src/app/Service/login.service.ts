@@ -55,4 +55,10 @@ export class LoginService {
   }
 
 
+  getuserbyid(id:number)
+  {
+    return this.http.get(`https://localhost:7295/api/State/GetStateById/${id}`)
+  }
+
+
 }

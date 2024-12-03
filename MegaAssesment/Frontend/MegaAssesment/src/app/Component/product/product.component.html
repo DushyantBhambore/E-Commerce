@@ -1,1 +1,222 @@
-<p>product works!</p>
+
+
+<div class="container">
+    <button type="button" class="btn btn-primary" data-toggle="modal" (click)="OpneModal()" data-target="#myModal">
+        Add Product
+      </button>
+    <div class="container">
+        <table class="table ">
+    
+            <thead>
+              <tr>
+                <th scope="col">Product Name</th>
+                <th scope="col">Category</th>
+                <th scope="col">Brand</th>
+                <th scope="col">Selling Price</th>
+                <th scope="col">Purchase Price</th>
+                <th scope="col">Purchase Date</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let product of productlist">
+                <td>{{ product.productName }}</td>
+                <td>{{ product.category }}</td> 
+                <td>{{ product.brand }}</td>
+                <td>{{ product.sellingPrice }}</td>
+                <td>{{ product.purchasePrice }}</td>
+                <td>{{ product.purchaseDate| date }}</td>
+                <td>{{ product.stock }}</td>
+                <td>
+                  <button class="btn btn-primary" (click)="editProduct(product)">Edit</button>
+                  <button class="btn btn-danger" (click)="deleteProduct(product.prodcutId)">Delete</button>
+                </td>
+        </table>
+      </div>
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Add Product</h4>
+              <button type="button" class="close" data-dismiss="modal" (click)="CloseModal()">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+        <form
+            class="form-container"
+            [formGroup]="productform"
+          >
+            <div class="row mb-3">
+              <div class="col-md-12">
+                <label for="productName" class="form-label">Product Name:</label>
+                <input
+                  id="productName"
+                  formControlName="productName"
+                  type="text"
+                  class="form-control"
+                  [ngClass]="{
+                    'is-invalid':
+                      productform.controls['productName'].invalid &&
+                      productform.controls['productName'].touched
+                  }"
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="productImage" class="form-label">Product Image:</label>
+                <input
+                  id="productImage"
+                  formControlName="productImage"
+                  type="file"
+                  class="form-control"
+                  (change)="onFileChange($event)"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="category" class="form-label">Category:</label>
+                <input
+                  id="category"
+                  formControlName="category"
+                  type="text"
+                  class="form-control"
+                  [ngClass]="{
+                    'is-invalid':
+                      productform.controls['category'].invalid &&
+                      productform.controls['category'].touched
+                  }"
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="brand" class="form-label">Brand:</label>
+                <input
+                  id="brand"
+                  formControlName="brand"
+                  type="text"
+                  class="form-control"
+                  [ngClass]="{
+                    'is-invalid':
+                      productform.controls['brand'].invalid &&
+                      productform.controls['brand'].touched
+                  }"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="sellingPrice" class="form-label">Selling Price:</label>
+                <input
+                  id="sellingPrice"
+                  formControlName="sellingPrice"
+                  type="number"
+                  class="form-control"
+                  [ngClass]="{
+                    'is-invalid':
+                      productform.controls['sellingPrice'].invalid &&
+                      productform.controls['sellingPrice'].touched
+                  }"
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="purchasePrice" class="form-label">Purchase Price:</label>
+                <input
+                  id="purchasePrice"
+                  formControlName="purchasePrice"
+                  type="number"
+                  class="form-control"
+                  [ngClass]="{
+                    'is-invalid':
+                      productform.controls['purchasePrice'].invalid &&
+                      productform.controls['purchasePrice'].touched
+                  }"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="purchaseDate" class="form-label">Purchase Date:</label>
+                <input
+                  id="purchaseDate"
+                  formControlName="purchaseDate"
+                  type="date"
+                  class="form-control"
+                  [ngClass]="{
+                    'is-invalid':
+                      productform.controls['purchaseDate'].invalid &&
+                      productform.controls['purchaseDate'].touched
+                  }"
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <label for="Stock" class="form-label">Stock</label>
+                    <input
+                      id="purchasePrice"
+                      formControlName="stock"
+                      type="number"
+                      class="form-control"
+                      [ngClass]="{
+                        'is-invalid':
+                          productform.controls['stock'].invalid &&
+                          productform.controls['stock'].touched
+                      }"
+                    />
+                  </div>
+            </div>
+        </form>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" (ngSubmit)="onSubmit()" class="btn btn-success" data-dismiss="modal" >Submit </button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="CloseModal()">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+    
+
+</div>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -14,7 +14,7 @@ namespace Infrastructure
             services.AddScoped<IAppDbContext, AppDbContext>();
             services.AddScoped<IEmailService, EmailService>();
             services.AddScoped<IFileService, FileService>();
-
+            services.AddTransient<ISmsService, SmsService>();
             services.AddDbContext<AppDbContext>((provide, options) =>
             {
                 options.UseSqlServer((configuration.GetConnectionString("DefaultConnection")));

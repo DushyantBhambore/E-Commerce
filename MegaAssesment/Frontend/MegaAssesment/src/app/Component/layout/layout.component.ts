@@ -14,10 +14,6 @@ export class LayoutComponent {
 
   dropdownOpen = false;
   profile = localStorage.getItem('profileimage');
-
-
- 
-
   onLogOut(){
     localStorage.removeItem('token');
     this.router.navigateByUrl('login');

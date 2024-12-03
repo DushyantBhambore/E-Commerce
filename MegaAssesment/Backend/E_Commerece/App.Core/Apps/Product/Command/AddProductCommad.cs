@@ -33,10 +33,7 @@ namespace App.Core.Apps.Product.Command
 
         public async Task<JSonModel> Handle(AddProductCommad request, CancellationToken cancellationToken)
         {
-           
-
             var imageFile = request.prodcutDto.ProductImage;
-
             var allowedFileExtensions = new string[] { ".jpg", ".jpeg", ".png" };
             var filePath = await _fileservice.SaveFileAsync(imageFile, allowedFileExtensions);
             var fileUrl = $"https://localhost:7295/Uploads/{Path.GetFileName(filePath)}";
