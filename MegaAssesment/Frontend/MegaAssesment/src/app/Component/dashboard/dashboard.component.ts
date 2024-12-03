@@ -40,6 +40,11 @@ export class DashboardComponent implements OnInit {
   }
 
 
+  ViewImgae()
+  {
+    
+  }
+
 
   
 

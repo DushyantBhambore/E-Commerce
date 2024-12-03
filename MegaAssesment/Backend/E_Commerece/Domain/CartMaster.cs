@@ -17,5 +17,7 @@ namespace Domain
 
         [ForeignKey("UserId")]
         public User User { get; set; }
+
+        public List<CartDetail> CartDetails { get; set; }
     }
 }

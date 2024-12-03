@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "WebAPI.Controllers.CartController",
+    "Method": "AddToCart",
+    "RelativePath": "api/Cart/AddToCart",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cartdetailsDto",
+        "Type": "App.Core.Dtos.CartdetailsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebAPI.Controllers.CountryController",
     "Method": "AddCountry",
     "RelativePath": "api/Country/AddCountry",
