@@ -8,10 +8,34 @@
             <div class="contentBx">
               <h3>{{product.productName}} <span>{{product.brand}}</span></h3>
               <h2 class="price">{{product.sellingPrice}}</h2>
-              <a href="#" class="buy">Add to Cart </a>
-              <a href="#" class="buy" (click)="ViewImgae()">View Image  </a>
+              <button class="buy" (click)="addToCart(product.prodcutId)">Add to Cart </button>
+              <!-- <a href="#" class="buy" (click)="ViewImgae()">View Image  </a> -->
             </div>
           </div>
       </div>
     </div>
   </div>
+
+  <div class="cart-icon">
+    <i class="fa fa-shopping-cart"></i>
+    <span class="cart-count">{{cartCount}}</span>
+    <div class="cart-dropdown">
+      <ul>
+        <li *ngFor="let item of cartdata">
+          <span>{{item.productName}} ({{item.Qty}})</span>
+          
+          <span>{{item.sellingPrice}}</span>
+          <p>{{item.total}}</p>
+          <button class="remove-btn" (click)="removeFromCart(item.cartDetailId)">Remove</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>Cart</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Cart Details</h5>
+            <p class="card-text">User Name: {{usrname}}</p>
+            <p class="card-text">Total Items: {{cartdata.length}}</p>
+            <!-- <p class="card-text">Total Price: {{cartdata | sumTotalPrice}}</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div *ngFor="let item of cartdata" class="col-md-4">
+            <div class="card">
+              <img [src]="item.productImage" class="card-img-top" alt="{{item.productName}}">
+              <div class="card-body">
+                <h5 class="card-title">{{item.productName}}</h5>
+                <p class="card-text">Quantity: {{item.qty}}</p>
+                <p class="card-text">Selling Price: {{item.sellingPrice}}</p>
+                <p class="card-text">Total Price: {{item.total}}</p>
+              </div>
+              <button class="btn btn-danger" (click)="removeFromCart(item.cartDetailsId)">Remove</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

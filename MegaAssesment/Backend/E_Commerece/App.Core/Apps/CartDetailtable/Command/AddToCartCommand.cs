@@ -23,7 +23,10 @@ namespace App.Core.Apps.CartDetailtable.Command
         public async Task<CartResponseModel> Handle(AddToCartCommand request, CancellationToken cancellationToken)
         {
             var cartMasterId = await _appDbContext.Set<Domain.CartMaster>()
-                .FirstOrDefaultAsync(a => a.UserId == request.cartdetailsDto.UserId);
+               .FirstOrDefaultAsync(a => a.UserId == request.cartdetailsDto.UserId);
+
+            
+
             if (cartMasterId == null)
             {
 

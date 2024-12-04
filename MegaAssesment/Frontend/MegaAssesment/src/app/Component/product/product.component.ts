@@ -139,7 +139,20 @@ export class ProductComponent implements OnInit {
 
     editProduct(item:any)
     {
-      this.productform.patchValue(item);
+      debugger
+      console.log(item);
+      this.OpneModal();
+      // this.productform.patchValue(item);
+      this.productform.patchValue({
+        productId: item.productId,
+        productName: item.productName,
+        category: item.category,
+        purchaseDate: item.purchaseDate,
+        sellingPrice: item.sellingPrice,
+        purchasePrice: item.purchasePrice,
+        brand: item.brand,
+        stock: item.stock,
+      });
     }
 
     deleteProduct(id:number)

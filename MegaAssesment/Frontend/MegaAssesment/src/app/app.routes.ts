@@ -7,6 +7,7 @@ import { ProfileComponent } from './Component/profile/profile.component';
 import { ChangePassowrdComponent } from './Component/change-passowrd/change-passowrd.component';
 import { DashboardComponent } from './Component/dashboard/dashboard.component';
 import { ProductComponent } from './Component/product/product.component';
+import { ViewCartComponent } from './Component/view-cart/view-cart.component';
 
 export const routes: Routes = [
     {
@@ -40,6 +41,10 @@ export const routes: Routes = [
                 path:'changepassword',
                 component:ChangePassowrdComponent
             },
+            {
+                path:'viewcart',
+                component:ViewCartComponent
+            }
         ]
     },
     {

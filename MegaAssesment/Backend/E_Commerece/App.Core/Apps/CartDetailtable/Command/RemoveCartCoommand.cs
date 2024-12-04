@@ -30,14 +30,12 @@ namespace App.Core.Apps.CartDetailtable.Command
             var cartDetail = await _appDbContext.Set<Domain.CartDetail>()
         .FirstOrDefaultAsync(cd => cd.CartId == productid.CardMasterId
         && cd.ProductId == request.removerCartDto.ProductId, cancellationToken);
-
-            if (cartDetail !=null)
+            if (cartDetail != null)
             {
-               _appDbContext.Set<Domain.CartDetail>().Remove(cartDetail);
+                _appDbContext.Set<Domain.CartDetail>().Remove(cartDetail);
                 _appDbContext.SaveChangesAsync(cancellationToken);
             }
             return new CartResponseModel((int)HttpStatusCode.OK, "Prodcut Remove Successfully", null);
-
         }
     }
 }

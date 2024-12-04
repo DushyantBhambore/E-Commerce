@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mncM4xeXuR85HHgbvDOQoBPssn4aGF8lL3CNxXF4HXA=",
+  "Hash": "wZvwbrdL2egaGuwuCDOOREySm6/o6mx3CFuz2ww4zdg=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\14977e1b-5852-4202-a5da-41044026c7d9.png"
+    },
+    {
+      "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\21aac6aa-a478-43de-a349-f58f63b46ed6.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Uploads/21aac6aa-a478-43de-a349-f58f63b46ed6.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\21aac6aa-a478-43de-a349-f58f63b46ed6.jpg"
     },
     {
       "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\4c3a7a07-cc89-48b7-a399-8143c0fb4872.png",

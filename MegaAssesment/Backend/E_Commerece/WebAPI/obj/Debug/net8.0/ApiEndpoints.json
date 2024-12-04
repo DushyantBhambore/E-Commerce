@@ -16,6 +16,70 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WebAPI.Controllers.CartController",
+    "Method": "DeleteFromCart",
+    "RelativePath": "api/Cart/DeleteFromCart",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "removerCartDto",
+        "Type": "App.Core.Dtos.RemoverCartDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.CartController",
+    "Method": "GetCartById",
+    "RelativePath": "api/Cart/GetCartById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.CartController",
+    "Method": "ProcessPayment",
+    "RelativePath": "api/Cart/ProcessPayment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cardValidation",
+        "Type": "App.Core.Dtos.CardValidationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.CartController",
+    "Method": "UpdateCart",
+    "RelativePath": "api/Cart/UpdateCart",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cartdetailsDto",
+        "Type": "App.Core.Dtos.CartdetailsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebAPI.Controllers.CountryController",
     "Method": "AddCountry",
     "RelativePath": "api/Country/AddCountry",
@@ -253,6 +317,22 @@
       {
         "Name": "roleDto",
         "Type": "App.Core.Dtos.RoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.SalesController",
+    "Method": "PlaceOrder",
+    "RelativePath": "api/Sales/place-order",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "App.Core.Dtos.SalesMasterDto",
         "IsRequired": true
       }
     ],

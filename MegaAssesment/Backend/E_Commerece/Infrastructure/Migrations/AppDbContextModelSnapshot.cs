@@ -510,7 +510,7 @@ namespace Infrastructure.Migrations
             modelBuilder.Entity("Domain.CartDetail", b =>
                 {
                     b.HasOne("Domain.CartMaster", "CartMaster")
-                        .WithMany("CartDetails")
+                        .WithMany()
                         .HasForeignKey("CartId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -565,11 +565,6 @@ namespace Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("Country");
-                });
-
-            modelBuilder.Entity("Domain.CartMaster", b =>
-                {
-                    b.Navigation("CartDetails");
                 });
 #pragma warning restore 612, 618
         }

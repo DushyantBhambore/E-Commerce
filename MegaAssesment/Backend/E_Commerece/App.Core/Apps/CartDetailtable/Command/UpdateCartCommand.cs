@@ -14,7 +14,7 @@ namespace App.Core.Apps.CartDetailtable.Command
 {
     public class UpdateCartCommand : IRequest<CartResponseModel>
     {
-        public CartdetailsDto   cartdetailsDto { get; set; }
+        public CartdetailsDto cartdetailsDto { get; set; }
     }
     public class UpdateCartCommandHandller : IRequestHandler<UpdateCartCommand, CartResponseModel>
     {
@@ -24,26 +24,21 @@ namespace App.Core.Apps.CartDetailtable.Command
         {
             _appDbContext = appDbContext;
         }
-
         public async Task<CartResponseModel> Handle(UpdateCartCommand request, CancellationToken cancellationToken)
         {
 
-            //var exintngcartid = await _appDbContext.Set<Domain.CartDetail>()
-            //    .Where(a => a.CartId == request.cartdetailsDto.CartId && a.ProductId == request.cartdetailsDto.ProductId).FirstOrDefaultAsync();
-            //if (exintngcartid != null)
-            //{
-            //    exintngcartid.ProductId += 1;
-            //    exintngcartid.Qty += 1;
-            //    await _appDbContext.SaveChangesAsync(cancellationToken);
-            //    return new CartResponseModel((int)HttpStatusCode.OK, "Product is Added", exintngcartid);
-            //}
-
-            //return new CartResponseModel
-            //    ((int)HttpStatusCode.AlreadyReported, "Your Added Product are ", exintngcartid);
-            //}
-
-            return null;
+            var exintngcartid = await _appDbContext.Set<Domain.CartDetail>()
+                 .Where(a => a.CartId == request.cartdetailsDto.UserId && a.ProductId == request.cartdetailsDto.ProductId).FirstOrDefaultAsync();
+            if (exintngcartid != null)
+            {
+                exintngcartid.ProductId += 1;
+                exintngcartid.Qty += 1;
+                await _appDbContext.SaveChangesAsync(cancellationToken);
+                return new CartResponseModel((int)HttpStatusCode.OK, "Product is Added", exintngcartid);
+            }
+            return new CartResponseModel
+                ((int)HttpStatusCode.AlreadyReported, "Your Added Product are ", exintngcartid);
         }
     }
-    }
+}
 
