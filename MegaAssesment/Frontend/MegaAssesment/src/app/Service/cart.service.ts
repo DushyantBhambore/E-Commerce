@@ -1,41 +1,61 @@
-import { HttpClient } from '@angular/common/http';
-import { inject, Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+  import { HttpClient } from '@angular/common/http';
+  import { inject, Injectable } from '@angular/core';
+  import { BehaviorSubject, tap } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class CartService {
-
-
-  addtocarturl = 'https://localhost:7295/api/Cart/AddToCart'
-
-  removecarturl = 'https://localhost:7295/api/Cart/DeleteFromCart'
-
-  getcartbyidurl = 'https://localhost:7295/api/Cart/GetCartById'
+  @Injectable({
+    providedIn: 'root'
+  })
+  export class CartService {
 
 
-  http = inject(HttpClient)
+    addtocarturl = 'https://localhost:7295/api/Cart/AddToCart'
+
+    removecarturl = 'https://localhost:7295/api/Cart/DeleteFromCart'
+
+    getcartbyidurl = 'https://localhost:7295/api/Cart/GetCartById'
+
+    updatecarturl = 'https://localhost:7295/api/Cart/UpdateCart'
 
 
-  public cartCount$ = new BehaviorSubject<number>(0);
+    http = inject(HttpClient)
 
 
-  constructor() { }
-  Addtocart(data:any)
-  {
-    return this.http.post(this.addtocarturl,data)
+    public cartCount$ = new BehaviorSubject<number>(0);
+
+
+    constructor() { }
+    Addtocart(data: any) {
+      return this.http.post(this.addtocarturl, data).pipe(
+        tap(() => {
+          // Increment the count after a successful API call
+          const currentCount = this.cartCount$.value;
+          this.cartCount$.next(currentCount + 1);
+        })
+      );
+    }
+    
+  removeFromCart(obj: any) {
+    return this.http.delete(this.removecarturl, { body: obj }).pipe(
+      tap(() => {
+        // Decrement the count after a successful API call
+        const currentCount = this.cartCount$.value;
+        this.cartCount$.next(currentCount > 0 ? currentCount - 1 : 0);
+      })
+    );
   }
-  removeFromCart(data:any)
-  {
-    return this.http.delete(this.removecarturl,data)
-  }
+    
   getCartCount() {
     return this.cartCount$.asObservable();
   }
 
-  getcartbyid(id : number)
-  {
-    return this.http.get(`${this.getcartbyidurl}/${id}`)
+    getcartbyid(id : number)
+    {
+      return this.http.get(`${this.getcartbyidurl}/${id}`)
+    }
+
+    updateCart(data : any)
+    {
+      return this.http.put(this.updatecarturl,data)
+    }
+
   }
-}

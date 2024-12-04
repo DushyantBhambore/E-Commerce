@@ -24,9 +24,6 @@ export class DashboardComponent implements OnInit {
   
   ngOnInit(): void {
     this.getProduct();
-    this.cartservice.getCartCount().subscribe((count) => {
-      this.cartCount = count;
-    });
   }
 
 
@@ -67,7 +64,6 @@ export class DashboardComponent implements OnInit {
       next: (response) => {
         console.log('Product added to cart:', response);
         alert('Product added to cart successfully!');
-        this.cartCount++;
         
       },
       error: (err) => {
@@ -86,7 +82,7 @@ export class DashboardComponent implements OnInit {
         console.log('Product removed from cart:', response);
         alert('Product removed from cart successfully!');
         this.getProduct(); // Refresh the cart items after removing
-        this.cartCount--;
+    
       },
       error: (err) => {
         console.error('Error removing from cart:', err);

@@ -10,8 +10,14 @@
         </ul>
       </li>
       <li><button routerLink="product" class="navbar-button">Admin</button></li>
-      <li><button class="navbar-button">{{cartCount}}</button></li>
-      <li><button class="navbar-button" routerLink="/viewcart" >Go to Cart</button></li>
+      <li>
+        <button class="navbar-button">
+          <i class="material-icons" routerLink="/viewcart">shopping_cart</i>
+          <span class="cart-count" *ngIf="cartCount > 0">{{ cartCount }}</span>
+        </button>
+      </li>
+      
+      <!-- <li><button class="navbar-button" routerLink="/viewcart" >Go to Cart</button></li> -->
       <li><button class="navbar-button" (click)="onLogOut()">LogOff</button></li>
     </ul>
   </nav>

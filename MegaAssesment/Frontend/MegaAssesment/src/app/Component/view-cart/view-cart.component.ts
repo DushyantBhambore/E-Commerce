@@ -39,8 +39,14 @@ export class ViewCartComponent implements OnInit {
 cartid! : number
 removeFromCart(cartid: number)
   {
+    
+    var cartobj ={
+      cartDetailId : cartid,
+      userid : this.id
+    }
+
     debugger
-    this.cartservice.removeFromCart(cartid).subscribe({
+    this.cartservice.removeFromCart(cartobj).subscribe({
       next: (response) => {
         console.log('Product removed from cart:', response);
         alert('Product removed from cart successfully!');

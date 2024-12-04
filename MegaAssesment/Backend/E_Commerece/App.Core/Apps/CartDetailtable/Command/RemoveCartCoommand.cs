@@ -32,8 +32,8 @@ namespace App.Core.Apps.CartDetailtable.Command
         && cd.ProductId == request.removerCartDto.ProductId, cancellationToken);
             if (cartDetail != null)
             {
-                _appDbContext.Set<Domain.CartDetail>().Remove(cartDetail);
-                _appDbContext.SaveChangesAsync(cancellationToken);
+                _appDbContext.Set<Domain.CartDetail>().RemoveRange(cartDetail);
+             await   _appDbContext.SaveChangesAsync(cancellationToken);
             }
             return new CartResponseModel((int)HttpStatusCode.OK, "Prodcut Remove Successfully", null);
         }

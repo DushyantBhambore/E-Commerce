@@ -68,16 +68,7 @@
               </div>
             </div>
             <div class="row mb-3">
-              <div class="col-md-6">
-                <label for="productImage" class="form-label">Product Image:</label>
-                <input
-                  id="productImage"
-                  formControlName="productImage"
-                  type="file"
-                  class="form-control"
-                  (change)="onFileChange($event)"
-                />
-              </div>
+             
               <div class="col-md-6">
                 <label for="category" class="form-label">Category:</label>
                 <input
@@ -154,7 +145,7 @@
               </div>
             </div>
             <div class="row mb-3">
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <label for="Stock" class="form-label">Stock</label>
                     <input
                       id="purchasePrice"
@@ -168,11 +159,21 @@
                       }"
                     />
                   </div>
+                  <div class="col-md-6">
+                    <label for="productImage" class="form-label">Product Image:</label>
+                    <input
+                      id="productImage"
+                      formControlName="productImage"
+                      type="file"
+                      class="form-control"
+                      (change)="onFileChange($event)"
+                    />
+                  </div>
             </div>
         </form>
             <!-- Modal footer -->
             <div class="modal-footer">
-                <button type="button" (ngSubmit)="onSubmit()" class="btn btn-success" data-dismiss="modal" >Submit </button>
+                <button type="button" (click)="onSubmit()" class="btn btn-success" data-dismiss="modal" >Submit </button>
               <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="CloseModal()">Close</button>
             </div>
       

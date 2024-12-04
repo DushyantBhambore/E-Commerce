@@ -21,3 +21,15 @@ C:\Users\dushyantbhambore\Desktop\E-Commerce\MegaAssesment\Backend\E_Commerece\D
 C:\Users\dushyantbhambore\Desktop\E-Commerce\MegaAssesment\Backend\E_Commerece\Domain\obj\Debug\net8.0\refint\Domain.dll
 C:\Users\dushyantbhambore\Desktop\E-Commerce\MegaAssesment\Backend\E_Commerece\Domain\obj\Debug\net8.0\Domain.pdb
 C:\Users\dushyantbhambore\Desktop\E-Commerce\MegaAssesment\Backend\E_Commerece\Domain\obj\Debug\net8.0\ref\Domain.dll
+D:\Sdfolder\SdPractice\ECommerece\E-Commerce\MegaAssesment\Backend\E_Commerece\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\Sdfolder\SdPractice\ECommerece\E-Commerce\MegaAssesment\Backend\E_Commerece\Domain\bin\Debug\net8.0\Domain.dll
+D:\Sdfolder\SdPractice\ECommerece\E-Commerce\MegaAssesment\Backend\E_Commerece\Domain\bin\Debug\net8.0\Domain.pdb
+D:\Sdfolder\SdPractice\ECommerece\E-Commerce\MegaAssesment\Backend\E_Commerece\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sdfolder\SdPractice\ECommerece\E-Commerce\MegaAssesment\Backend\E_Commerece\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\Sdfolder\SdPractice\ECommerece\E-Commerce\MegaAssesment\Backend\E_Commerece\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\Sdfolder\SdPractice\ECommerece\E-Commerce\MegaAssesment\Backend\E_Commerece\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\Sdfolder\SdPractice\ECommerece\E-Commerce\MegaAssesment\Backend\E_Commerece\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+D:\Sdfolder\SdPractice\ECommerece\E-Commerce\MegaAssesment\Backend\E_Commerece\Domain\obj\Debug\net8.0\Domain.dll
+D:\Sdfolder\SdPractice\ECommerece\E-Commerce\MegaAssesment\Backend\E_Commerece\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\Sdfolder\SdPractice\ECommerece\E-Commerce\MegaAssesment\Backend\E_Commerece\Domain\obj\Debug\net8.0\Domain.pdb
+D:\Sdfolder\SdPractice\ECommerece\E-Commerce\MegaAssesment\Backend\E_Commerece\Domain\obj\Debug\net8.0\ref\Domain.dll

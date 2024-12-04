@@ -37,16 +37,34 @@ namespace App.Core.Apps.CartDetailtable.Command
                 await _appDbContext.Set<Domain.CartMaster>().AddAsync(cartMasterId);
                 await _appDbContext.SaveChangesAsync(cancellationToken);
             }
-            var addcart = new CartDetail
-            {
-                CartId = cartMasterId.CardMasterId,
-                ProductId = request.cartdetailsDto.ProductId,
-                Qty = request.cartdetailsDto.Qty,
 
-            };
-            await _appDbContext.Set<Domain.CartDetail>().AddAsync(addcart);
+            // Check if the product already exists in the cart
+            var existingCartDetail = await _appDbContext.Set<CartDetail>()
+                .FirstOrDefaultAsync(cd => cd.CartId == cartMasterId.CardMasterId && cd.ProductId == request.cartdetailsDto.ProductId);
+
+            if (existingCartDetail != null)
+            {
+                // Update the quantity if the product already exists in the cart
+                existingCartDetail.Qty += request.cartdetailsDto.Qty;
+                _appDbContext.Set<CartDetail>().Update(existingCartDetail);
+            }
+            else
+            {
+
+            }
+            {
+                var addcart = new CartDetail
+                {
+                    CartId = cartMasterId.CardMasterId,
+                    ProductId = request.cartdetailsDto.ProductId,
+                    Qty = request.cartdetailsDto.Qty,
+
+                };
+                await _appDbContext.Set<Domain.CartDetail>().AddAsync(addcart);
+
+            }
             await _appDbContext.SaveChangesAsync(cancellationToken);
-            return new CartResponseModel((int)HttpStatusCode.OK, "Prodcut Added into the Card", addcart);
+            return new CartResponseModel((int)HttpStatusCode.OK, "Prodcut Added into the Card", null);
         }
 
     
