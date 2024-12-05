@@ -4,6 +4,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { CommonModule } from '@angular/common';
 import { CartService } from '../../Service/cart.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-dashboard',
@@ -19,7 +20,7 @@ export class DashboardComponent implements OnInit {
   cartservice = inject(CartService)
   userdata  = JSON.parse(sessionStorage.getItem('logindata') || '{}')
   userId = this.userdata.userId
-
+  toastr=inject(ToastrService)
   
   
   ngOnInit(): void {
@@ -63,7 +64,16 @@ export class DashboardComponent implements OnInit {
     this.cartservice.Addtocart(cartDetails).subscribe({
       next: (response) => {
         console.log('Product added to cart:', response);
-        alert('Product added to cart successfully!');
+        // alert('Product added to cart successfully!');
+        this.toastr.success('Product added to cart.', 'Success', {
+          timeOut: 3000,
+          progressBar: true,
+          progressAnimation: 'increasing',
+          positionClass: 'toast-top-right',
+          closeButton:false
+          
+        });
+        this.getProduct();
         
       },
       error: (err) => {
@@ -80,6 +90,13 @@ export class DashboardComponent implements OnInit {
     this.cartservice.removeFromCart(cartDetailId).subscribe({
       next: (response) => {
         console.log('Product removed from cart:', response);
+        this.toastr.success('Product removed from cart.', 'Success', {
+          timeOut: 3000,
+          progressBar: true,
+          progressAnimation: 'increasing',
+          positionClass: 'toast-top-right'
+          
+        });
         alert('Product removed from cart successfully!');
         this.getProduct(); // Refresh the cart items after removing
     

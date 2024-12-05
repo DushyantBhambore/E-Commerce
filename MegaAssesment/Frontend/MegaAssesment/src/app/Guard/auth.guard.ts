@@ -4,12 +4,12 @@ import { CanActivateFn, Router } from '@angular/router';
 export const authGuard: CanActivateFn = (route, state) => {
 
   const token = localStorage.getItem('token'); // Check if a token exists
-  const role = localStorage.getItem('role'); // Check user role from local storage
+  const role =localStorage.getItem('role'); // Check user role from local storage
 
   const router = inject(Router);
   if (token) {
 
-    if(role ==='admin')
+    if(role === '4')
     {
       router.navigateByUrl('/product');
     }
@@ -18,7 +18,7 @@ export const authGuard: CanActivateFn = (route, state) => {
 
   if(token)
   {
-    router.navigateByUrl('/dashboard');
+    router.navigateByUrl('/dashboard');1
     return true;
   }
 

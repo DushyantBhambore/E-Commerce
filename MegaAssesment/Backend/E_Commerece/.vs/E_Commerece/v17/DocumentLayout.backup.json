@@ -1,266 +1,286 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\",
+  "WorkspaceRootPath": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\webapi\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\webapi\\controllers\\statecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\statecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\productsales\\command\\placeordercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\productsales\\command\\placeordercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\productsales\\query\\getinvoicebyid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\productsales\\query\\getinvoicebyid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\productsales\\invoicecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\productsales\\invoicecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\responsemodel\\paymentresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\responsemodel\\paymentresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204211425_FullFinal1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Migrations\\20241204211425_FullFinal1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\salesdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\salesdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\salesmasterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\salesmasterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\infrastructure\\migrations\\20241204210446_fullfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20241204210446_fullfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\salesmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\salesmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\responsemodel\\invoiceresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\responsemodel\\invoiceresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\responsemodel\\jsonmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\responsemodel\\jsonmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\payementcardtable\\command\\addorupdateaddresscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\payementcardtable\\command\\addorupdateaddresscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\cartdetailtable\\command\\addtocartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\cartdetailtable\\command\\addtocartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\user\\command\\verifyotpcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\user\\command\\verifyotpcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\user\\command\\addregistercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\user\\command\\addregistercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\payementcardtable\\command\\validatepaymentcardcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\payementcardtable\\command\\validatepaymentcardcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\payementcardtable\\command\\processpaymentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\payementcardtable\\command\\processpaymentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\payementcardtable\\command\\addcardcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\payementcardtable\\command\\addcardcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\webapi\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\webapi\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\product\\command\\addproductcommad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\product\\command\\addproductcommad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\cardvalidationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\cardvalidationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\responsemodel\\cartresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\responsemodel\\cartresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\cartdetailtable\\command\\removecartcoommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\cartdetailtable\\command\\removecartcoommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\cartdetailtable\\command\\removecartcoommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\payementcardtable\\query\\getcardbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\payementcardtable\\query\\getcardbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\responsemodel\\cartresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\responsemodel\\cartresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\removercartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\removercartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\user\\command\\verifyotpcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\user\\command\\verifyotpcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\payementcardtable\\query\\getcartsubtotalquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\payementcardtable\\query\\getcartsubtotalquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\payementcardtable\\query\\getallcardquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\payementcardtable\\query\\getallcardquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\cartdetailtable\\command\\updatecartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\cartdetailtable\\command\\updatecartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\cartdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\cartdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\role\\command\\addrolecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\role\\command\\addrolecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\cartdetailtable\\query\\getcartbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\cartdetailtable\\query\\getcartbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\carddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\carddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\cartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\cartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\payementcardtable\\command\\deletecardcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\payementcardtable\\command\\deletecardcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\cartdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\cartdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\getcartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\getcartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\product\\query\\getproductbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\product\\query\\getproductbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\product\\query\\getallprodcutquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\product\\query\\getallprodcutquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\countrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\countrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\cartmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\cartmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\user\\command\\loginusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\user\\command\\loginusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\prodcutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\prodcutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\product\\command\\deleteproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\product\\command\\deleteproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\smsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\smsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\user\\query\\getuserbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\user\\query\\getuserbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\user\\query\\getuserbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\product\\command\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\productsales\\command\\placeordercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\productsales\\command\\placeordercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\role\\command\\addrolecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\role\\command\\addrolecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\user\\command\\loginusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\user\\command\\loginusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\productsales\\query\\getinvoicebyid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\productsales\\query\\getinvoicebyid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\cartdetailtable\\command\\addtocartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\cartdetailtable\\command\\addtocartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\user\\command\\changepasswordcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\user\\command\\changepasswordcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\cartdetailtable\\query\\getcartbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\cartdetailtable\\query\\getcartbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\cartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\cartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\getcartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\getcartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\salesdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\salesdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\salesmasterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\salesmasterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\webapi\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\prodcutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\prodcutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\product\\command\\addproductcommad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\product\\command\\addproductcommad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\product\\command\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\product\\command\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\state\\query\\getstatebyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\state\\query\\getstatebyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\product\\query\\getproductbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\product\\query\\getproductbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\role\\query\\getallrolequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\role\\query\\getallrolequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\role\\query\\getrolebyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\role\\query\\getrolebyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\role\\query\\getrolebyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\verifyotpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\cartdetailtable\\command\\updatecartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\cartdetailtable\\command\\updatecartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\responsemodel\\jsonmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\responsemodel\\jsonmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\user\\command\\addregistercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\user\\command\\addregistercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\user\\command\\forgetpasswordcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\user\\command\\forgetpasswordcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\responsemodel\\userresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\responsemodel\\userresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\webapi\\controllers\\statecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B745214-CFAE-4691-AB38-E876D2C6DB66}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\statecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\productsales\\invoicecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\productsales\\invoicecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\responsemodel\\paymentresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\responsemodel\\paymentresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\infrastructure\\migrations\\20241204210446_fullfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20241204210446_fullfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\salesmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\salesmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\responsemodel\\invoiceresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\responsemodel\\invoiceresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\payementcardtable\\command\\addorupdateaddresscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\payementcardtable\\command\\addorupdateaddresscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\payementcardtable\\command\\validatepaymentcardcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\payementcardtable\\command\\validatepaymentcardcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\payementcardtable\\command\\processpaymentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\payementcardtable\\command\\processpaymentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\payementcardtable\\command\\addcardcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\payementcardtable\\command\\addcardcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\cardvalidationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\cardvalidationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\payementcardtable\\query\\getcardbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\payementcardtable\\query\\getcardbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\removercartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\removercartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\payementcardtable\\query\\getcartsubtotalquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\payementcardtable\\query\\getcartsubtotalquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\payementcardtable\\query\\getallcardquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\payementcardtable\\query\\getallcardquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\cartdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\cartdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\carddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\carddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\payementcardtable\\command\\deletecardcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\payementcardtable\\command\\deletecardcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\cartdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\cartdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\product\\query\\getallprodcutquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\product\\query\\getallprodcutquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\countrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\countrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\cartmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\cartmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\product\\command\\deleteproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\product\\command\\deleteproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\smsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\smsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\state\\query\\getstatebyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\state\\query\\getstatebyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\apps\\role\\query\\getallrolequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\apps\\role\\query\\getallrolequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\dtos\\verifyotpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\dtos\\verifyotpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\interface\\ismsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\app.core\\interface\\ismsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDD8267D-8988-472A-AE9B-74ACA8556C73}|App.Core\\App.Core.csproj|solutionrelative:app.core\\interface\\ismsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\domain\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA660BD6-8C15-4B19-84D5-EA515518BBA3}|Domain\\Domain.csproj|solutionrelative:domain\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\infrastructure\\migrations\\20241203100358_fourthmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\infrastructure\\migrations\\20241203100358_fourthmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20241203100358_fourthmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\infrastructure\\migrations\\20241204045342_finalmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\infrastructure\\migrations\\20241204045342_finalmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20241204045342_finalmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\infrastructure\\migrations\\20241204150433_homefirst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\infrastructure\\migrations\\20241204150433_homefirst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20241204150433_homefirst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\infrastructure\\migrations\\20241204150242_homelast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\infrastructure\\migrations\\20241204150242_homelast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20241204150242_homelast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|d:\\sdfolder\\sdpractice\\ecommerece\\e-commerce\\megaassesment\\backend\\e_commerece\\infrastructure\\migrations\\20241204144244_homefinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\infrastructure\\migrations\\20241204144244_homefinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20241204144244_homefinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\infrastructure\\migrations\\20241204211425_fullfinal1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20241204211425_fullfinal1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|c:\\users\\dushyantbhambore\\desktop\\e-commerce\\megaassesment\\backend\\e_commerece\\infrastructure\\migrations\\20241205041606_officemigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{526156AB-329B-46A3-A812-C234FC5794CB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20241205041606_officemigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -270,145 +290,199 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 39,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StateController.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\StateController.cs",
-              "RelativeDocumentMoniker": "WebAPI\\Controllers\\StateController.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\StateController.cs",
-              "RelativeToolTip": "WebAPI\\Controllers\\StateController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 27,
+              "Title": "ChangePasswordDto.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\ChangePasswordDto.cs",
+              "RelativeDocumentMoniker": "App.Core\\Dtos\\ChangePasswordDto.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\ChangePasswordDto.cs",
+              "RelativeToolTip": "App.Core\\Dtos\\ChangePasswordDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T21:26:42.605Z",
+              "WhenOpened": "2024-12-05T04:32:29.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ChangePasswordCommand.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Command\\ChangePasswordCommand.cs",
+              "RelativeDocumentMoniker": "App.Core\\Apps\\User\\Command\\ChangePasswordCommand.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Command\\ChangePasswordCommand.cs",
+              "RelativeToolTip": "App.Core\\Apps\\User\\Command\\ChangePasswordCommand.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwA4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T04:31:52.864Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 29,
+              "Title": "UserResponseModel.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\ResponseModel\\UserResponseModel.cs",
+              "RelativeDocumentMoniker": "Domain\\ResponseModel\\UserResponseModel.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\ResponseModel\\UserResponseModel.cs",
+              "RelativeToolTip": "Domain\\ResponseModel\\UserResponseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T04:26:57.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ForgetPasswordCommand.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Command\\ForgetPasswordCommand.cs",
+              "RelativeDocumentMoniker": "App.Core\\Apps\\User\\Command\\ForgetPasswordCommand.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Command\\ForgetPasswordCommand.cs",
+              "RelativeToolTip": "App.Core\\Apps\\User\\Command\\ForgetPasswordCommand.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAACkAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T04:26:22.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "20241205041606_OfficeMigration.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241205041606_OfficeMigration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20241205041606_OfficeMigration.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241205041606_OfficeMigration.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20241205041606_OfficeMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T04:16:06.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "StateController.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\StateController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\StateController.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\StateController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\StateController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T21:26:42.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "GetInvoiceById.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\ProductSales\\Query\\GetInvoiceById.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\ProductSales\\Query\\GetInvoiceById.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\ProductSales\\Query\\GetInvoiceById.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\ProductSales\\Query\\GetInvoiceById.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\ProductSales\\Query\\GetInvoiceById.cs",
               "RelativeToolTip": "App.Core\\Apps\\ProductSales\\Query\\GetInvoiceById.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAiwCAAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvyAAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T21:22:31.044Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 68,
               "Title": "20241204211425_FullFinal1.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204211425_FullFinal1.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204211425_FullFinal1.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20241204211425_FullFinal1.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204211425_FullFinal1.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204211425_FullFinal1.cs",
               "RelativeToolTip": "Infrastructure\\Migrations\\20241204211425_FullFinal1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T21:14:26.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T21:14:26.353Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 34,
               "Title": "20241204210446_FullFinal.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204210446_FullFinal.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204210446_FullFinal.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20241204210446_FullFinal.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204210446_FullFinal.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204210446_FullFinal.cs",
               "RelativeToolTip": "Infrastructure\\Migrations\\20241204210446_FullFinal.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T21:04:48.585Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T21:04:48.585Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "SalesDetail.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\SalesDetail.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\SalesDetail.cs",
               "RelativeDocumentMoniker": "Domain\\SalesDetail.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\SalesDetail.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\SalesDetail.cs",
               "RelativeToolTip": "Domain\\SalesDetail.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T21:02:35.053Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 36,
               "Title": "InvoiceResponseModel.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\ResponseModel\\InvoiceResponseModel.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\ResponseModel\\InvoiceResponseModel.cs",
               "RelativeDocumentMoniker": "Domain\\ResponseModel\\InvoiceResponseModel.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\ResponseModel\\InvoiceResponseModel.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\ResponseModel\\InvoiceResponseModel.cs",
               "RelativeToolTip": "Domain\\ResponseModel\\InvoiceResponseModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T20:41:01.513Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "InvoiceCommand.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\ProductSales\\InvoiceCommand.cs",
-              "RelativeDocumentMoniker": "App.Core\\Apps\\ProductSales\\InvoiceCommand.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\ProductSales\\InvoiceCommand.cs",
-              "RelativeToolTip": "App.Core\\Apps\\ProductSales\\InvoiceCommand.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAASwDsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T20:40:24.41Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AddOrUpdateAddressCommand.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\AddOrUpdateAddressCommand.cs",
-              "RelativeDocumentMoniker": "App.Core\\Apps\\PayementCardTable\\Command\\AddOrUpdateAddressCommand.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\AddOrUpdateAddressCommand.cs",
-              "RelativeToolTip": "App.Core\\Apps\\PayementCardTable\\Command\\AddOrUpdateAddressCommand.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAB1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T18:56:39.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ValidatePaymentCardCommand.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\ValidatePaymentCardCommand.cs",
-              "RelativeDocumentMoniker": "App.Core\\Apps\\PayementCardTable\\Command\\ValidatePaymentCardCommand.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\ValidatePaymentCardCommand.cs",
-              "RelativeToolTip": "App.Core\\Apps\\PayementCardTable\\Command\\ValidatePaymentCardCommand.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAAB8AAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T17:29:28.649Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T20:41:01.513Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 32,
+              "Title": "InvoiceCommand.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\ProductSales\\InvoiceCommand.cs",
+              "RelativeDocumentMoniker": "App.Core\\Apps\\ProductSales\\InvoiceCommand.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\ProductSales\\InvoiceCommand.cs",
+              "RelativeToolTip": "App.Core\\Apps\\ProductSales\\InvoiceCommand.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAASwDsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T20:40:24.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AddOrUpdateAddressCommand.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\AddOrUpdateAddressCommand.cs",
+              "RelativeDocumentMoniker": "App.Core\\Apps\\PayementCardTable\\Command\\AddOrUpdateAddressCommand.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\AddOrUpdateAddressCommand.cs",
+              "RelativeToolTip": "App.Core\\Apps\\PayementCardTable\\Command\\AddOrUpdateAddressCommand.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T18:56:39.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ValidatePaymentCardCommand.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\ValidatePaymentCardCommand.cs",
+              "RelativeDocumentMoniker": "App.Core\\Apps\\PayementCardTable\\Command\\ValidatePaymentCardCommand.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\ValidatePaymentCardCommand.cs",
+              "RelativeToolTip": "App.Core\\Apps\\PayementCardTable\\Command\\ValidatePaymentCardCommand.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAAB8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:29:28.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AddRoleCommand.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Role\\Command\\AddRoleCommand.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Role\\Command\\AddRoleCommand.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\Role\\Command\\AddRoleCommand.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Role\\Command\\AddRoleCommand.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Role\\Command\\AddRoleCommand.cs",
               "RelativeToolTip": "App.Core\\Apps\\Role\\Command\\AddRoleCommand.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAEwB0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwB0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T14:57:37.23Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 65,
               "Title": "20241204150433_HomeFirst.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204150433_HomeFirst.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204150433_HomeFirst.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20241204150433_HomeFirst.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204150433_HomeFirst.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204150433_HomeFirst.cs",
               "RelativeToolTip": "Infrastructure\\Migrations\\20241204150433_HomeFirst.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -416,11 +490,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 66,
               "Title": "20241204150242_HomeLast.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204150242_HomeLast.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204150242_HomeLast.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20241204150242_HomeLast.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204150242_HomeLast.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204150242_HomeLast.cs",
               "RelativeToolTip": "Infrastructure\\Migrations\\20241204150242_HomeLast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -428,11 +502,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 67,
               "Title": "20241204144244_HomeFinal.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204144244_HomeFinal.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204144244_HomeFinal.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20241204144244_HomeFinal.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204144244_HomeFinal.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204144244_HomeFinal.cs",
               "RelativeToolTip": "Infrastructure\\Migrations\\20241204144244_HomeFinal.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -440,75 +514,75 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 17,
               "Title": "SalesController.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\SalesController.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\SalesController.cs",
               "RelativeDocumentMoniker": "WebAPI\\Controllers\\SalesController.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\SalesController.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\SalesController.cs",
               "RelativeToolTip": "WebAPI\\Controllers\\SalesController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAvwCAAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T12:08:46.723Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 13,
               "Title": "CartItemDto.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CartItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CartItemDto.cs",
               "RelativeDocumentMoniker": "App.Core\\Dtos\\CartItemDto.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CartItemDto.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CartItemDto.cs",
               "RelativeToolTip": "App.Core\\Dtos\\CartItemDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T11:54:24.838Z"
+              "WhenOpened": "2024-12-04T11:54:24.838Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "SalesMasterDto.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\SalesMasterDto.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\SalesMasterDto.cs",
               "RelativeDocumentMoniker": "App.Core\\Dtos\\SalesMasterDto.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\SalesMasterDto.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\SalesMasterDto.cs",
               "RelativeToolTip": "App.Core\\Dtos\\SalesMasterDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T11:38:28.194Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 35,
               "Title": "SalesMaster.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\SalesMaster.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\SalesMaster.cs",
               "RelativeDocumentMoniker": "Domain\\SalesMaster.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\SalesMaster.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\SalesMaster.cs",
               "RelativeToolTip": "Domain\\SalesMaster.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T11:38:04.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T11:38:04.241Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "PlaceOrderCommand.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\ProductSales\\Command\\PlaceOrderCommand.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\ProductSales\\Command\\PlaceOrderCommand.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\ProductSales\\Command\\PlaceOrderCommand.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\ProductSales\\Command\\PlaceOrderCommand.cs*",
-              "RelativeToolTip": "App.Core\\Apps\\ProductSales\\Command\\PlaceOrderCommand.cs*",
-              "ViewState": "AgIAADoAAAAAAAAAAAAvwEYAAAAIAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\ProductSales\\Command\\PlaceOrderCommand.cs",
+              "RelativeToolTip": "App.Core\\Apps\\ProductSales\\Command\\PlaceOrderCommand.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAowEUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T11:36:05.735Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 48,
               "Title": "DeleteCardCommand.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\DeleteCardCommand.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\DeleteCardCommand.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\PayementCardTable\\Command\\DeleteCardCommand.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\DeleteCardCommand.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\DeleteCardCommand.cs",
               "RelativeToolTip": "App.Core\\Apps\\PayementCardTable\\Command\\DeleteCardCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -516,11 +590,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 44,
               "Title": "GetCartSubtotalQuery.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Query\\GetCartSubtotalQuery.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Query\\GetCartSubtotalQuery.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\PayementCardTable\\Query\\GetCartSubtotalQuery.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Query\\GetCartSubtotalQuery.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Query\\GetCartSubtotalQuery.cs",
               "RelativeToolTip": "App.Core\\Apps\\PayementCardTable\\Query\\GetCartSubtotalQuery.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAB8AAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -528,11 +602,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 42,
               "Title": "GetCardByIdQuery.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Query\\GetCardByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Query\\GetCardByIdQuery.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\PayementCardTable\\Query\\GetCardByIdQuery.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Query\\GetCardByIdQuery.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Query\\GetCardByIdQuery.cs",
               "RelativeToolTip": "App.Core\\Apps\\PayementCardTable\\Query\\GetCardByIdQuery.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAAACcAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -541,11 +615,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 45,
               "Title": "GetAllCardQuery.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Query\\GetAllCardQuery.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Query\\GetAllCardQuery.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\PayementCardTable\\Query\\GetAllCardQuery.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Query\\GetAllCardQuery.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Query\\GetAllCardQuery.cs",
               "RelativeToolTip": "App.Core\\Apps\\PayementCardTable\\Query\\GetAllCardQuery.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAIwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -553,63 +627,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 33,
               "Title": "PaymentResponseModel.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\ResponseModel\\PaymentResponseModel.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\ResponseModel\\PaymentResponseModel.cs",
               "RelativeDocumentMoniker": "Domain\\ResponseModel\\PaymentResponseModel.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\ResponseModel\\PaymentResponseModel.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\ResponseModel\\PaymentResponseModel.cs",
               "RelativeToolTip": "Domain\\ResponseModel\\PaymentResponseModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAvwA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T09:09:55.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T09:09:55.807Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 39,
               "Title": "ProcessPaymentCommand.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\ProcessPaymentCommand.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\ProcessPaymentCommand.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\PayementCardTable\\Command\\ProcessPaymentCommand.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\ProcessPaymentCommand.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\ProcessPaymentCommand.cs",
               "RelativeToolTip": "App.Core\\Apps\\PayementCardTable\\Command\\ProcessPaymentCommand.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAiwEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T09:09:15.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T09:09:15.963Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 41,
               "Title": "CardValidationDto.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CardValidationDto.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CardValidationDto.cs",
               "RelativeDocumentMoniker": "App.Core\\Dtos\\CardValidationDto.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CardValidationDto.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CardValidationDto.cs",
               "RelativeToolTip": "App.Core\\Dtos\\CardValidationDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T09:08:02.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T09:08:02.474Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 40,
               "Title": "AddCardCommand.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\AddCardCommand.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\AddCardCommand.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\PayementCardTable\\Command\\AddCardCommand.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\AddCardCommand.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\PayementCardTable\\Command\\AddCardCommand.cs",
               "RelativeToolTip": "App.Core\\Apps\\PayementCardTable\\Command\\AddCardCommand.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAYwA8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T05:53:00.678Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T05:53:00.678Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 47,
               "Title": "CardDto.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CardDto.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CardDto.cs",
               "RelativeDocumentMoniker": "App.Core\\Dtos\\CardDto.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CardDto.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CardDto.cs",
               "RelativeToolTip": "App.Core\\Dtos\\CardDto.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -617,23 +687,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 14,
               "Title": "GetCartDto.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\GetCartDto.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\GetCartDto.cs",
               "RelativeDocumentMoniker": "App.Core\\Dtos\\GetCartDto.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\GetCartDto.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\GetCartDto.cs",
               "RelativeToolTip": "App.Core\\Dtos\\GetCartDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T04:58:06.399Z"
+              "WhenOpened": "2024-12-04T04:58:06.399Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 64,
               "Title": "20241204045342_FinalMigration.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204045342_FinalMigration.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204045342_FinalMigration.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20241204045342_FinalMigration.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204045342_FinalMigration.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241204045342_FinalMigration.cs",
               "RelativeToolTip": "Infrastructure\\Migrations\\20241204045342_FinalMigration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -641,11 +712,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 43,
               "Title": "RemoverCartDto.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\RemoverCartDto.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\RemoverCartDto.cs",
               "RelativeDocumentMoniker": "App.Core\\Dtos\\RemoverCartDto.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\RemoverCartDto.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\RemoverCartDto.cs",
               "RelativeToolTip": "App.Core\\Dtos\\RemoverCartDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -653,11 +724,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 51,
               "Title": "CountryDto.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CountryDto.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CountryDto.cs",
               "RelativeDocumentMoniker": "App.Core\\Dtos\\CountryDto.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CountryDto.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CountryDto.cs",
               "RelativeToolTip": "App.Core\\Dtos\\CountryDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -665,61 +736,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 12,
               "Title": "GetCartByidQuery.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\CartDetailtable\\Query\\GetCartByidQuery.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\CartDetailtable\\Query\\GetCartByidQuery.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\CartDetailtable\\Query\\GetCartByidQuery.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\CartDetailtable\\Query\\GetCartByidQuery.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\CartDetailtable\\Query\\GetCartByidQuery.cs",
               "RelativeToolTip": "App.Core\\Apps\\CartDetailtable\\Query\\GetCartByidQuery.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAxwCIAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T11:21:48.635Z"
+              "WhenOpened": "2024-12-03T11:21:48.635Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 24,
               "Title": "UpdateCartCommand.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\CartDetailtable\\Command\\UpdateCartCommand.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\CartDetailtable\\Command\\UpdateCartCommand.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\CartDetailtable\\Command\\UpdateCartCommand.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\CartDetailtable\\Command\\UpdateCartCommand.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\CartDetailtable\\Command\\UpdateCartCommand.cs",
               "RelativeToolTip": "App.Core\\Apps\\CartDetailtable\\Command\\UpdateCartCommand.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAuwB8AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T11:09:56.49Z"
+              "WhenOpened": "2024-12-03T11:09:56.49Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 1,
               "Title": "RemoveCartCoommand.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\CartDetailtable\\Command\\RemoveCartCoommand.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\CartDetailtable\\Command\\RemoveCartCoommand.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\CartDetailtable\\Command\\RemoveCartCoommand.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\CartDetailtable\\Command\\RemoveCartCoommand.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\CartDetailtable\\Command\\RemoveCartCoommand.cs",
               "RelativeToolTip": "App.Core\\Apps\\CartDetailtable\\Command\\RemoveCartCoommand.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAvwBUAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAADYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T10:18:23.864Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 0,
               "Title": "CartController.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\CartController.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "WebAPI\\Controllers\\CartController.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\CartController.cs",
               "RelativeToolTip": "WebAPI\\Controllers\\CartController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAAADwAAAB0AAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAuwCIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T10:14:44.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 63,
               "Title": "20241203100358_FourthMigration.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241203100358_FourthMigration.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241203100358_FourthMigration.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20241203100358_FourthMigration.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241203100358_FourthMigration.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\Migrations\\20241203100358_FourthMigration.cs",
               "RelativeToolTip": "Infrastructure\\Migrations\\20241203100358_FourthMigration.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -727,11 +800,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 46,
               "Title": "CartdetailsDto.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CartdetailsDto.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CartdetailsDto.cs",
               "RelativeDocumentMoniker": "App.Core\\Dtos\\CartdetailsDto.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CartdetailsDto.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\CartdetailsDto.cs",
               "RelativeToolTip": "App.Core\\Dtos\\CartdetailsDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -739,50 +812,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 10,
               "Title": "AddToCartCommand.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\CartDetailtable\\Command\\AddToCartCommand.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\CartDetailtable\\Command\\AddToCartCommand.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\CartDetailtable\\Command\\AddToCartCommand.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\CartDetailtable\\Command\\AddToCartCommand.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\CartDetailtable\\Command\\AddToCartCommand.cs",
               "RelativeToolTip": "App.Core\\Apps\\CartDetailtable\\Command\\AddToCartCommand.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAvwBcAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAQwDQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T09:23:47.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 25,
               "Title": "JSonModel.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\ResponseModel\\JSonModel.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\ResponseModel\\JSonModel.cs",
               "RelativeDocumentMoniker": "Domain\\ResponseModel\\JSonModel.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\ResponseModel\\JSonModel.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\ResponseModel\\JSonModel.cs",
               "RelativeToolTip": "Domain\\ResponseModel\\JSonModel.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAvwBQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T09:23:05.642Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 2,
               "Title": "CartResponseModel.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\ResponseModel\\CartResponseModel.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\ResponseModel\\CartResponseModel.cs",
               "RelativeDocumentMoniker": "Domain\\ResponseModel\\CartResponseModel.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\ResponseModel\\CartResponseModel.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\ResponseModel\\CartResponseModel.cs",
               "RelativeToolTip": "Domain\\ResponseModel\\CartResponseModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAvwBIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T09:22:58.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 54,
               "Title": "Domain.csproj",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Domain.csproj",
               "RelativeDocumentMoniker": "Domain\\Domain.csproj",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Domain.csproj",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Domain.csproj",
               "RelativeToolTip": "Domain\\Domain.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -790,11 +863,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 52,
               "Title": "CartMaster.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\CartMaster.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\CartMaster.cs",
               "RelativeDocumentMoniker": "Domain\\CartMaster.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\CartMaster.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\CartMaster.cs",
               "RelativeToolTip": "Domain\\CartMaster.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -802,11 +875,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 53,
               "Title": "Card.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Card.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Card.cs",
               "RelativeDocumentMoniker": "Domain\\Card.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Card.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Card.cs",
               "RelativeToolTip": "Domain\\Card.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -814,23 +887,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 22,
               "Title": "GetProductByIdQuery.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Query\\GetProductByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Query\\GetProductByIdQuery.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\Product\\Query\\GetProductByIdQuery.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Query\\GetProductByIdQuery.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Query\\GetProductByIdQuery.cs",
               "RelativeToolTip": "App.Core\\Apps\\Product\\Query\\GetProductByIdQuery.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwBsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T08:35:20.63Z"
+              "WhenOpened": "2024-12-03T08:35:20.63Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 49,
               "Title": "CartDetail.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\CartDetail.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\CartDetail.cs",
               "RelativeDocumentMoniker": "Domain\\CartDetail.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\CartDetail.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\CartDetail.cs",
               "RelativeToolTip": "Domain\\CartDetail.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAqwAoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -838,35 +912,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 18,
               "Title": "ProdcutDto.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\ProdcutDto.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\ProdcutDto.cs",
               "RelativeDocumentMoniker": "App.Core\\Dtos\\ProdcutDto.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\ProdcutDto.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\ProdcutDto.cs",
               "RelativeToolTip": "App.Core\\Dtos\\ProdcutDto.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA1wBsAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T06:19:23.466Z"
+              "WhenOpened": "2024-12-03T06:19:23.466Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 20,
               "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "WebAPI\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\ProductController.cs",
               "RelativeToolTip": "WebAPI\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwBwAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwCkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T06:10:49.224Z"
+              "WhenOpened": "2024-12-03T06:10:49.224Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 50,
               "Title": "GetAllProdcutQuery.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Query\\GetAllProdcutQuery.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Query\\GetAllProdcutQuery.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\Product\\Query\\GetAllProdcutQuery.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Query\\GetAllProdcutQuery.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Query\\GetAllProdcutQuery.cs",
               "RelativeToolTip": "App.Core\\Apps\\Product\\Query\\GetAllProdcutQuery.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwBsAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -874,23 +950,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 21,
               "Title": "UpdateProductCommand.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Command\\UpdateProductCommand.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Command\\UpdateProductCommand.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\Product\\Command\\UpdateProductCommand.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Command\\UpdateProductCommand.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Command\\UpdateProductCommand.cs",
               "RelativeToolTip": "App.Core\\Apps\\Product\\Command\\UpdateProductCommand.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAADwvzYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T05:38:09.467Z"
+              "WhenOpened": "2024-12-03T05:38:09.467Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 55,
               "Title": "DeleteProductCommand.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Command\\DeleteProductCommand.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Command\\DeleteProductCommand.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\Product\\Command\\DeleteProductCommand.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Command\\DeleteProductCommand.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Command\\DeleteProductCommand.cs",
               "RelativeToolTip": "App.Core\\Apps\\Product\\Command\\DeleteProductCommand.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -898,24 +975,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 5,
               "Title": "GetUserByIdQuery.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Query\\GetUserByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Query\\GetUserByIdQuery.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\User\\Query\\GetUserByIdQuery.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Query\\GetUserByIdQuery.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Query\\GetUserByIdQuery.cs",
               "RelativeToolTip": "App.Core\\Apps\\User\\Query\\GetUserByIdQuery.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAkwBoAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T04:57:01.58Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 57,
               "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Infrastructure\\DependencyInjection.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Infrastructure\\DependencyInjection.cs",
               "RelativeToolTip": "Infrastructure\\DependencyInjection.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAArwBQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -923,11 +1000,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 62,
               "Title": "Otp.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Otp.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Otp.cs",
               "RelativeDocumentMoniker": "Domain\\Otp.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Otp.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\Domain\\Otp.cs",
               "RelativeToolTip": "Domain\\Otp.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -935,24 +1012,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 26,
               "Title": "AddRegisterCommand.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Command\\AddRegisterCommand.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Command\\AddRegisterCommand.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\User\\Command\\AddRegisterCommand.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Command\\AddRegisterCommand.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Command\\AddRegisterCommand.cs",
               "RelativeToolTip": "App.Core\\Apps\\User\\Command\\AddRegisterCommand.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAvwCcAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAswCcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T04:37:59.014Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 60,
               "Title": "VerifyOtpDto.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\VerifyOtpDto.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\VerifyOtpDto.cs",
               "RelativeDocumentMoniker": "App.Core\\Dtos\\VerifyOtpDto.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\VerifyOtpDto.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Dtos\\VerifyOtpDto.cs",
               "RelativeToolTip": "App.Core\\Dtos\\VerifyOtpDto.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -960,36 +1037,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 8,
               "Title": "LoginUserCommand.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Command\\LoginUserCommand.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Command\\LoginUserCommand.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\User\\Command\\LoginUserCommand.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Command\\LoginUserCommand.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Command\\LoginUserCommand.cs",
               "RelativeToolTip": "App.Core\\Apps\\User\\Command\\LoginUserCommand.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAlwCEAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAWwDsAAABsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T04:37:59.037Z"
+              "WhenOpened": "2024-12-03T04:37:59.037Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 3,
               "Title": "VerifyOtpCommand.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Command\\VerifyOtpCommand.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Command\\VerifyOtpCommand.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\User\\Command\\VerifyOtpCommand.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Command\\VerifyOtpCommand.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\User\\Command\\VerifyOtpCommand.cs",
               "RelativeToolTip": "App.Core\\Apps\\User\\Command\\VerifyOtpCommand.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAvwCQAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAYwCQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T04:37:59.059Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 58,
               "Title": "GetStateByIdQuery.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\State\\Query\\GetStateByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\State\\Query\\GetStateByIdQuery.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\State\\Query\\GetStateByIdQuery.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\State\\Query\\GetStateByIdQuery.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\State\\Query\\GetStateByIdQuery.cs",
               "RelativeToolTip": "App.Core\\Apps\\State\\Query\\GetStateByIdQuery.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAASwCAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -998,24 +1076,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 23,
               "Title": "GetRoleByIdQuery.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Role\\Query\\GetRoleByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Role\\Query\\GetRoleByIdQuery.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\Role\\Query\\GetRoleByIdQuery.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Role\\Query\\GetRoleByIdQuery.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Role\\Query\\GetRoleByIdQuery.cs",
               "RelativeToolTip": "App.Core\\Apps\\Role\\Query\\GetRoleByIdQuery.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwCIAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwBwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T04:37:59.117Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 59,
               "Title": "GetAllRoleQuery.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Role\\Query\\GetAllRoleQuery.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Role\\Query\\GetAllRoleQuery.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\Role\\Query\\GetAllRoleQuery.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Role\\Query\\GetAllRoleQuery.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Role\\Query\\GetAllRoleQuery.cs",
               "RelativeToolTip": "App.Core\\Apps\\Role\\Query\\GetAllRoleQuery.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAASwBoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1023,24 +1101,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 4,
               "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\UserController.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "WebAPI\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\Controllers\\UserController.cs",
               "RelativeToolTip": "WebAPI\\Controllers\\UserController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAvwCQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwB4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T04:37:59.151Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 56,
               "Title": "SmsService.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\SmsService.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\SmsService.cs",
               "RelativeDocumentMoniker": "App.Core\\SmsService.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\SmsService.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\SmsService.cs",
               "RelativeToolTip": "App.Core\\SmsService.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAQwBcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1048,11 +1126,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 61,
               "Title": "ISmsService.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Interface\\ISmsService.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Interface\\ISmsService.cs",
               "RelativeDocumentMoniker": "App.Core\\Interface\\ISmsService.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Interface\\ISmsService.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Interface\\ISmsService.cs",
               "RelativeToolTip": "App.Core\\Interface\\ISmsService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1060,25 +1138,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 30,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\appsettings.json",
               "RelativeDocumentMoniker": "WebAPI\\appsettings.json",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\appsettings.json",
               "RelativeToolTip": "WebAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAYwBIAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-12-03T04:41:18.169Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 19,
               "Title": "AddProductCommad.cs",
-              "DocumentMoniker": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Command\\AddProductCommad.cs",
+              "DocumentMoniker": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Command\\AddProductCommad.cs",
               "RelativeDocumentMoniker": "App.Core\\Apps\\Product\\Command\\AddProductCommad.cs",
-              "ToolTip": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Command\\AddProductCommad.cs",
+              "ToolTip": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\App.Core\\Apps\\Product\\Command\\AddProductCommad.cs",
               "RelativeToolTip": "App.Core\\Apps\\Product\\Command\\AddProductCommad.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAEwCIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAswDMAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T04:33:40.429Z",
               "EditorCaption": ""

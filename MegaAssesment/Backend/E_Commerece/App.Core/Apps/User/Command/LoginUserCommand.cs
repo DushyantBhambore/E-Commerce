@@ -1,5 +1,6 @@
 ﻿using App.Core.Dtos;
 using App.Core.Interface;
+using Domain;
 using Domain.ResponseModel;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -44,12 +45,18 @@ namespace App.Core.Apps.User.Command
             {
                 return new JSonModel((int)HttpStatusCode.BadRequest, "Username  and Password is  Invalid", null);
             }
-            // Generate OTP
+           // Generate OTP
             var otp = new Random().Next(100000, 999999).ToString();
-            // Store OTP in database or cache with expiration time
+
+            var existingOtps = await _appDbContext.Set<Otp>()
+            .Where(o => o.Username.ToLower() == checkuser.Username.ToLower())
+            .ToListAsync(cancellationToken);
+            if (existingOtps.Any())
+            {
+                _appDbContext.Set<Otp>().RemoveRange(existingOtps);
+            }
             await _appDbContext.Set<Domain.Otp>().AddAsync(new Domain.Otp { Email = checkuser.Email, Username = checkuser.Username, Code = otp, Expiration = DateTime.Now.AddMinutes(5) });
             await _appDbContext.SaveChangesAsync();
-            // Send OTP to user's email
             await _emailService.SendEmailAsync(checkuser.Email, "Your OTP Code", $"Your OTP code is {otp}");
             return new JSonModel((int)HttpStatusCode.OK, "Otp is Send Successfully", null);
 

@@ -110,12 +110,7 @@ export class RegisterComponent implements OnInit {
     })
   }
 
-  // userData:any
-  // fetchUserDetails(userId: number) {
-  //   const allUsers = JSON.parse(sessionStorage.getItem('logindata') || '[]'); // Example source
-  //   this.userData = allUsers.find((user: any) => user.userId === userId) || {};
 
-  // }
 
   onFileChange(event: any): void {
     if (event.target.files.length > 0) {

@@ -9,6 +9,7 @@ import { PaymentComponent } from '../payment/payment.component';
 import { MatDialog } from '@angular/material/dialog';
 import { state } from '@angular/animations';
 import { count } from 'rxjs';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-view-cart',
@@ -20,6 +21,8 @@ import { count } from 'rxjs';
 export class ViewCartComponent implements OnInit {
 
   cartservice = inject(CartService)
+
+  toastr = inject(ToastrService)
   cartdata :any
 
   userid = JSON.parse(sessionStorage.getItem('logindata') || '{}');
@@ -31,6 +34,8 @@ export class ViewCartComponent implements OnInit {
   subtotal = 0;
   usrname = this.userid.username
   invoiceResponse :any
+
+  isrecipient = false
 
   cartvalue! :any
 
@@ -65,8 +70,15 @@ removeFromCart(productId: number)
     this.cartservice.removeFromCart(cartobj).subscribe({
       next: (response) => {
         console.log('Product removed from cart:', response);
-      
-        alert('Product removed from cart successfully!');
+      this.toastr.success('Product removed from cart.', 'Success', {
+        timeOut: 3000,
+        progressBar: true,
+        progressAnimation: 'increasing',
+        positionClass: 'toast-top-right'
+        
+      });
+        this.gotocart(this.id);
+       
       },
       error: (err) => {
         console.error('Error removing from cart:', err);
@@ -92,20 +104,32 @@ removeFromCart(productId: number)
 
 
   openPaymentDialog() {
+    debugger
     const dialogRef = this.dialog.open(PaymentComponent, {
       data: { subtotal: this.subtotal }
     });
 
     debugger
     dialogRef.afterClosed().subscribe((paymentDetails) => {
+      debugger
       if (paymentDetails) {
         this.cartservice.paymentcard(paymentDetails).subscribe((isValid) => {
           if (isValid) {
-            alert('Payment successful!');
+            this.toastr.success('Payment successful', 'Success', {
+              timeOut: 3000,
+              progressBar: true,
+              progressAnimation: 'increasing',
+              positionClass: 'toast-top-right'
+            })
             this.generateInvoice();
 
           } else {
-            alert('Invalid payment details.');
+            this.toastr.error('Payment failed', 'Error', {
+              timeOut: 3000,
+              progressBar: true,
+              progressAnimation: 'increasing',
+              positionClass: 'toast-top-right'
+            })
           }
         });
       }
@@ -113,29 +137,123 @@ removeFromCart(productId: number)
   }
 
 
+  // generateInvoice()
+  // {
+  //   debugger
+  //   var invoiceRequest = {
+  //     userId: this.id,
+  //     DeliveryAddress: this.address,
+  //     zipcode: this.zipcode,
+  //     stateId: this.stateid,
+  //     countryId: this.countryid,
+  //     Items: this.cartdata.map((item :any) => ({ productId: item.productId , qty: item.qty, sellingPrice: item.sellingPrice ,procuctcode : item.procuctcode}))
+  //   }
+  //   this.cartservice.getinvoice(invoiceRequest).subscribe({
+  //     next: (response) => {
+  //       this.invoiceResponse = response; // Store the response in a variable
+  //       console.log('Invoice generated successfully:', this.invoiceResponse);
+  //       // Optionally, redirect to a new page to display the receipt
+  //       this.router.navigate(['/receipt'], { state: { invoiceData: this.invoiceResponse } });
+  //     },
+  //     error: (err) => {
+  //       console.error('Error generating invoice:', err);
+  //       alert('Failed to generate invoice.');
+  //     }
+  //   });
+
+  // }
+
   generateInvoice()
-  {
-    debugger
-    var invoiceRequest = {
-      userId: this.id,
-      DeliveryAddress: this.address,
-      zipcode: this.zipcode,
-      stateId: this.stateid,
-      countryId: this.countryid,
-      Items: this.cartdata.map((item :any) => ({ productId: item.productId , qty: item.qty, sellingPrice: item.sellingPrice ,procuctcode : item.procuctcode}))
-    }
-    this.cartservice.getinvoice(invoiceRequest).subscribe({
-      next: (response) => {
-        this.invoiceResponse = response; // Store the response in a variable
-        console.log('Invoice generated successfully:', this.invoiceResponse);
-        // Optionally, redirect to a new page to display the receipt
-        this.router.navigate(['/receipt'], { state: { invoiceData: this.invoiceResponse } });
-      },
-      error: (err) => {
-        console.error('Error generating invoice:', err);
-        alert('Failed to generate invoice.');
-      }
+{
+  debugger
+  var invoiceRequest = {
+    UserId: this.id,
+    DeliveryAddress: this.address,
+    DeliveryZipcode: this.zipcode,
+    DeliveryState: this.stateid,
+    DeliveryCountry: this.countryid,
+    Items: this.cartdata.map((item :any) => ({ 
+      ProductId: item.productId, 
+      ProductCode: item.productCode, 
+      SaleQty: item.qty, 
+      SellingPrice: item.sellingPrice 
+    }))
+  }
+  this.cartservice.getinvoice(invoiceRequest).subscribe({
+    next: (response) => {
+      this.invoiceResponse = response; // Store the response in a variable
+      console.log('Invoice generated successfully:', this.invoiceResponse);
+      this.toastr.success('Invoice generated successfully.', 'Success', {
+        timeOut: 3000,
+        progressBar: true,
+        progressAnimation: 'increasing',
+        positionClass: 'toast-top-right'    
+      })
+     sessionStorage.setItem('invoce',this.invoiceResponse)
+
+
+     this.cartdata.forEach((item: any) => {
+      this.removeFromCart(item.productId);
     });
 
+    // Update the cart data
+    this.cartdata = [];
+    this.calculateSubtotal();
+
+     this.router.navigateByUrl('/invoice')
+    },
+    error: (err) => {
+      console.error('Error generating invoice:', err);
+      alert('Failed to generate invoice.');
+    }
+  });
+
+}
+
+  addToCart(item:number)
+  {
+    console.log(item)
+    const cartDetails = {
+      userId: this.id, 
+      productId: item,
+      qty:  1
+    };
+
+    console.log(cartDetails);
+
+    this.cartservice.Addtocart(cartDetails).subscribe({
+      next: (response) => {
+        console.log('Product added to cart:', response);
+        // alert('Product added to cart successfully!');
+        this.toastr.success('Product added to cart.', 'Success', {
+          timeOut: 3000,
+          progressBar: true,
+          progressAnimation: 'increasing',
+          positionClass: 'toast-top-right'
+          
+        });
+        
+      },
+      error: (err) => {
+        console.error('Error adding to cart:', err);
+        alert('Failed to add product to cart.');
+
+      }
+    });
   }
+
+ 
+   showInvoiceModal() {
+  const modal = document.getElementById("myModal");
+  modal!.style.display = "block";
+}
+
+closeInvoiceModal() {
+  const modal = document.getElementById("myModal");
+  // Hide the modal
+  modal!.style.display = "none";
+}
+  
+
+  
 } 

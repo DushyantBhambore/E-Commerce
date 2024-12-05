@@ -226,6 +226,22 @@
   },
   {
     "ContainingType": "WebAPI.Controllers.ProductController",
+    "Method": "GetProductByid",
+    "RelativePath": "api/Product/GetProductByid/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.ProductController",
     "Method": "UpdateProduct",
     "RelativePath": "api/Product/UpdateProduct",
     "HttpMethod": "PUT",
@@ -422,6 +438,38 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.UserController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/User/ChangePassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "changePasswordDto",
+        "Type": "App.Core.Dtos.ChangePasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.UserController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/User/ForgotPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Email",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],

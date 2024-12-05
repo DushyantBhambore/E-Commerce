@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CartService } from '../../Service/cart.service';
 import { FormArray, FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -10,9 +10,17 @@ import { CommonModule } from '@angular/common';
   templateUrl: './invoice.component.html',
   styleUrl: './invoice.component.css'
 })
-export class InvoiceComponent {
+export class InvoiceComponent implements OnInit{
 
   invoiceForm: FormGroup;
+
+
+  getinvoice :any
+  invoiceItems = JSON.stringify(sessionStorage.getItem('invoce') || '')
+
+  ngOnInit(): void {
+    this.getinvoice = this.invoiceItems
+  }
 
   constructor(private fb: FormBuilder, private invoiceService: CartService) {
     this.invoiceForm = this.fb.group({
@@ -24,6 +32,7 @@ export class InvoiceComponent {
       items: this.fb.array([this.createCartItem()])
     });
   }
+  
 
   get items(): FormArray {
     return this.invoiceForm.get('items') as FormArray;
@@ -57,10 +66,5 @@ export class InvoiceComponent {
       }
     });
   }
-
-
-
-
  
-
 }

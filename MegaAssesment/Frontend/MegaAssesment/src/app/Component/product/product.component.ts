@@ -54,6 +54,7 @@ export class ProductComponent implements OnInit {
   // modal close
   CloseModal()
   {
+    this.productform.reset();
     const modal = document.getElementById("myModal");
     if (modal) {
       modal.style.display = "none";
@@ -69,65 +70,123 @@ export class ProductComponent implements OnInit {
       });
     }
   }
-    onSubmit()
-    {
-      debugger
-      const formData = new FormData();
-      Object.keys(this.productform.controls).forEach(key => {
-        const value = this.productform.get(key)?.value;
-        if (key === 'productImage' && this.productImage) {
-          formData.append(key, this.productImage);
-        } else if (value) {
-          formData.append(key, value);
+
+  onSubmit() {
+    const formData = new FormData();
+    const formValues = this.productform.getRawValue();
+    Object.keys(formValues).forEach(key => {
+      const value = formValues[key];
+      if (key === 'productImage' && this.productImage) {
+        formData.append(key, this.productImage);
+      } else if (value) {
+        formData.append(key, value);
+      } else if (key === 'productImage' && !this.productImage) {
+        formData.append(key, '');
+      }
+    });
+  
+    // update product
+    if (formValues.prodcutId > 0) {
+      debugger;
+  
+      this.service.updateProduct(formData).subscribe({
+        next: (res: any) => {
+          console.log(res.data);
+          this.toastr.success('Product Updated successfully!');
+          this.CloseModal();
+          this.getProduct();
+          const updatedProduct = res; // Assuming the service returns the updated product
+          const index = this.productlist.findIndex((p: any) => p.productId === updatedProduct.productId);
+          if (index !== -1) {
+            this.productlist[index] = updatedProduct; // Replace the old product with the updated one
+          }
+        },
+        error: (err) => {
+          console.log(err);
+          this.toastr.error('Failed to update product.');
         }
       });
-
-      // update product 
-      if(this.productform.value.prodcutId != 0)
-      {
-        debugger
-
-        this.service.updateProduct(formData).subscribe({
-          next: (res:any) => {
-            console.log(res.data);
-            this.toastr.success('Product Updated successfully!');
-            this.CloseModal();
-            this.productform.reset()
-            this.getProduct();
-            const updatedProduct = res; // Assuming the service returns the updated product
-        const index = this.productlist.findIndex((p:any) => p.productId === updatedProduct.productId);
-        if (index !== -1) {
-          this.productlist[index] = updatedProduct; // Replace the old product with the updated one
+    } else {
+      this.service.addProduct(formData).subscribe({
+        next: (res) => {
+          console.log(res);
+          this.toastr.success('Product Added successfully!');
+          this.CloseModal();
+          this.productform.reset();
+          this.getProduct();
+          this.productlist.push(res); // Assuming the service returns the added product
+        },
+        error: (err) => {
+          console.log(err);
+          this.toastr.error('Failed to add product.');
         }
-          },
-          error: (err) => {
-            console.log(err);
-            this.toastr.error('Failed to update product.');
-          }
-        })
-      }
-      else
-      {
-        this.service.addProduct(formData).subscribe({
-          next: (res) => {
-            console.log(res);
-            this.toastr.success('Product Added successfully!');
-            this.CloseModal();
-            this.productform.reset();
-            this.getProduct();
-            this.productlist.push(res); // Assuming the service returns the added product
-
-
-          },
-          error: (err) => {
-            console.log(err);
-            this.toastr.error('Failed to add product.');
-          }
-          
-        })
-      }
-     
+      });
     }
+  }
+  //   onSubmit()
+  //   {
+  //     debugger
+  //     if(this.productform.value.prodcutId >0)
+  //     {
+  //       this.service.updateProduct(this.productform).subscribe({
+  //         next: (res:any) => {
+  //           console.log(res.data);
+  //           this.toastr.success('Product Updated successfully!');
+  //           this.CloseModal();
+  //           this.productform.reset()
+  //           this.getProduct();
+  //           const updatedProduct = res; // Assuming the service returns the updated product
+  //       const index = this.productlist.findIndex((p:any) => p.productId === updatedProduct.productId);
+  //       if (index !== -1) {
+  //         this.productlist[index] = updatedProduct; // Replace the old product with the updated one
+  //       }
+  //         },
+  //         error: (err) => {
+  //           console.log(err);
+  //           this.toastr.error('Failed to update product.');
+  //         }
+  //       })
+        
+  //     }
+  //     else
+  //     {
+
+      
+  //     const formData = new FormData();
+  // Object.keys(this.productform.controls).forEach(key => {
+  //   const value = this.productform.get(key)?.value;
+  //   if (key === 'productImage' && this.productImage) {
+  //     formData.append(key, this.productImage);
+  //   } else if (value) {
+  //     formData.append(key, value);
+  //   } else if (key === 'productImage' && !this.productImage) {
+  //     formData.append(key, '');
+  //   }
+  // });
+  // debugger
+  //     // update product 
+     
+      
+  //       this.service.addProduct(formData).subscribe({
+  //         next: (res) => {
+  //           console.log(res);
+  //           this.toastr.success('Product Added successfully!');
+  //           this.CloseModal();
+  //           this.productform.reset();
+  //           this.getProduct();
+  //           this.productlist.push(res); // Assuming the service returns the added product
+
+
+  //         },
+  //         error: (err) => {
+  //           console.log(err);
+  //           this.toastr.error('Failed to add product.');
+  //         }
+          
+  //       })
+  //     }
+     
+  //   }
 
 
 
@@ -140,6 +199,7 @@ export class ProductComponent implements OnInit {
         {
           console.log(res);
           this.productlist = res;
+          console.log(this.productlist);
         },
         error:(err)=>
         {
@@ -149,22 +209,47 @@ export class ProductComponent implements OnInit {
       
     }
 
-    editProduct(item:any)
+    editProduct(id:number)
     {
-      debugger
-      console.log(item);
-      this.OpneModal();
-      // this.productform.patchValue(item);
-      this.productform.patchValue({
-        productId: item.productId,
-        productName: item.productName,
-        category: item.category,
-        purchaseDate: item.purchaseDate,
-        sellingPrice: item.sellingPrice,
-        purchasePrice: item.purchasePrice,
-        brand: item.brand,
-        stock: item.stock,
-      });
+      // debugger
+      // console.log(item);
+      // this.OpneModal();
+      // // this.productform.patchValue(item);
+      // this.productform.patchValue({
+      //   productId: item.productId,
+      //   productName: item.productName,
+      //   category: item.category,
+      //   purchaseDate: item.purchaseDate,
+      //   sellingPrice: item.sellingPrice,
+      //   purchasePrice: item.purchasePrice,
+      //   brand: item.brand,
+      //   stock: item.stock,
+      // });
+
+      this.service.getproductbyid(id).subscribe({
+        next:(res :any)=>
+        {
+          debugger
+          this.OpneModal();
+          console.log(res);
+          this.productform.patchValue({
+            prodcutId: res.prodcutId,
+            productName: res.productName,
+            category: res.category,
+            purchaseDate: res.purchaseDate,
+            sellingPrice: res.sellingPrice,
+            purchasePrice: res.purchasePrice,
+            brand: res.brand,
+            stock: res.stock,
+            productImage: res.productImage
+          });
+          
+        },
+        error:(err)=>
+        {
+          console.log(err);
+        }
+      })
     }
 
     deleteProduct(id:number)
@@ -184,6 +269,9 @@ export class ProductComponent implements OnInit {
       }
 
     }
+
+
+   
 
   }
 

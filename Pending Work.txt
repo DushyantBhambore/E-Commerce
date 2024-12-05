@@ -1,0 +1,11 @@
+Pending task:
+
+ChangePassword 
+ForogtPassword,
+UpdateProfile,
+UpdateProduct,
+Validation,
+Ui,
+Guards,
+Cart RemoverProduct ,
+

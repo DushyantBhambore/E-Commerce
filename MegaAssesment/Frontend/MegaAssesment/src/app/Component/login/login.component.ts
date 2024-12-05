@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, OnInit, signal } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { LoginService } from '../../Service/login.service';
 import { Router, RouterLink } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
@@ -157,6 +157,7 @@ export class LoginComponent implements OnInit {
         localStorage.setItem('token', res.token);
         localStorage.setItem('profileimage', res.data.imageFile);
         sessionStorage.setItem('logindata', JSON.stringify(res.data));
+        sessionStorage.setItem('role',(res.data.roleId))
         this.router.navigateByUrl('/dashboard');
         this.toastr.success('Login successful', 'Success', {
           timeOut: 3000,

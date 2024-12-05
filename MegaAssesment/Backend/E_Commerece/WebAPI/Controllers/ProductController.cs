@@ -44,5 +44,12 @@ namespace WebAPI.Controllers
             return Ok(result);
         }
 
+        [HttpGet("[action]/{id}")]
+        public async Task<IActionResult> GetProductByid(int id)
+        {
+            var result = await _mediator.Send(new GetProductByIdQuery { id = id });
+            return Ok(result);
+        }
+
     }
 }

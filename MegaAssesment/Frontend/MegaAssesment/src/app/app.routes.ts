@@ -10,6 +10,8 @@ import { ProductComponent } from './Component/product/product.component';
 import { ViewCartComponent } from './Component/view-cart/view-cart.component';
 import { PaymentComponent } from './Component/payment/payment.component';
 import { InvoiceComponent } from './Component/invoice/invoice.component';
+import { ForgotPasswordComponent } from './Component/forgot-password/forgot-password.component';
+import { authGuard } from './Guard/auth.guard';
 
 export const routes: Routes = [
     {
@@ -28,32 +30,50 @@ export const routes: Routes = [
             {
 
                 path:'dashboard',
-                component:DashboardComponent
+                component:DashboardComponent,
+                canActivate:[authGuard]
             },
             {
                 path:'product',
-                component:ProductComponent
+                component:ProductComponent,
+                canActivate: [authGuard]
+
             },
             {
 
                 path: 'profile',
-                component:ProfileComponent
+                component:ProfileComponent,
+                canActivate :[authGuard]
             },
             {
                 path:'changepassword',
-                component:ChangePassowrdComponent
+                component:ChangePassowrdComponent,
+                canActivate:[authGuard]
             },
             {
                 path:'viewcart',
-                component:ViewCartComponent
+                component:ViewCartComponent,
+                canActivate:[authGuard]
+
             },
             {
                 path:'payment',
-                component:PaymentComponent
+                component:PaymentComponent,
+                canActivate:[authGuard]
+
             },
             {
                 path:'invoice',
-                component:InvoiceComponent
+                component:InvoiceComponent,
+                canActivate:[authGuard]
+
+            },
+            {
+                
+                    path:'changepassword',
+                    component:ChangePassowrdComponent,
+                    canActivate:[authGuard]
+                
             }
         ]
     },
@@ -61,5 +81,10 @@ export const routes: Routes = [
         path: 'register',
         component:RegisterComponent
     },
+    {
+        path:'forgotpassword',
+        component:ForgotPasswordComponent
+    },
+    
     
 ];

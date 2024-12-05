@@ -44,6 +44,17 @@ namespace WebAPI.Controllers
             var result = await _mediator.Send(new GetUserByIdQuery { id = id });
             return Ok(result);
         }
-    
+        [HttpPost("ForgotPassword")]
+        public async Task<IActionResult> ForgotPassword(string Email)
+        {
+            var result = await _mediator.Send(new ForgetPasswordCommand { Email = Email });
+            return Ok(result);
+        }
+        [HttpPost("ChangePassword")]
+        public async Task<IActionResult> ChangePassword(ChangePasswordDto changePasswordDto)
+        {
+            var result = await _mediator.Send(new ChangePasswordCommand { ChangePasswordDto = changePasswordDto });
+            return Ok(result);
+        }
     }
 }

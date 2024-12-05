@@ -21,6 +21,7 @@
             </thead>
             <tbody>
               <tr *ngFor="let product of productlist">
+                <td>{{ product.prodcutId }}</td>
                 <td>{{ product.productName }}</td>
                 <td>{{ product.category }}</td> 
                 <td>{{ product.brand }}</td>
@@ -29,7 +30,7 @@
                 <td>{{ product.purchaseDate| date }}</td>
                 <td>{{ product.stock }}</td>
                 <td>
-                  <button class="btn btn-primary" (click)="editProduct(product)">Edit</button>
+                  <button class="btn btn-primary mx-2" (click)="editProduct(product.prodcutId)">Edit</button>
                   <button class="btn btn-danger" (click)="deleteProduct(product.prodcutId)">Delete</button>
                 </td>
         </table>

@@ -10,6 +10,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.WebRequestMethods;
 
 namespace App.Core.Apps.ProductSales.Command
 {
@@ -20,14 +21,17 @@ namespace App.Core.Apps.ProductSales.Command
     public class PlaceOrderCommandHandler : IRequestHandler<PlaceOrderCommand, PaymentResponseModel>
     {
         private readonly IAppDbContext _appDbContext;
+        private readonly IEmailService _emailService;
 
-        public PlaceOrderCommandHandler(IAppDbContext appDbContext)
+        public PlaceOrderCommandHandler(IAppDbContext appDbContext, IEmailService emailService)
         {
             _appDbContext = appDbContext;
+            _emailService = emailService;
         }
 
         public async Task<PaymentResponseModel> Handle(PlaceOrderCommand request, CancellationToken cancellationToken)
         {
+            object obj = "";
 
             var salesMaster = new SalesMaster
             {
@@ -60,10 +64,17 @@ namespace App.Core.Apps.ProductSales.Command
                 }
                 product.Stock -= item.SaleQty;
                 await _appDbContext.Set<SalesDetail>().AddAsync(salesDetail);
+                obj = salesDetail;
 
 
             }
             await _appDbContext.SaveChangesAsync();
+
+            var checkuser = await _appDbContext.Set<Domain.User>().
+                FirstOrDefaultAsync(a => a.UserId == request.salesMasterDto.UserId);
+
+            await _emailService.SendEmailAsync(checkuser.Email, "Your Invoice Has Sent To Your Registred Email", $"Your Invoice is {salesMaster.ToString() + obj.ToString()}");
+
             return new PaymentResponseModel((int)HttpStatusCode.OK, "Invoice Generated ", salesMaster);
 
 

@@ -1,5 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { LoginService } from '../../Service/login.service';
 
 @Component({
   selector: 'app-profile',
@@ -12,19 +13,31 @@ export class ProfileComponent implements OnInit {
 
 
 
+  service = inject(LoginService)
   router = inject(Router)
   userdata :any
   logindatdata = JSON.parse(sessionStorage.getItem('logindata') || '{}');
-
   
-
-
-  onEdit(id: number) {
-    this.router.navigate(['/register'], { queryParams: { userId: id } });
-  }
+ 
   ngOnInit(): void {
     this.userdata = this.logindatdata
   }
+
+  onEdit(id:number)
+  {
+    this.service.getbyid(id).subscribe({
+      next:(res)=>{
+        console.log(res)
+      },
+      error:(err)=>{
+        console.log(err)
+      }
+    })
+
+
+  }
+
+
 
 
 

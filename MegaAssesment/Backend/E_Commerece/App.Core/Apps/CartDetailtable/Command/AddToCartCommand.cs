@@ -25,7 +25,6 @@ namespace App.Core.Apps.CartDetailtable.Command
             var cartMasterId = await _appDbContext.Set<Domain.CartMaster>()
                .FirstOrDefaultAsync(a => a.UserId == request.cartdetailsDto.UserId);
 
-            
 
             if (cartMasterId == null)
             {

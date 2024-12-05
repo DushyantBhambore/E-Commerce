@@ -14,6 +14,8 @@ export class ProductService {
 
   deleteproducturl = 'https://localhost:7295/api/Product/DeleteProduct'
 
+  getproductbyidurl ='https://localhost:7295/api/Product/GetProductByid'
+
   http = inject(HttpClient)
 
 
@@ -38,5 +40,10 @@ export class ProductService {
   deleteProduct(id:number)
   {
     return this.http.delete(this.deleteproducturl+"/"+id)
+  }
+
+  getproductbyid(id:number)
+  {
+    return this.http.get(this.getproductbyidurl+"/"+id)
   }
 }
