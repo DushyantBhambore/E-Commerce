@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { LoginService } from '../../Service/login.service';
 import { ToastrService } from 'ngx-toastr';
 import { CommonModule } from '@angular/common';
@@ -34,11 +34,14 @@ export class RegisterComponent implements OnInit {
   countries: any;
   states: any;
   roles: any;
-
+  route = inject(ActivatedRoute);
+  userObj: any;
   private http = inject(HttpClient);
   private router = inject(Router);
   private service = inject(LoginService);
   private toastr = inject(ToastrService);
+  mode!: string;
+  userId!: number;
 
   constructor(private fb: FormBuilder) {
     this.registerForm = this.fb.group({
@@ -61,7 +64,58 @@ export class RegisterComponent implements OnInit {
     this.loadCountries();
     this.loadRoles();
     this.loadStates();
+
+    // this.route.queryParams.subscribe((params) => {
+    //   const userId = params['userId'];
+    //   if (userId) {
+    //     this.fetchUserDetails(userId); // Fetch user data for editing
+    //   }
+    // });
+    this.route.queryParams.subscribe(params => {
+      this.mode = params['mode'];
+      this.userId = +params['userId']; // Convert userId to a number
+
+      if (this.mode === 'edit'  && this.userId) {
+        // Add logic to load user data based on userId if needed
+        console.log(`Edit mode: ${this.userId}`);
+        this.loadUserData(this.userId);
+
+      }
+    });
   }
+  
+  loadUserData(userId: number) {
+    this.service.getbyid(userId).subscribe({
+      next: (res :any) => {
+        this.userObj = res.data;
+        console.log(this.userObj);
+        this.registerForm.patchValue({
+          firstName: this.userObj.firstName,
+          lastName: this.userObj.lastName,
+          email: this.userObj.email,
+          mobile: this.userObj.mobile,
+          dob: this.userObj.dob,
+          roleId: this.userObj.roleId,
+          address: this.userObj.address,
+          stateId: this.userObj.stateId,
+          countryId: this.userObj.countryId,
+          zipcode: this.userObj.zipcode,
+          imageFile: this.userObj.imageFile,
+        });
+        console.log(res)
+      },
+      error: (err :any) => {
+        console.log(err);
+      }
+    })
+  }
+
+  // userData:any
+  // fetchUserDetails(userId: number) {
+  //   const allUsers = JSON.parse(sessionStorage.getItem('logindata') || '[]'); // Example source
+  //   this.userData = allUsers.find((user: any) => user.userId === userId) || {};
+
+  // }
 
   onFileChange(event: any): void {
     if (event.target.files.length > 0) {

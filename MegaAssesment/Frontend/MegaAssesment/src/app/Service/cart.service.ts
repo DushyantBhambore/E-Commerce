@@ -16,6 +16,12 @@
 
     updatecarturl = 'https://localhost:7295/api/Cart/UpdateCart'
 
+    paymentcardurl ='https://localhost:7295/api/Cart/PayementCard'
+
+    getaddressurl ='https://localhost:7295/api/Cart/AddAddess'
+
+    postinvoiceurl = 'https://localhost:7295/api/Sales/place-order'
+
 
     http = inject(HttpClient)
 
@@ -56,6 +62,22 @@
     updateCart(data : any)
     {
       return this.http.put(this.updatecarturl,data)
+    }
+
+
+    paymentcard(data : any)
+    {
+      return this.http.post(this.paymentcardurl,data)
+    }
+
+    getUserProfile(obj :any)
+    {
+      return this.http.post(this.getaddressurl,obj)
+    }
+
+    getinvoice(data : any)
+    {
+      return this.http.post(this.postinvoiceurl,data)
     }
 
   }

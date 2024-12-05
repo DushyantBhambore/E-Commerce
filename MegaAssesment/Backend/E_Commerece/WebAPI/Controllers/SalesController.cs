@@ -1,4 +1,6 @@
 ﻿using App.Core.Apps.ProductSales;
+using App.Core.Apps.ProductSales.Command;
+using App.Core.Apps.ProductSales.Query;
 using App.Core.Dtos;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -21,6 +23,13 @@ namespace WebAPI.Controllers
         {
 
             var result = await _mediator.Send(new PlaceOrderCommand { salesMasterDto = command });
+            return Ok(result);
+        }
+
+        [HttpGet("GetInvoce")]
+        public async Task<IActionResult> GetInvoce()
+        {
+            var result = await _mediator.Send(new GetInvoiceById());
             return Ok(result);
         }
     }

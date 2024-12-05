@@ -8,9 +8,7 @@ namespace App.Core.Dtos
 {
     public class CardValidationDto
     {
-        public int CardId { get; set; }
         public string CardNumber { get; set; }
-        public int UserId { get; set; }
         public DateTime ExpiryDate { get; set; }
         public string CVV { get; set; }
     }

@@ -2,11 +2,14 @@ import { Component, inject } from '@angular/core';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { CartService } from '../../Service/cart.service';
 import { CommonModule } from '@angular/common';
+import { MatIconModule } from '@angular/material/icon';
+import { MatIconTestingModule } from '@angular/material/icon/testing';
+import { MatMenuModule } from '@angular/material/menu';
 
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [RouterOutlet,RouterLink,CommonModule],
+  imports: [RouterOutlet,RouterLink,CommonModule,MatIconTestingModule,MatIconModule,MatMenuModule],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.css'
 })

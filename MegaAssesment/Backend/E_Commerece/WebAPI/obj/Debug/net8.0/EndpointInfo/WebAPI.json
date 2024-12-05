@@ -121,7 +121,7 @@
         }
       }
     },
-    "/api/Cart/ProcessPayment": {
+    "/api/Cart/PayementCard": {
       "post": {
         "tags": [
           "Cart"
@@ -141,6 +141,80 @@
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/CardValidationDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Cart/AddAddess": {
+      "post": {
+        "tags": [
+          "Cart"
+        ],
+        "parameters": [
+          {
+            "name": "Address",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Cart/AddCard": {
+      "post": {
+        "tags": [
+          "Cart"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardDto"
               }
             }
           }
@@ -571,6 +645,18 @@
         }
       }
     },
+    "/api/Sales/GetInvoce": {
+      "get": {
+        "tags": [
+          "Sales"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/State/AddState": {
       "post": {
         "tags": [
@@ -866,7 +952,7 @@
   },
   "components": {
     "schemas": {
-      "CardValidationDto": {
+      "CardDto": {
         "type": "object",
         "properties": {
           "cardId": {
@@ -877,9 +963,23 @@
             "type": "string",
             "nullable": true
           },
-          "userId": {
-            "type": "integer",
-            "format": "int32"
+          "expiryDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "cvv": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CardValidationDto": {
+        "type": "object",
+        "properties": {
+          "cardNumber": {
+            "type": "string",
+            "nullable": true
           },
           "expiryDate": {
             "type": "string",

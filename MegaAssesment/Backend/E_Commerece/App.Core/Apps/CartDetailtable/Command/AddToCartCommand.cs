@@ -51,8 +51,8 @@ namespace App.Core.Apps.CartDetailtable.Command
             else
             {
 
-            }
-            {
+            
+            
                 var addcart = new CartDetail
                 {
                     CartId = cartMasterId.CardMasterId,

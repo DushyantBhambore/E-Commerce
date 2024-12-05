@@ -35,6 +35,7 @@ export class LoginComponent implements OnInit {
   service = inject(LoginService);
   router = inject(Router);
   toastr = inject(ToastrService);
+  isLoading = signal(false); // To show a loading state
 
   constructor(private fb: FormBuilder) {}
 
@@ -123,6 +124,7 @@ export class LoginComponent implements OnInit {
     this.service.onLogin(this.loginform.value).subscribe({
       next: (res) => {
         this.setOtpForm();
+        this.isLoginSuccessful = true;
         this.isLoginSuccessful = true; 
         this.toastr.success('OTP sent successfully', 'Success', {
           timeOut: 3000,

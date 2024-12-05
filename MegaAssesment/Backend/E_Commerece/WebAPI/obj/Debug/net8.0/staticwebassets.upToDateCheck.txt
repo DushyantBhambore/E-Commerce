@@ -7,6 +7,7 @@ wwwroot\Uploads\21aac6aa-a478-43de-a349-f58f63b46ed6.jpg
 wwwroot\Uploads\4c3a7a07-cc89-48b7-a399-8143c0fb4872.png
 wwwroot\Uploads\4c7c7ccf-ccee-4a9e-b62a-428324c6efaa.jpg
 wwwroot\Uploads\71ff42b8-2e22-47d0-a04a-7e99bdb0beee.png
+wwwroot\Uploads\74fe6430-7664-486b-b062-401b04713e43.png
 wwwroot\Uploads\936d5ad0-1eec-4721-a72b-eb9685ecd273.jpg
 wwwroot\Uploads\94d11593-4457-41a9-873e-6765f0a5d9ec.jpg
 wwwroot\Uploads\94d96748-c3c4-4aea-a38a-1f2afa448cff.jpg

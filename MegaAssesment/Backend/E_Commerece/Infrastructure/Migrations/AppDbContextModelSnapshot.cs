@@ -310,8 +310,8 @@ namespace Infrastructure.Migrations
                     b.Property<DateTime>("DeletedOn")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("InvoiceId")
-                        .HasColumnType("int");
+                    b.Property<string>("InvoiceId")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
@@ -338,8 +338,6 @@ namespace Infrastructure.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("SaleDetailId");
-
-                    b.HasIndex("InvoiceId");
 
                     b.HasIndex("ProductId");
 
@@ -539,12 +537,6 @@ namespace Infrastructure.Migrations
 
             modelBuilder.Entity("Domain.SalesDetail", b =>
                 {
-                    b.HasOne("Domain.SalesMaster", "SalesMaster")
-                        .WithMany()
-                        .HasForeignKey("InvoiceId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Domain.Product", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId")
@@ -552,8 +544,6 @@ namespace Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("Product");
-
-                    b.Navigation("SalesMaster");
                 });
 
             modelBuilder.Entity("Domain.State", b =>

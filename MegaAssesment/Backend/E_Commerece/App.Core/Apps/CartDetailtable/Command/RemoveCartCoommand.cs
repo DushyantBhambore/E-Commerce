@@ -30,11 +30,27 @@ namespace App.Core.Apps.CartDetailtable.Command
             var cartDetail = await _appDbContext.Set<Domain.CartDetail>()
         .FirstOrDefaultAsync(cd => cd.CartId == productid.CardMasterId
         && cd.ProductId == request.removerCartDto.ProductId, cancellationToken);
-            if (cartDetail != null)
+        if (cartDetail == null)
             {
-                _appDbContext.Set<Domain.CartDetail>().RemoveRange(cartDetail);
-             await   _appDbContext.SaveChangesAsync(cancellationToken);
+                return new CartResponseModel((int)HttpStatusCode.BadRequest, "Product not found in the cart", null);
             }
+
+
+            // Check the Qty and decide to decrement or remove
+            if (cartDetail.Qty > 1)
+            {
+                // Decrement the quantity
+                cartDetail.Qty -= 1;
+                _appDbContext.Set<Domain.CartDetail>().Update(cartDetail);
+            }
+            else
+            {
+                // Remove the item from the cart
+                _appDbContext.Set<Domain.CartDetail>().Remove(cartDetail);
+            }
+
+            // Save changes to the database
+            await _appDbContext.SaveChangesAsync(cancellationToken);
             return new CartResponseModel((int)HttpStatusCode.OK, "Prodcut Remove Successfully", null);
         }
     }

@@ -1,6 +1,43 @@
 [
   {
     "ContainingType": "WebAPI.Controllers.CartController",
+    "Method": "PlaceOrder",
+    "RelativePath": "api/Cart/AddAddess",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Address",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.CartController",
+    "Method": "AddCard",
+    "RelativePath": "api/Cart/AddCard",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "card",
+        "Type": "App.Core.Dtos.CardDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.CartController",
     "Method": "AddToCart",
     "RelativePath": "api/Cart/AddToCart",
     "HttpMethod": "POST",
@@ -49,14 +86,14 @@
   },
   {
     "ContainingType": "WebAPI.Controllers.CartController",
-    "Method": "ProcessPayment",
-    "RelativePath": "api/Cart/ProcessPayment",
+    "Method": "PayementCard",
+    "RelativePath": "api/Cart/PayementCard",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cardValidation",
+        "Name": "cardValidationDto",
         "Type": "App.Core.Dtos.CardValidationDto",
         "IsRequired": true
       }
@@ -320,6 +357,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.SalesController",
+    "Method": "GetInvoce",
+    "RelativePath": "api/Sales/GetInvoce",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

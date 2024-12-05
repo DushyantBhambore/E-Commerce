@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "symx4rnlxeXLhYDmLjvCVRELX8cBLuaDj7cAokJv8uw=",
+  "Hash": "pdls/+OPf35dZJ29Olm6QJI34nB28hCHDsv/JeI/3D4=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
@@ -204,6 +204,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\71ff42b8-2e22-47d0-a04a-7e99bdb0beee.png"
+    },
+    {
+      "Identity": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\74fe6430-7664-486b-b062-401b04713e43.png",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Uploads/74fe6430-7664-486b-b062-401b04713e43#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hdms2mlkmu",
+      "Integrity": "u/Xm3+5EjB3ZzdRFZna3Bm/KK8J1/onFNK1GFgVGVFA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\74fe6430-7664-486b-b062-401b04713e43.png"
     },
     {
       "Identity": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\936d5ad0-1eec-4721-a72b-eb9685ecd273.jpg",
@@ -1278,6 +1299,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-xjwSbLxBZSxqo4LREoWZKXSa1+2udqiqzaOI9Gn058Y="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/74fe6430-7664-486b-b062-401b04713e43.hdms2mlkmu.png",
+      "AssetFile": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\74fe6430-7664-486b-b062-401b04713e43.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6259"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u/Xm3+5EjB3ZzdRFZna3Bm/KK8J1/onFNK1GFgVGVFA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 20:11:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hdms2mlkmu"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/74fe6430-7664-486b-b062-401b04713e43.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u/Xm3+5EjB3ZzdRFZna3Bm/KK8J1/onFNK1GFgVGVFA="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/74fe6430-7664-486b-b062-401b04713e43.png",
+      "AssetFile": "D:\\Sdfolder\\SdPractice\\ECommerece\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\74fe6430-7664-486b-b062-401b04713e43.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6259"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u/Xm3+5EjB3ZzdRFZna3Bm/KK8J1/onFNK1GFgVGVFA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 20:11:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u/Xm3+5EjB3ZzdRFZna3Bm/KK8J1/onFNK1GFgVGVFA="
         }
       ]
     },

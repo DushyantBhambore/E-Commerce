@@ -11,7 +11,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Core.Apps.ProductSales
+namespace App.Core.Apps.ProductSales.Command
 {
     public class PlaceOrderCommand : IRequest<PaymentResponseModel>
     {
@@ -40,14 +40,14 @@ namespace App.Core.Apps.ProductSales
                 DeliveryState = request.salesMasterDto.DeliveryState,
                 DeliveryCountry = request.salesMasterDto.DeliveryCountry
             };
-            await _appDbContext.Set<Domain.SalesMaster>().AddAsync(salesMaster);
+            await _appDbContext.Set<SalesMaster>().AddAsync(salesMaster);
             await _appDbContext.SaveChangesAsync();
 
             foreach (var item in request.salesMasterDto.Items)
             {
                 var salesDetail = new SalesDetail
                 {
-                    //InvoiceId = salesMaster.InvoiceId,
+                    InvoiceId = salesMaster.InvoiceId,
                     ProductId = item.ProductId,
                     ProductCode = item.ProductCode,
                     SaleQty = item.SaleQty,
@@ -59,14 +59,11 @@ namespace App.Core.Apps.ProductSales
                     return new PaymentResponseModel((int)HttpStatusCode.BadRequest, "InSufficeint Stock", null);
                 }
                 product.Stock -= item.SaleQty;
-
-                await _appDbContext.Set<Domain.SalesDetail>().AddAsync(salesDetail);
+                await _appDbContext.Set<SalesDetail>().AddAsync(salesDetail);
 
 
             }
-
             await _appDbContext.SaveChangesAsync();
-
             return new PaymentResponseModel((int)HttpStatusCode.OK, "Invoice Generated ", salesMaster);
 
 

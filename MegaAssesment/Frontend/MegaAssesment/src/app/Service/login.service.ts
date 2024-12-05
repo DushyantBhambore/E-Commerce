@@ -21,6 +21,8 @@ export class LoginService {
 
   verifyotpurl = 'https://localhost:7295/api/User/VerifyOtp'
 
+  getbyidurl = 'https://localhost:7295/api/User/GetUserById'
+
   http = inject(HttpClient)
 
   constructor() { }
@@ -58,6 +60,11 @@ export class LoginService {
   getuserbyid(id:number)
   {
     return this.http.get(`https://localhost:7295/api/State/GetStateById/${id}`)
+  }
+
+  getbyid(id:number)
+  {
+    return this.http.get(`${this.getbyidurl}/${id}`)
   }
 
 

@@ -8,6 +8,8 @@ import { ChangePassowrdComponent } from './Component/change-passowrd/change-pass
 import { DashboardComponent } from './Component/dashboard/dashboard.component';
 import { ProductComponent } from './Component/product/product.component';
 import { ViewCartComponent } from './Component/view-cart/view-cart.component';
+import { PaymentComponent } from './Component/payment/payment.component';
+import { InvoiceComponent } from './Component/invoice/invoice.component';
 
 export const routes: Routes = [
     {
@@ -44,11 +46,20 @@ export const routes: Routes = [
             {
                 path:'viewcart',
                 component:ViewCartComponent
+            },
+            {
+                path:'payment',
+                component:PaymentComponent
+            },
+            {
+                path:'invoice',
+                component:InvoiceComponent
             }
         ]
     },
     {
         path: 'register',
         component:RegisterComponent
-    }
+    },
+    
 ];

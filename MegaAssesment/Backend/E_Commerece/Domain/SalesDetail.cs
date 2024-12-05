@@ -13,10 +13,7 @@ namespace Domain
         [Key]
         public int SaleDetailId { get; set; }
 
-        public int InvoiceId { get; set; }
-
-        [ForeignKey("InvoiceId")]
-        public SalesMaster SalesMaster { get; set; }
+        public string InvoiceId { get; set; }
 
         public int ProductId { get; set; }
 

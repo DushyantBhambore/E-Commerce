@@ -30,7 +30,7 @@ export class ProductComponent implements OnInit {
     this.productform = this.fb.group({
       prodcutId: ['', [Validators.required]],
       productName: ['', [Validators.required]],
-      productImage: ['', [Validators.required,]],
+      productImage: [null, [Validators.required,]],
       category: ['', [Validators.required, ]],
       purchaseDate: [new Date().toISOString(), Validators.required],
       sellingPrice: ['', [Validators.required]],
@@ -40,7 +40,7 @@ export class ProductComponent implements OnInit {
     
     });
   }
-  imageFile: File | null = null;
+  productImage: File | null = null;
   productform : FormGroup = new FormGroup({})
 
   // modal open 
@@ -63,22 +63,20 @@ export class ProductComponent implements OnInit {
   // image upload
   onFileChange(event: any): void {
     if (event.target.files.length > 0) {
-      this.imageFile = event.target.files[0];
+      this.productImage = event.target.files[0];
       this.productform.patchValue({
-        imageFile: this.imageFile
+        productImage: this.productImage
       });
     }
   }
-
     onSubmit()
     {
-
       debugger
       const formData = new FormData();
       Object.keys(this.productform.controls).forEach(key => {
         const value = this.productform.get(key)?.value;
-        if (key === 'imageFile' && this.imageFile) {
-          formData.append(key, this.imageFile);
+        if (key === 'productImage' && this.productImage) {
+          formData.append(key, this.productImage);
         } else if (value) {
           formData.append(key, value);
         }
@@ -90,9 +88,17 @@ export class ProductComponent implements OnInit {
         debugger
 
         this.service.updateProduct(formData).subscribe({
-          next: (res) => {
-            console.log(res);
+          next: (res:any) => {
+            console.log(res.data);
             this.toastr.success('Product Updated successfully!');
+            this.CloseModal();
+            this.productform.reset()
+            this.getProduct();
+            const updatedProduct = res; // Assuming the service returns the updated product
+        const index = this.productlist.findIndex((p:any) => p.productId === updatedProduct.productId);
+        if (index !== -1) {
+          this.productlist[index] = updatedProduct; // Replace the old product with the updated one
+        }
           },
           error: (err) => {
             console.log(err);
@@ -106,6 +112,12 @@ export class ProductComponent implements OnInit {
           next: (res) => {
             console.log(res);
             this.toastr.success('Product Added successfully!');
+            this.CloseModal();
+            this.productform.reset();
+            this.getProduct();
+            this.productlist.push(res); // Assuming the service returns the added product
+
+
           },
           error: (err) => {
             console.log(err);

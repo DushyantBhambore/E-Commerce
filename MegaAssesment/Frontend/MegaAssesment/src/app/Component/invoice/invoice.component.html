@@ -1,0 +1,36 @@
+<form [formGroup]="invoiceForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label>User ID:</label>
+      <input formControlName="userId" type="number" />
+    </div>
+    <div>
+      <label>Delivery Address:</label>
+      <input formControlName="deliveryAddress" type="text" />
+    </div>
+    <div>
+      <label>Delivery Zipcode:</label>
+      <input formControlName="deliveryZipcode" type="number" />
+    </div>
+    <div>
+      <label>Delivery State:</label>
+      <input formControlName="deliveryState" type="number" />
+    </div>
+    <div>
+      <label>Delivery Country:</label>
+      <input formControlName="deliveryCountry" type="number" />
+    </div>
+    <div formArrayName="items">
+      <div *ngFor="let item of items.controls; let i = index" [formGroupName]="i">
+        <label>Product ID:</label>
+        <input formControlName="productId" type="number" />
+        <label>Product Code:</label>
+        <input formControlName="productCode" type="text" />
+        <label>Sale Qty:</label>
+        <input formControlName="saleQty" type="number" />
+        <label>Selling Price:</label>
+        <input formControlName="sellingPrice" type="number" />
+      </div>
+    </div>
+    <button type="submit">Place Order</button>
+  </form>
+  
