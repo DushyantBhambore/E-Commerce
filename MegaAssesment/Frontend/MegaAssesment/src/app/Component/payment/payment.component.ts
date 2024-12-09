@@ -25,7 +25,7 @@ export class PaymentComponent {
   ) {}
 
   pay() {
-    if (this.cardNumber.length === 16  && this.cvv.length === 3) {
+    if (this.cardNumber.length === 16  && this.cvv.length === 3 ) {
       this.dialogRef.close({
         cardNumber: this.cardNumber,
         expiryDate: this.expiryDate,

@@ -26,10 +26,17 @@ namespace WebAPI.Controllers
             return Ok(result);
         }
 
-        [HttpGet("GetInvoce")]
-        public async Task<IActionResult> GetInvoce()
+        [HttpGet("[action]/{id}")]
+        public async Task<IActionResult> GetInvoceBYId(int id)
         {
-            var result = await _mediator.Send(new GetInvoiceById());
+            var result = await _mediator.Send(new GetInvoiceById{id =id});
+            return Ok(result);
+        }
+
+        [HttpGet("[action]/{id}")]
+        public async Task<IActionResult> GetReciptByidQuery(string id)
+        {
+            var result = await _mediator.Send(new GetReciptByidQuery { id =  id});
             return Ok(result);
         }
     }

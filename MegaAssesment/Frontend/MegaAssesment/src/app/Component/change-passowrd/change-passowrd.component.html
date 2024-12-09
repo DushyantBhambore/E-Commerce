@@ -2,14 +2,14 @@
     <div class="row align-items-center justify-content-center">
       <mat-card class="example-card" centered-card>
         <h2 class="text-center">Change Password</h2>
-        <form class="example-form" [formGroup]="changePaswordForm">
+        <form class="example-form" >
             <mat-form-field appearance="outline" class="mb-4 example-full-width">
                 <mat-label>Username</mat-label>
-                <input type="text" matInput formControlName="username" placeholder="Ex. EC_ABC123" required>
+                <input matInput type="text" [(ngModel)]="changePaswordForm.username"  name="username" placeholder="Ex. EC_ABC123" required>
               </mat-form-field>
               <mat-form-field appearance="outline" class="mb-4 example-full-width" >
                 <mat-label>Enter New password</mat-label>
-                <input matInput formControlName="newPassword" [type]="hide() ? 'password' : 'text'" required />
+                <input matInput [(ngModel)]="changePaswordForm.newPassword" name="newPassword" [type]="hide() ? 'password' : 'text'" required />
                 <button
                   mat-icon-button
                   matSuffix

@@ -43,7 +43,8 @@ namespace App.Core.Apps.CartDetailtable.Query
                     ProductImage =  cd.Product.ProductImage,
                     Total = cd.Qty * cd.Product.SellingPrice,
                     CartDetailsId = cd.CardDetailId,
-                    ProductCode = cd.Product.ProductCode
+                    ProductCode = cd.Product.ProductCode,
+                    CartId = cd.CartId
                 })
                 .ToListAsync(cancellationToken);
             return new CartResponseModel((int)HttpStatusCode.OK, "Cart found", cartDetails);

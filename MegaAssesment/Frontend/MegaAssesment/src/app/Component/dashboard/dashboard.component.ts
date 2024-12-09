@@ -2,14 +2,14 @@ import { Component, inject, OnInit } from '@angular/core';
 import { ProductService } from '../../Service/product.service';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
-import { CommonModule } from '@angular/common';
+import { CommonModule, JsonPipe } from '@angular/common';
 import { CartService } from '../../Service/cart.service';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [MatButtonModule,MatCardModule,CommonModule],
+  imports: [MatButtonModule,MatCardModule,CommonModule,],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
@@ -54,9 +54,9 @@ export class DashboardComponent implements OnInit {
   {
     console.log(item)
     const cartDetails = {
-      userId: this.userId, // Replace with actual user ID logic
+      userId: this.userId, 
       productId: item,
-      qty:  1// Adjust the quantity as needed
+      qty:  1
     };
 
     console.log(cartDetails);

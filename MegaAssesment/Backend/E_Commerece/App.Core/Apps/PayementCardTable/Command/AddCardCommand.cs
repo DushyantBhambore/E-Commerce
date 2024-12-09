@@ -28,13 +28,13 @@ namespace App.Core.Apps.PayementCardTable.Command
         {
 
 
-            if(request.cardDto.ExpiryDate>DateTime.Now)
-            {
+          
+            
                 var addcard = new Domain.Card
                 {
                     CardNumber = request.cardDto.CardNumber,
                     CVV = request.cardDto.CVV,
-                    ExpiryDate = DateTime.Now,
+                    ExpiryDate = request.cardDto.ExpiryDate,
                     CreatedBy = "User",
                     CreatedOn = DateTime.Now,
                     IsActive = true,
@@ -43,8 +43,7 @@ namespace App.Core.Apps.PayementCardTable.Command
                 await _appDbContext.Set<Domain.Card>().AddAsync(addcard);
                 await _appDbContext.SaveChangesAsync(cancellationToken);
                 return JsonSerializer.Serialize(new { message = "Card is Added Successfully " });
-            }
-            return JsonSerializer.Serialize(new { message = "Card is Expire" });
+            
         }
     }
 }

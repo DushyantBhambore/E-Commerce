@@ -39,9 +39,15 @@ export class ViewCartComponent implements OnInit {
 
   cartvalue! :any
 
-  constructor(private dialog: MatDialog) { }
+  cartCount = 0
+ 
+
+  constructor(private dialog: MatDialog, private cartService : CartService) { }
   ngOnInit(): void {
     this.gotocart(this.id)
+    this.cartService.getCartCount().subscribe((count) => {
+      this.cartCount = count;
+    });
 
   }
   gotocart(id:number)
@@ -181,22 +187,22 @@ removeFromCart(productId: number)
   }
   this.cartservice.getinvoice(invoiceRequest).subscribe({
     next: (response) => {
-      this.invoiceResponse = response; // Store the response in a variable
+      this.invoiceResponse = response;
+    
       console.log('Invoice generated successfully:', this.invoiceResponse);
+
       this.toastr.success('Invoice generated successfully.', 'Success', {
         timeOut: 3000,
         progressBar: true,
         progressAnimation: 'increasing',
         positionClass: 'toast-top-right'    
       })
-     sessionStorage.setItem('invoce',this.invoiceResponse)
-
-
+      sessionStorage.setItem('invoce', JSON.stringify(this.invoiceResponse.data)); 
+      sessionStorage.setItem('sales', JSON.stringify(this.invoiceResponse.salesDetails)); 
      this.cartdata.forEach((item: any) => {
       this.removeFromCart(item.productId);
     });
 
-    // Update the cart data
     this.cartdata = [];
     this.calculateSubtotal();
 
@@ -210,15 +216,15 @@ removeFromCart(productId: number)
 
 }
 
-  addToCart(item:number)
+  addToCart(productId:number)
   {
-    console.log(item)
+    console.log(productId)
     const cartDetails = {
       userId: this.id, 
-      productId: item,
+      productId: productId,
       qty:  1
     };
-
+debugger
     console.log(cartDetails);
 
     this.cartservice.Addtocart(cartDetails).subscribe({
@@ -229,8 +235,8 @@ removeFromCart(productId: number)
           timeOut: 3000,
           progressBar: true,
           progressAnimation: 'increasing',
-          positionClass: 'toast-top-right'
-          
+          positionClass: 'toast-top-right',
+          closeButton:false
         });
         
       },

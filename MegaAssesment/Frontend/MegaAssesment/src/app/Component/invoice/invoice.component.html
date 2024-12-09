@@ -1,25 +1,108 @@
-<div class="invoice-container">
+<div class="container">
   <div class="invoice-header">
-      <h2>Invoice</h2>
+      <h2 class="text-center">Invoice</h2>
   </div>
   <div class="invoice-details">
-      <table>
+      <table class="table table-striped">
+        <thead>
           <tr>
-              <th>Product</th>
+              <th>Order Id</th>
               <th>Quantity</th>
               <th>Price</th>
               <th>Total</th>
+              <th>Action</th>
           </tr>
-          <tr *ngFor="let item of getinvoice">
-              <td>{{ item.productCode }}</td>
-              <td>{{ item.qty }}</td>
-              <td>{{ item.sellingPrice }}</td>
-              <td>{{ item.sellingPrice  }} * {{item.qty}}</td>
+        </thead>
+        <tbody>          <tr *ngFor="let item of getinvoice">
+              <td>{{ item.invoiceId }}</td>              
+              <td>{{ item.invoiceDate}}</td>
+              <td>{{ item.deliveryAddress }}</td>
+              <td>{{ item.subtotal }}</td>
+              <td><button class="btn btn-danger" (click)="getinvoceRecipt(item.invoiceId)">View</button></td>
           </tr>
+        </tbody>
         
       </table>
   </div>
-  <div class="invoice-footer">
-      <p>Thank you </p>
+
   </div>
-</div>
+
+
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Invoice Details</h4>
+          <button type="button" class="close" data-dismiss="modal" (click)="CloseModal()">&times;</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form *ngFor="let getrecipt of getrecipt" class="form-container">
+            <div class="row mb-3">
+              <div class="col-md-12">
+                <label for="invoiceId" class="form-label">
+                  Invoice ID:
+                </label>
+                <label for="invoiceId" class="form-value">
+                  {{getrecipt.invoiceId}}
+                </label>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="productId" class="form-label">
+                  Product ID:
+                </label>
+                <label for="productId" class="form-value">
+                  {{getrecipt.productId}}
+                </label>
+              </div>
+              <div class="col-md-6">
+                <label for="productCode" class="form-label">
+                  Product Code:
+                </label>
+                <label for="productCode" class="form-value">
+                  {{getrecipt.productCode}}
+                </label>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="saleQty" class="form-label">
+                  Sale Quantity:
+                </label>
+                <label for="saleQty" class="form-value">
+                  {{getrecipt.saleQty}}
+                </label>
+              </div>
+              <div class="col-md-6">
+                <label for="sellingPrice" class="form-label">
+                   Price:
+                </label>
+                <label for="sellingPrice" class="form-value">
+                  {{getrecipt.sellingPrice}}
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="CloseModal()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+

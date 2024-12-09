@@ -12,18 +12,20 @@
           maxlength="16"
           placeholder="Enter 16-digit card number"
           class="form-control"
+         
         />
       </div>
-  
       <div class="mb-3">
         <label for="expiryDate" class="form-label">Expiry Date:</label>
         <input
+        type="text"
           id="expiryDate"
           [(ngModel)]="expiryDate"
           name="expiryDate"
           placeholder="MM/YY"
           class="form-control"
           type="datetime-local"
+
         />
       </div>
   

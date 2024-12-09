@@ -45,9 +45,9 @@ namespace WebAPI.Controllers
             return Ok(result);
         }
         [HttpPost("ForgotPassword")]
-        public async Task<IActionResult> ForgotPassword(string Email)
+        public async Task<IActionResult> ForgotPassword(ForgotEamilDto forgotEamilDto)
         {
-            var result = await _mediator.Send(new ForgetPasswordCommand { Email = Email });
+            var result = await _mediator.Send(new ForgetPasswordCommand { forgotEamilDto = forgotEamilDto });
             return Ok(result);
         }
         [HttpPost("ChangePassword")]

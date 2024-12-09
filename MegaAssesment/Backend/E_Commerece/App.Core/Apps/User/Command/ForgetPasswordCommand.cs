@@ -1,4 +1,5 @@
-﻿using App.Core.Interface;
+﻿using App.Core.Dtos;
+using App.Core.Interface;
 using Domain.ResponseModel;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -13,7 +14,7 @@ namespace App.Core.Apps.User.Command
 {
     public class ForgetPasswordCommand : IRequest<UserResponseModel>
     {
-        public string Email { get; set; }
+        public ForgotEamilDto forgotEamilDto { get; set; }
     }
     public class ForgetPasswordCommandHandler : IRequestHandler<ForgetPasswordCommand, UserResponseModel>
     {
@@ -27,12 +28,12 @@ namespace App.Core.Apps.User.Command
         }
         public async Task<UserResponseModel> Handle(ForgetPasswordCommand request, CancellationToken cancellationToken)
         {
-            var email = request.Email.Trim().ToLower();
-            var user = await _context.Set<Domain.User>().FirstOrDefaultAsync(x => x.Email.ToLower() == email, cancellationToken);
+            //var email = request.Email.Trim().ToLower();
+            var user = await _context.Set<Domain.User>().FirstOrDefaultAsync(x => x.Email== request.forgotEamilDto.Email, cancellationToken);
 
             if (user == null)
             {
-                return new UserResponseModel((int)HttpStatusCode.BadRequest, "Invalid Email", user.Email);
+                return new UserResponseModel((int)HttpStatusCode.BadRequest, "Invalid Email", request.forgotEamilDto.Email);
             }
 
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -44,7 +45,7 @@ namespace App.Core.Apps.User.Command
 
             await _context.SaveChangesAsync(cancellationToken);
             await _emailService.SendEmailAsync(user.Email, "Password Reset", $"Your new password is {password}");
-            return new UserResponseModel((int)HttpStatusCode.OK, "Passsword is Updated ", user.Password);
+            return new UserResponseModel((int)HttpStatusCode.OK, "Password Sent To Your Mail ", user.Password);
         }
     }
 }

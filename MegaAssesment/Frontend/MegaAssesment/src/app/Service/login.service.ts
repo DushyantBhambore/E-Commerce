@@ -12,7 +12,6 @@ export class LoginService {
 
   getallcountryurl ='https://localhost:7295/api/Country/GetAllCountry'
   
-
   getstatebyidurl = 'https://localhost:7295/api/State'
   
   getallstateurl ='https://localhost:7295/api/State/GetAllState'
@@ -26,9 +25,7 @@ export class LoginService {
   changepasswordurl = 'https://localhost:7295/api/User/ChangePassword'
 
   forgotpasswordurl = 'https://localhost:7295/api/User/ForgotPassword'
-
   http = inject(HttpClient)
-
   constructor() { }
 
   onLogin(data: any) {
@@ -79,7 +76,7 @@ export class LoginService {
 
   onChangePassword(data:any)
   {
-    return this.http.put(this.changepasswordurl,data)
+    return this.http.post(this.changepasswordurl,data)
   }
 
 

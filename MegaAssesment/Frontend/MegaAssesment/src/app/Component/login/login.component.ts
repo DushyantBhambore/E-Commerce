@@ -29,7 +29,8 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class LoginComponent implements OnInit {
 
-  isLoginSuccessful = false;   loginform: FormGroup = new FormGroup({});
+  isLoginSuccessful = false;
+     loginform: FormGroup = new FormGroup({});
   verifytform: FormGroup = new FormGroup({});
   username: string = '';
   service = inject(LoginService);
@@ -41,6 +42,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.setForm();
+
   }
 
   setForm() {
@@ -123,15 +125,15 @@ export class LoginComponent implements OnInit {
   
     this.service.onLogin(this.loginform.value).subscribe({
       next: (res) => {
-        this.setOtpForm();
-        this.isLoginSuccessful = true;
-        this.isLoginSuccessful = true; 
         this.toastr.success('OTP sent successfully', 'Success', {
           timeOut: 3000,
           progressBar: true,
           progressAnimation: 'increasing',
           positionClass: 'toast-top-right',
         });
+        this.isLoginSuccessful = true;
+        this.setOtpForm();
+
       },
       error: (err) => {
         this.toastr.error('Login failed', 'Error', {

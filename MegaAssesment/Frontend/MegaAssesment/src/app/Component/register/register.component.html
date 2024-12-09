@@ -17,10 +17,13 @@
               class="form-control"
               [ngClass]="{
                 'is-invalid':
-                  registerForm.controls['firstName'].invalid &&
-                  registerForm.controls['firstName'].touched
+                  registerForm.controls['firstName'].invalid && 
+                  registerForm.controls['firstName'].touched 
               }"
             />
+            <div *ngIf="registerForm.controls['firstName'].invalid && 
+            registerForm.controls['firstName'].touched" class="text-danger"> 
+            First name is required. </div>
           </div>
           <div class="col-md-6">
             <label for="lastName" class="form-label">Last Name:</label>
@@ -30,8 +33,13 @@
               type="text"
               class="form-control"
             />
+            <div *ngIf="registerForm.controls['lastName'].invalid && 
+            registerForm.controls['lastName'].touched" class="text-danger">
+            Last Name is required. </div>
           </div>
-        </div>
+          </div>
+          
+        
         <div class="row mb-3">
           <div class="col-md-6">
             <label for="email" class="form-label">Email:</label>
@@ -41,6 +49,9 @@
               type="email"
               class="form-control"
             />
+            <div *ngIf="registerForm.controls['email'].invalid && 
+            registerForm.controls['email'].touched" class="text-danger">
+            Email is required. </div>
           </div>
           <div class="col-md-6">
             <label for="mobile" class="form-label">Mobile:</label>
@@ -50,12 +61,18 @@
               type="text"
               class="form-control"
             />
+            <div *ngIf="registerForm.controls['mobile'].invalid && 
+            registerForm.controls['mobile'].touched" class="text-danger">
+            Mobile is required. </div>
           </div>
         </div>
         <div class="row mb-3">
           <div class="col-md-6">
             <label for="dob" class="form-label">Date of Birth:</label>
-            <input id="dob" formControlName="dob" type="date" class="form-control" />
+            <input id="dob" formControlName="dob" type="date" class="form-control"  [max]="todayDate"            />
+            <div *ngIf="registerForm.controls['dob'].invalid && 
+            registerForm.controls['dob'].touched" class="text-danger">
+            Date Of Birth  is required. </div>
           </div>
           <div class="col-md-6">
             <label for="roleId" class="form-label">Role:</label>
@@ -64,34 +81,49 @@
                 {{ role.roleName }}
               </option>
             </select>
+            <div *ngIf="registerForm.controls['roleId'].invalid && 
+            registerForm.controls['roleId'].touched" class="text-danger">
+            Role is required. </div>
           </div>
         </div>
         <div class="row mb-3">
           <div class="col-md-6">
             <label for="address" class="form-label">Address:</label>
             <textarea id="address" formControlName="address" class="form-control"></textarea>
+            <div *ngIf="registerForm.controls['address'].invalid && 
+            registerForm.controls['address'].touched" class="text-danger">
+            Address is required. </div>
           </div>
           <div class="col-md-6">
             <label for="zipcode" class="form-label">Zipcode:</label>
             <input id="zipcode" formControlName="zipcode" type="text" class="form-control" />
+            <div *ngIf="registerForm.controls['zipcode'].invalid && 
+            registerForm.controls['zipcode'].touched" class="text-danger">
+            Zipcode is required. </div>
           </div>
         </div>
         <div class="row mb-3">
           <div class="col-md-6">
-            <label for="stateId" class="form-label">State ID:</label>
+            <label for="stateId" class="form-label">State :</label>
             <select id="stateId" formControlName="stateId" class="form-select">
               <option *ngFor="let state of states" [value]="state.stateId">
                 {{ state.stateName }}
               </option>
             </select>
+            <div *ngIf="registerForm.controls['stateId'].invalid && 
+            registerForm.controls['stateId'].touched" class="text-danger">
+            State is required. </div>
           </div>
           <div class="col-md-6">
-            <label for="countryId" class="form-label">Country ID:</label>
+            <label for="countryId" class="form-label">Country :</label>
             <select id="countryId" formControlName="countryId" class="form-select">
               <option *ngFor="let country of countries" [value]="country.countryId">
                 {{ country.countryName }}
               </option>
             </select>
+            <div *ngIf="registerForm.controls['countryId'].invalid && 
+            registerForm.controls['countryId'].touched" class="text-danger">
+            Country is required. </div>
           </div>
         </div>
         <div class="row mb-3">
@@ -101,11 +133,18 @@
               id="imageFile"
               type="file"
               class="form-control"
+              formControlName="imageFile"
               (change)="onFileChange($event)"
             />
+            <div *ngIf="registerForm.controls['imageFile'].invalid && 
+            registerForm.controls['imageFile'].touched" class="text-danger">
+            Image is required. </div>
+          
           </div>
         </div>
         <button type="submit" class="btn btn-primary w-100">Register</button>
+        <a type="submit" routerLink="/login" class="">Go to Login</a>
+
       </form>
     </div>
   </div>

@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { LoginService } from '../../Service/login.service';
 import { Router, RouterLink } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
@@ -9,6 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
+import { ForgoTService } from '../../Service/forgo-t.service';
 
 @Component({
   selector: 'app-forgot-password',
@@ -20,29 +21,37 @@ import { MatIconModule } from '@angular/material/icon';
     MatInputModule,
     MatFormFieldModule,
     MatIconModule,
+    RouterLink,
+    FormsModule
+
   ],
   templateUrl: './forgot-password.component.html',
   styleUrl: './forgot-password.component.css'
 })
 export class ForgotPasswordComponent   {
   
-  service = inject(LoginService)
+  service = inject(ForgoTService)
 
   toastr = inject(ToastrService)
   router = inject(Router)
   
-  forgotPasswordForm = new FormGroup({
-    email: new FormControl('', [Validators.required, Validators.email]),
-  })
+
+
+  forgotPasswordForm={
+    email:''
+  }
 
 
   forgotpassword()
   {
-    this.service.onforgotpassword(this.forgotPasswordForm.value).subscribe(
+    console.log(this.forgotPasswordForm);
+    debugger
+    this.service.onforgotpassword(this.forgotPasswordForm).subscribe(
       {
+        
         next: (res) => {
           console.log(res);
-          this.toastr.success('User registered successfully!' , 'Success', {
+          this.toastr.success('Password Forgot successfully! Check your email' , 'Success', {
             timeOut: 3000,
             progressBar: true,
             progressAnimation: 'increasing',

@@ -22,6 +22,10 @@
 
     postinvoiceurl = 'https://localhost:7295/api/Sales/place-order'
 
+    getimvocebyidurl ='https://localhost:7295/api/Sales/GetInvoceBYId'
+
+    getrecieptbyidurl = 'https://localhost:7295/api/Sales/GetReciptByidQuery'
+
 
     http = inject(HttpClient)
 
@@ -78,6 +82,16 @@
     getinvoice(data : any)
     {
       return this.http.post(this.postinvoiceurl,data)
+    }
+
+    getinvoicebyid(id : number)
+    {
+      return this.http.get(`${this.getimvocebyidurl}/${id}`)
+    }
+
+    getrecieptbyid(id : number)
+    {
+      return this.http.get(`${this.getrecieptbyidurl}/${id}`)
     }
 
   }

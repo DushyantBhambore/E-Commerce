@@ -377,12 +377,34 @@
   },
   {
     "ContainingType": "WebAPI.Controllers.SalesController",
-    "Method": "GetInvoce",
-    "RelativePath": "api/Sales/GetInvoce",
+    "Method": "GetInvoceBYId",
+    "RelativePath": "api/Sales/GetInvoceBYId/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.SalesController",
+    "Method": "GetReciptByidQuery",
+    "RelativePath": "api/Sales/GetReciptByidQuery/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -468,9 +490,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Email",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "forgotEamilDto",
+        "Type": "App.Core.Dtos.ForgotEamilDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

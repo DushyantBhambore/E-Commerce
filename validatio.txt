@@ -1,0 +1,13 @@
+	@yopmail.com
+
+
+ Login & OTP  Validation :- Allow Login and OTP  When user is avaliable  ,
+ Addd Text  Limit ,
+ Add Invoice Print Button,
+When user is Add page is should not to  reload ,
+When admin is login Show only product list ,
+Apply  Validation for ,
+Edit Profile Not Working ,
+Change Password only New Passowrd and Confirm Password 
+
+

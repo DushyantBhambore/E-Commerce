@@ -259,7 +259,12 @@ export class ProductComponent implements OnInit {
         this.service.deleteProduct(id).subscribe({
           next: (res) => {
             console.log('deleted', res);
-            alert('delete successfully ');
+            this.toastr.error('Product Deleted successfully', 'Error', {
+              timeOut: 3000,
+              progressBar: true,
+              progressAnimation: 'increasing',
+              positionClass: 'toast-top-right'
+            })
           },
           error: (error) => {
             alert('I am error in delete');

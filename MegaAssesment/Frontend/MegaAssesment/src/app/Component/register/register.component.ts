@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { LoginService } from '../../Service/login.service';
 import { ToastrService } from 'ngx-toastr';
 import { CommonModule } from '@angular/common';
@@ -21,7 +21,7 @@ import { MatDatepickerModule, MatDateRangePicker } from '@angular/material/datep
   imports: [ReactiveFormsModule,
      CommonModule,MatFormFieldModule,MatIconModule,MatInputModule,
      MatButtonModule,MatSelectModule,MatNativeDateModule,MatOptionModule,
-     MatCardModule,MatDatepickerModule
+     MatCardModule,MatDatepickerModule,RouterLink
     
     
     ],
@@ -42,20 +42,22 @@ export class RegisterComponent implements OnInit {
   private toastr = inject(ToastrService);
   mode!: string;
   userId!: number;
+  todayDate=new Date().toISOString().split('T')[0];
+
 
   constructor(private fb: FormBuilder) {
     this.registerForm = this.fb.group({
 
-      firstName: ['', [Validators.required]],
+      firstName: ['', [Validators.required,Validators.minLength(3)]],
       lastName: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
-      mobile: ['', [Validators.required, ]],
+      mobile: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]],
       dob: [new Date().toISOString(), Validators.required],
       roleId: ['', [Validators.required]],
       address: ['', [Validators.required]],
       stateId: ['', [Validators.required]],
       countryId: ['', [Validators.required]],
-      zipcode: ['', [Validators.required]],
+      zipcode: ['', [Validators.required,]],
       imageFile: [null, [Validators.required]]
     });
   }

@@ -2,7 +2,7 @@ import { Component, inject, signal } from '@angular/core';
 import { LoginService } from '../../Service/login.service';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
-import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
@@ -21,6 +21,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatInputModule,
     MatFormFieldModule,
     MatIconModule,
+    FormsModule
   ],
   templateUrl: './change-passowrd.component.html',
   styleUrl: './change-passowrd.component.css'
@@ -31,16 +32,21 @@ export class ChangePassowrdComponent {
 
   toastr = inject(ToastrService)
   router = inject(Router)
-
   
-  changePaswordForm = new FormGroup({
-    username : new FormControl('', [Validators.required,]),
-    newPassword: new FormControl('', [Validators.required,]),
-  })
+  changePaswordForm ={
+    username :'',
+    newPassword: '',
+  }
+  // changePaswordForm = new FormGroup({
+  //   username : new FormControl('', [Validators.required,]),
+  //   newPassword: new FormControl('', [Validators.required,]),
+  // })
 
   changePassword() {
-    this.service.onChangePassword(this.changePaswordForm.value).subscribe(
+    debugger
+    this.service.onChangePassword(this.changePaswordForm).subscribe(
       {
+        
         next: (res) => {
           console.log(res);
           this.toastr.success('Password Changed Successfully', 'Success', {

@@ -23,6 +23,7 @@ export class LayoutComponent {
 
   userid = JSON.parse(sessionStorage.getItem('logindata') || '{}');
   id : number = this.userid.userId
+  name :string = this.userid.firstName
 
 
   constructor(private cartService: CartService,) {

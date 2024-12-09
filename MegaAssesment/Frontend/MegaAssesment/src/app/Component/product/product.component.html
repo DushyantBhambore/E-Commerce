@@ -9,6 +9,7 @@
     
             <thead>
               <tr>
+                <th>Prodcut Id </th>
                 <th scope="col">Product Name</th>
                 <th scope="col">Category</th>
                 <th scope="col">Brand</th>
@@ -59,13 +60,18 @@
                   id="productName"
                   formControlName="productName"
                   type="text"
+                  minlength="3"
                   class="form-control"
                   [ngClass]="{
                     'is-invalid':
                       productform.controls['productName'].invalid &&
-                      productform.controls['productName'].touched
+                      productform.controls['productName'].touched 
                   }"
                 />
+                <div *ngIf="productform.controls['productName'].invalid && productform.controls['productName'].errors?.['minlength']  &&
+                productform.controls['productName'].touched"  class="text-danger"   >
+                productName  min length 3  is required. </div>
+                
               </div>
             </div>
             <div class="row mb-3">
@@ -79,10 +85,14 @@
                   class="form-control"
                   [ngClass]="{
                     'is-invalid':
-                      productform.controls['category'].invalid &&
+                      productform.controls['category'].invalid && 
                       productform.controls['category'].touched
                   }"
                 />
+                <div *ngIf="productform.controls['category'].invalid && 
+                productform.controls['category'].touched" class="text-danger">
+                category is required. </div>
+                
               </div>
             </div>
             <div class="row mb-3">
@@ -99,6 +109,9 @@
                       productform.controls['brand'].touched
                   }"
                 />
+                <div *ngIf="productform.controls['brand'].invalid && 
+                productform.controls['brand'].touched" class="text-danger">
+                brand is required. </div>
               </div>
               <div class="col-md-6">
                 <label for="sellingPrice" class="form-label">Selling Price:</label>
@@ -113,6 +126,9 @@
                       productform.controls['sellingPrice'].touched
                   }"
                 />
+                <div *ngIf="productform.controls['sellingPrice'].invalid && 
+                productform.controls['sellingPrice'].touched" class="text-danger">
+                sellingPrice is required. </div>
               </div>
             </div>
             <div class="row mb-3">
@@ -129,6 +145,9 @@
                       productform.controls['purchasePrice'].touched
                   }"
                 />
+                <div *ngIf="productform.controls['purchasePrice'].invalid && 
+                productform.controls['purchasePrice'].touched" class="text-danger">
+                purchasePrice is required. </div>
               </div>
               <div class="col-md-6">
                 <label for="purchaseDate" class="form-label">Purchase Date:</label>
@@ -143,6 +162,9 @@
                       productform.controls['purchaseDate'].touched
                   }"
                 />
+                <div *ngIf="productform.controls['purchaseDate'].invalid && 
+                productform.controls['purchaseDate'].touched" class="text-danger">
+                purchaseDate is required. </div>
               </div>
             </div>
             <div class="row mb-3">
@@ -159,6 +181,9 @@
                           productform.controls['stock'].touched
                       }"
                     />
+                    <div *ngIf="productform.controls['stock'].invalid && 
+                    productform.controls['stock'].touched" class="text-danger">
+                    stock is required. </div>
                   </div>
                   <div class="col-md-6">
                     <label for="productImage" class="form-label">Product Image:</label>
@@ -169,6 +194,9 @@
                       class="form-control"
                       (change)="onFileChange($event)"
                     />
+                    <div *ngIf="productform.controls['productImage'].invalid && 
+                    productform.controls['productImage'].touched" class="text-danger">
+                    productImage is required. </div>
                   </div>
             </div>
         </form>
@@ -177,12 +205,9 @@
                 <button type="button" (click)="onSubmit()" class="btn btn-success" data-dismiss="modal" >Submit </button>
               <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="CloseModal()">Close</button>
             </div>
-      
           </div>
         </div>
       </div>
-    
-
 </div>
 
 

@@ -2,6 +2,7 @@
 using App.Core.Interface;
 using Domain;
 using Domain.ResponseModel;
+using Mapster;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -14,14 +15,16 @@ using static System.Net.WebRequestMethods;
 
 namespace App.Core.Apps.ProductSales.Command
 {
-    public class PlaceOrderCommand : IRequest<PaymentResponseModel>
+    public class PlaceOrderCommand : IRequest<InvoiceResponseModel>
     {
         public SalesMasterDto salesMasterDto { get; set; }
+
     }
-    public class PlaceOrderCommandHandler : IRequestHandler<PlaceOrderCommand, PaymentResponseModel>
+    public class PlaceOrderCommandHandler : IRequestHandler<PlaceOrderCommand, InvoiceResponseModel>
     {
         private readonly IAppDbContext _appDbContext;
         private readonly IEmailService _emailService;
+
 
         public PlaceOrderCommandHandler(IAppDbContext appDbContext, IEmailService emailService)
         {
@@ -29,8 +32,9 @@ namespace App.Core.Apps.ProductSales.Command
             _emailService = emailService;
         }
 
-        public async Task<PaymentResponseModel> Handle(PlaceOrderCommand request, CancellationToken cancellationToken)
+        public async Task<InvoiceResponseModel> Handle(PlaceOrderCommand request, CancellationToken cancellationToken)
         {
+
             object obj = "";
 
             var salesMaster = new SalesMaster
@@ -56,26 +60,51 @@ namespace App.Core.Apps.ProductSales.Command
                     ProductCode = item.ProductCode,
                     SaleQty = item.SaleQty,
                     SellingPrice = item.SellingPrice,
+
                 };
                 var product = await _appDbContext.Set<Domain.Product>().FindAsync(item.ProductId);
                 if (product == null || product.Stock < item.SaleQty)
                 {
-                    return new PaymentResponseModel((int)HttpStatusCode.BadRequest, "InSufficeint Stock", null);
+                    return new InvoiceResponseModel((int)HttpStatusCode.BadRequest, "InSufficeint Stock", null, obj);
                 }
+
+                obj = salesDetail;
                 product.Stock -= item.SaleQty;
                 await _appDbContext.Set<SalesDetail>().AddAsync(salesDetail);
-                obj = salesDetail;
-
+              
 
             }
             await _appDbContext.SaveChangesAsync();
 
             var checkuser = await _appDbContext.Set<Domain.User>().
                 FirstOrDefaultAsync(a => a.UserId == request.salesMasterDto.UserId);
+            StringBuilder emailBody = new StringBuilder();
+            emailBody.AppendLine($"Your Order has been Confirmed. Invoice ID: {salesMaster.InvoiceId}");
+            emailBody.AppendLine($"Date: {salesMaster.InvoiceDate.ToString("yyyy-MM-dd")}");
+            emailBody.AppendLine("Product Details:");
 
-            await _emailService.SendEmailAsync(checkuser.Email, "Your Invoice Has Sent To Your Registred Email", $"Your Invoice is {salesMaster.ToString() + obj.ToString()}");
+            decimal totalAmount = 0;
 
-            return new PaymentResponseModel((int)HttpStatusCode.OK, "Invoice Generated ", salesMaster);
+            foreach (var item in request.salesMasterDto.Items)
+            {
+                decimal itemTotal = (decimal)(item.SellingPrice * item.SaleQty);
+                emailBody.AppendLine($"Product Code: {item.ProductCode}, Price: {item.SellingPrice:C}, Quantity: {item.SaleQty}, Total: {itemTotal:C}");
+                totalAmount += itemTotal;
+            }
+
+            emailBody.AppendLine($"Subtotal: {salesMaster.Subtotal:C}");
+            emailBody.AppendLine($"Total Amount: {totalAmount:C}");
+            emailBody.AppendLine($"Delivery Address: {salesMaster.DeliveryAddress}");
+
+            // Sending the email
+            await _emailService.SendEmailAsync(checkuser.Email, "Your Invoice Has Been Sent", emailBody.ToString());
+
+
+            //await _emailService.SendEmailAsync(checkuser.Email, "Your Invoice Has Sent To Your Registred Email", $"Your Order is Confirm and Your Invoice  is" +
+            //    $" {salesMaster.InvoiceId + salesMaster.InvoiceId +
+            //    salesMaster.DeliveryCountry + salesMaster.DeliveryZipcode}");
+
+            return new InvoiceResponseModel((int)HttpStatusCode.OK, "Invoice Generated ",salesMaster,obj );
 
 
 

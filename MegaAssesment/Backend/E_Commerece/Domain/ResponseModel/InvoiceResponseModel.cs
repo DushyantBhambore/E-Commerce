@@ -11,12 +11,14 @@ namespace Domain.ResponseModel
         public int StatusCode { get; set; }
         public string message { get; set; }
         public object Data { get; set; }
+        public object SalesDetails { get; set; }
 
-        public InvoiceResponseModel(int statusCode, string message, object data)
+        public InvoiceResponseModel(int statusCode, string message, object data, object salesDetails)
         {
             this.StatusCode = statusCode;
             this.message = message;
             this.Data = data;
+            SalesDetails = salesDetails;
         }
     }
 }

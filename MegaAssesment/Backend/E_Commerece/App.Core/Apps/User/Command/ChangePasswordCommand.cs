@@ -28,17 +28,17 @@ namespace App.Core.Apps.User.Command
         {
             var model = request.ChangePasswordDto;
             var user = await _context.Set<Domain.User>()
-                .FirstOrDefaultAsync(x => x.Username == model.UserName);
+                .FirstOrDefaultAsync(x => x.Username == request.ChangePasswordDto.UserName);
 
             if (user == null)
             {
-                return new UserResponseModel((int)HttpStatusCode.BadRequest, "Username is Invalid", user.Username);
+                return new UserResponseModel((int)HttpStatusCode.BadRequest, "Username is Invalid", request.ChangePasswordDto.UserName);
             }
 
-            user.Password = BCrypt.Net.BCrypt.HashPassword(model.NewPassword);
+           var newpassword  = BCrypt.Net.BCrypt.HashPassword(request.ChangePasswordDto.NewPassword);
             //_context.Set<Domain.User>().Update(user);
             await _context.SaveChangesAsync(cancellationToken);
-            return new UserResponseModel((int)HttpStatusCode.OK, "Password Changes SuccessFully", user.Password);
+            return new UserResponseModel((int)HttpStatusCode.OK, "Password Changes SuccessFully", newpassword);
         }
 
     }
