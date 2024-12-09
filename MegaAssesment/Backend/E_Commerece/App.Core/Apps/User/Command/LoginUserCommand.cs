@@ -58,16 +58,7 @@ namespace App.Core.Apps.User.Command
             await _appDbContext.Set<Domain.Otp>().AddAsync(new Domain.Otp { Email = checkuser.Email, Username = checkuser.Username, Code = otp, Expiration = DateTime.Now.AddMinutes(5) });
             await _appDbContext.SaveChangesAsync();
             await _emailService.SendEmailAsync(checkuser.Email, "Your OTP Code", $"Your OTP code is {otp}");
-            return new JSonModel((int)HttpStatusCode.OK, "Otp is Send Successfully", null);
-
-            //var isSmsSent = await _smsService.SendSmsAsync(checkuser.Mobile, $"Your OTP code is {otp}");
-            //if (!isSmsSent)
-            //{
-            //    return new JSonModel((int)HttpStatusCode.InternalServerError, "Failed to send OTP", null);
-            //}
-
-            //return new JSonModel((int)HttpStatusCode.OK, "OTP sent successfully via SMS", null);
-
+            return new JSonModel((int)HttpStatusCode.OK, "Otp is Send Successfully", checkuser);
         }
 
     }

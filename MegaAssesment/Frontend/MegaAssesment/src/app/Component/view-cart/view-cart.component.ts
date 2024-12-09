@@ -238,6 +238,7 @@ debugger
           positionClass: 'toast-top-right',
           closeButton:false
         });
+        this.gotocart(this.id);
         
       },
       error: (err) => {

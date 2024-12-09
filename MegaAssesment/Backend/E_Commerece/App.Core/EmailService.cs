@@ -26,7 +26,6 @@ namespace App.Core
             {
                 throw new ArgumentNullException(nameof(to), "Recipient email address cannot be null or empty.");
             }
-
             var smtpHost = _configuration["Smtp:Host"];
             var smtpPort = _configuration["Smtp:Port"];
             var smtpEmail = _configuration["Smtp:Email"];
@@ -57,7 +56,6 @@ namespace App.Core
             };
 
             mailMessage.To.Add(to);
-
             try
             {
                 await smtpClient.SendMailAsync(mailMessage);
@@ -72,6 +70,7 @@ namespace App.Core
             {
                 _logger.LogError(ex, "Unexpected error sending email to {Recipient}: {Message}", to, ex.Message);
                 throw new InvalidOperationException($"Unexpected error sending email to {to}: {ex.Message}", ex);
+
             }
         }
     }

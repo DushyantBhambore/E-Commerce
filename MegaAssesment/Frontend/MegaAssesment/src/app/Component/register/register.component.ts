@@ -47,25 +47,31 @@ export class RegisterComponent implements OnInit {
 
   constructor(private fb: FormBuilder) {
     this.registerForm = this.fb.group({
-
       firstName: ['', [Validators.required,Validators.minLength(3)]],
       lastName: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
-      mobile: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]],
+      mobile: ['', [Validators.required, Validators.pattern('^[0-9]{10}$'),]],
       dob: [new Date().toISOString(), Validators.required],
       roleId: ['', [Validators.required]],
       address: ['', [Validators.required]],
       stateId: ['', [Validators.required]],
       countryId: ['', [Validators.required]],
-      zipcode: ['', [Validators.required,]],
+      zipcode: ['', [Validators.required,Validators.pattern('^[0-9]{6}$')]],
       imageFile: [null, [Validators.required]]
     });
+  }
+
+
+  onInput(event:any){
+
   }
 
   ngOnInit(): void {
     this.loadCountries();
     this.loadRoles();
     this.loadStates();
+    this.sanitizeField('firstName');
+    this.sanitizeField('lastName');
 
     // this.route.queryParams.subscribe((params) => {
     //   const userId = params['userId'];
@@ -81,7 +87,6 @@ export class RegisterComponent implements OnInit {
         // Add logic to load user data based on userId if needed
         console.log(`Edit mode: ${this.userId}`);
         this.loadUserData(this.userId);
-
       }
     });
   }
@@ -123,7 +128,42 @@ export class RegisterComponent implements OnInit {
     }
   }
 
+  sanitizeField(fieldName: string): void {
+    this.registerForm.get(fieldName)?.valueChanges.subscribe((value) => {
+      if (value) {
+        // Allow trailing spaces, but clean invalid characters and reduce multiple spaces
+        const sanitizedValue = value
+          .replace(/[^A-Za-z\s]/g, '') // Remove non-letters and non-spaces
+          .replace(/\s{2,}/g, ' '); 
+          
+          // Replace multiple spaces with a single space (excluding trailing)
+        if (value !== sanitizedValue) {
+          this.registerForm.get(fieldName)?.setValue(sanitizedValue, {
+            emitEvent: false, // Avoid recursive calls
+          });
+        }
+      }
+    });
+  }
+
   onSubmit(): void {
+
+    
+    if(this.registerForm.invalid)
+    {
+        this.registerForm.markAllAsTouched();
+        
+      this.toastr.error('Please enter valid data', 'error',
+        {
+          timeOut: 3000,
+          progressBar: true,
+          progressAnimation: 'increasing',
+          positionClass: 'toast-top-right'
+
+        }
+      );
+      return;
+    }
 
     const formData = new FormData();
     Object.keys(this.registerForm.controls).forEach(key => {
@@ -137,10 +177,16 @@ export class RegisterComponent implements OnInit {
 
 
     this.service.onRegister(formData).subscribe({
-      next: (res) => {
+      next: (res : any) => {
+        if(res.status == 404)
+        {
+          this.toastr.error("Invalid data", res.message);
+        }
+        else{
         console.log(res);
-        this.toastr.success('User registered successfully!');
+        this.toastr.success('User registered successfully! , Username and Passwoed sent your mail');
         this.router.navigate(['/login']);
+        }
       },
       error: (err) => {
         console.log(err);

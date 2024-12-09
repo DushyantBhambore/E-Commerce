@@ -3,20 +3,26 @@
       <h2 class="text-center">Invoice</h2>
   </div>
   <div class="invoice-details">
+  
+    @if(getinvoice.Count === 0)
+    {
+      <p>No invoice found.</p>
+    }
+    
       <table class="table table-striped">
         <thead>
           <tr>
               <th>Order Id</th>
-              <th>Quantity</th>
-              <th>Price</th>
+              <th>invoiceDate</th>
               <th>Total</th>
               <th>Action</th>
           </tr>
         </thead>
-        <tbody>          <tr *ngFor="let item of getinvoice">
+        <tbody>      
+        
+              <tr *ngFor="let item of getinvoice">
               <td>{{ item.invoiceId }}</td>              
               <td>{{ item.invoiceDate}}</td>
-              <td>{{ item.deliveryAddress }}</td>
               <td>{{ item.subtotal }}</td>
               <td><button class="btn btn-danger" (click)="getinvoceRecipt(item.invoiceId)">View</button></td>
           </tr>
@@ -78,7 +84,7 @@
               </div>
               <div class="col-md-6">
                 <label for="sellingPrice" class="form-label">
-                   Price:
+                   Price Per Item  :
                 </label>
                 <label for="sellingPrice" class="form-value">
                   {{getrecipt.sellingPrice}}

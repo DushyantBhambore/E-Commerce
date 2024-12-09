@@ -2,7 +2,7 @@
     <div class="row justify-content-center">
       <!-- Profile Details -->
       <div class="col-md-8">
-        <div class="card border-0 shadow-lg animate__animated animate__fadeInUp">
+        <div class="card border-0 shadow-sm animate__animated animate__fadeInUp">
           <div class="card-header bg-primary text-white">
             <h2 class="text-center">Profile Details</h2>
           </div>
@@ -42,9 +42,157 @@
                   <label for="phoneNumber" class="form-label text-primary">{{userdata.mobile}}</label>
                 </div>
               </div>
+              <button class="btn btn-warning " (click)="onEdit(userdata.userId)">Edit </button>
             </form>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+
+
+
+
+<!-- Modal -->
+<div   id="myModal" class="modal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" (click)="CloseModal()">&times;</button>
+        <h4 class="modal-title">Update Profile </h4>
+      </div>
+      <div class="modal-body">
+        <form
+        class="form-container"
+        [formGroup]="registerForm"
+      >
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="firstName" class="form-label">First Name:</label>
+            <input
+              id="firstName"
+              formControlName="firstName"
+              type="text"
+              class="form-control"
+              maxlength="10" 
+              [ngClass]="{
+                'is-invalid':
+                  registerForm.controls['firstName'].invalid && 
+                  registerForm.controls['firstName'].touched 
+              }"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="lastName" class="form-label">Last Name:</label>
+            <input
+              id="lastName"
+              formControlName="lastName"
+              maxlength="10" 
+              type="text"
+              class="form-control"
+            />
+          </div>
+          </div>
+          
+        
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email:</label>
+            <input
+              id="email"
+              formControlName="email"
+              type="email"
+              class="form-control"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="mobile" class="form-label">Mobile:</label>
+            <input
+              id="mobile"
+              formControlName="mobile"
+              type="number"
+            maxlength="10"
+              class="form-control"
+              data-bind="value:replyNumber"
+            />
+          
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="dob" class="form-label">Date of Birth:</label>
+            <input id="dob" formControlName="dob" type="datetime-local" class="form-control"  [max]="todayDate"            />
+          </div>
+          <div class="col-md-6">
+            <label for="roleId" class="form-label">Role:</label>
+            <select id="roleId" formControlName="roleId" class="form-select">
+              <option *ngFor="let role of roles" [value]="role.roleId">
+                {{ role.roleName }}
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="address" class="form-label">Address:</label>
+            <textarea id="address" maxlength="20"  formControlName="address" class="form-control"></textarea>
+           
+          </div>
+          <div class="col-md-6">
+            <label for="zipcode" class="form-label">Zipcode:</label>
+            <input id="zipcode"   type="number"   maxlength="6" formControlName="zipcode" class="form-control" />
+           
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="countryId" class="form-label">Country :</label>
+            <select id="countryId" formControlName="countryId" class="form-select">
+              <option *ngFor="let country of countries" [value]="country.countryId">
+                {{ country.countryName }}
+              </option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="stateId" class="form-label">State :</label>
+            <select id="stateId" formControlName="stateId" class="form-select">
+              <option *ngFor="let state of states" [value]="state.stateId">
+                {{ state.stateName }}
+              </option>
+            </select>
+          </div>
+          
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="imageFile" class="form-label">Profile Image:</label>
+            <input
+                id="imageFile"
+                type="file"
+                class="form-control"
+                formControlName="imageFile"
+                (change)="onFileChange($event)"
+              />
+           
+          </div>
+        </div>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary w-50" (click)="onSubmit()">Update </button>
+
+        <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="CloseModal()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+

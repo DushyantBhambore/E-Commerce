@@ -9,6 +9,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
+import { T } from '@angular/cdk/keycodes';
 
 @Component({
   selector: 'app-login',
@@ -42,7 +43,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.setForm();
-
+    this.sanitizeField("username")
+    this.sanitizeField("password")
   }
 
   setForm() {
@@ -116,24 +118,30 @@ export class LoginComponent implements OnInit {
 
 
   onLogin() {
-    this.toastr.info('Logging in...', 'Please wait', {
-      timeOut: 2000,
-      progressBar: true,
-      progressAnimation: 'increasing',
-      positionClass: 'toast-top-right',
-    });
-  
-    this.service.onLogin(this.loginform.value).subscribe({
-      next: (res) => {
-        this.toastr.success('OTP sent successfully', 'Success', {
-          timeOut: 3000,
-          progressBar: true,
-          progressAnimation: 'increasing',
-          positionClass: 'toast-top-right',
-        });
-        this.isLoginSuccessful = true;
-        this.setOtpForm();
 
+    this.service.onLogin(this.loginform.value).subscribe({
+      next: (res :any) => {
+
+        if(res.statusCode == 200)
+        {
+          this.toastr.success('OTP sent successfully', 'Success', {
+            timeOut: 3000,
+            progressBar: true,
+            progressAnimation: 'increasing',
+            positionClass: 'toast-top-right',
+          });
+          sessionStorage.setItem('loginuser', JSON.stringify(res.data));
+          this.isLoginSuccessful=true
+          this.setOtpForm()
+        }
+        else{
+          this.toastr.error('Wrong Creadentials Enter Coreect Credential', 'Error', {
+            timeOut: 3000,
+            progressBar: true,
+            progressAnimation: 'increasing',
+            positionClass: 'toast-top-right'
+          });
+        }
       },
       error: (err) => {
         this.toastr.error('Login failed', 'Error', {
@@ -159,7 +167,7 @@ export class LoginComponent implements OnInit {
         localStorage.setItem('token', res.token);
         localStorage.setItem('profileimage', res.data.imageFile);
         sessionStorage.setItem('logindata', JSON.stringify(res.data));
-        sessionStorage.setItem('role',(res.data.roleId))
+        sessionStorage.setItem('role',JSON.stringify(res.data.roleId))
         this.router.navigateByUrl('/dashboard');
         this.toastr.success('Login successful', 'Success', {
           timeOut: 3000,
@@ -178,7 +186,23 @@ export class LoginComponent implements OnInit {
       }
     });
   }
-  
+  sanitizeField(fieldName: string): void {
+    this.loginform.get(fieldName)?.valueChanges.subscribe((value) => {
+      if (value) {
+        // Allow trailing spaces, but clean invalid characters and reduce multiple spaces
+        const sanitizedValue = value
+          .replace(/[^A-Za-z\s]/g, '') // Remove non-letters and non-spaces
+          .replace(/\s{2,}/g, ' ').trimO()
+          
+          // Replace multiple spaces with a single space (excluding trailing)
+        if (value !== sanitizedValue) {
+          this.loginform.get(fieldName)?.setValue(sanitizedValue, {
+            emitEvent: false, // Avoid recursive calls
+          });
+        }
+      }
+    });
+  }
 
 
   hide = signal(true);

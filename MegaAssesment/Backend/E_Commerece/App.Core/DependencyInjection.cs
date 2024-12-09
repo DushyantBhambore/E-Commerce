@@ -8,9 +8,7 @@ namespace App.Core
         {
             services.AddMediatR(cfg =>
             {
-
                 cfg.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly);
-
             });
             return services;
         }

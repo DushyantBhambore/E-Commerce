@@ -25,6 +25,11 @@ export class LoginService {
   changepasswordurl = 'https://localhost:7295/api/User/ChangePassword'
 
   forgotpasswordurl = 'https://localhost:7295/api/User/ForgotPassword'
+
+  updateuserurl = 'https://localhost:7295/api/User/UpdatedProfile'
+
+
+
   http = inject(HttpClient)
   constructor() { }
 
@@ -60,14 +65,12 @@ export class LoginService {
 
   getuserbyid(id:number)
   {
-    return this.http.get(`https://localhost:7295/api/State/GetStateById/${id}`)
-  }
-
-  getbyid(id:number)
-  {
     return this.http.get(`${this.getbyidurl}/${id}`)
   }
-
+  getbyid(id:number)
+  {
+    return this.http.get(`https://localhost:7295/api/User/GetUserById/${id}`)
+  }
 
   onforgotpassword(data:any)
   {
@@ -77,6 +80,12 @@ export class LoginService {
   onChangePassword(data:any)
   {
     return this.http.post(this.changepasswordurl,data)
+  }
+
+
+  onUpdateuser(data:any)
+  {
+    return this.http.post(this.updateuserurl,data)
   }
 
 

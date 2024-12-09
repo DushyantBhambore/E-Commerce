@@ -32,14 +32,14 @@ namespace WebAPI.Controllers
             var result = await _mediator.Send(new LoginUserCommand { LoginDto = loginDto });
             return Ok(result);
         }
-        [HttpPost("VerifyOtp")]
+        [HttpPost("VerifyOTP")]
         public async Task<IActionResult> VerifyOtp([FromBody] VerifyOtpDto verifyOtpDto)
         {
             var result = await _mediator.Send(new VerifyOtpCommand { VerifyOtp = verifyOtpDto });
             return Ok(result);
         }
-        [HttpGet("[action]")]
-        public async Task<IActionResult> GetUserById([FromQuery] int id )
+        [HttpGet("[action]/{id}")]
+        public async Task<IActionResult> GetUserById( int id )
         {
             var result = await _mediator.Send(new GetUserByIdQuery { id = id });
             return Ok(result);
@@ -54,6 +54,12 @@ namespace WebAPI.Controllers
         public async Task<IActionResult> ChangePassword(ChangePasswordDto changePasswordDto)
         {
             var result = await _mediator.Send(new ChangePasswordCommand { ChangePasswordDto = changePasswordDto });
+            return Ok(result);
+        }
+        [HttpPost("UpdatedProfile")]
+        public async Task<IActionResult> UpdateUser([FromForm] RegisterDto registerDto)
+        {
+            var result = await _mediator.Send(new UpdateUserCommand { registerDto = registerDto });
             return Ok(result);
         }
     }

@@ -12,9 +12,11 @@
             <label for="firstName" class="form-label">First Name:</label>
             <input
               id="firstName"
+              class="alphaonly"
               formControlName="firstName"
               type="text"
               class="form-control"
+              maxlength="10" 
               [ngClass]="{
                 'is-invalid':
                   registerForm.controls['firstName'].invalid && 
@@ -30,6 +32,7 @@
             <input
               id="lastName"
               formControlName="lastName"
+              maxlength="10" 
               type="text"
               class="form-control"
             />
@@ -58,10 +61,14 @@
             <input
               id="mobile"
               formControlName="mobile"
-              type="text"
+              type="tel"
+              (input)="onInput($event)"
+            maxlength="10"
               class="form-control"
+              data-bind="value:replyNumber"
+              required
             />
-            <div *ngIf="registerForm.controls['mobile'].invalid && 
+            <div *ngIf="registerForm.controls['mobile'].invalid  && registerForm.controls['mobile'].errors?.['maxlength'] &&
             registerForm.controls['mobile'].touched" class="text-danger">
             Mobile is required. </div>
           </div>
@@ -89,31 +96,20 @@
         <div class="row mb-3">
           <div class="col-md-6">
             <label for="address" class="form-label">Address:</label>
-            <textarea id="address" formControlName="address" class="form-control"></textarea>
+            <textarea id="address" maxlength="20"  formControlName="address" class="form-control"></textarea>
             <div *ngIf="registerForm.controls['address'].invalid && 
             registerForm.controls['address'].touched" class="text-danger">
             Address is required. </div>
           </div>
           <div class="col-md-6">
             <label for="zipcode" class="form-label">Zipcode:</label>
-            <input id="zipcode" formControlName="zipcode" type="text" class="form-control" />
+            <input id="zipcode"   type="number"   maxlength="6" formControlName="zipcode" class="form-control" />
             <div *ngIf="registerForm.controls['zipcode'].invalid && 
             registerForm.controls['zipcode'].touched" class="text-danger">
             Zipcode is required. </div>
           </div>
         </div>
         <div class="row mb-3">
-          <div class="col-md-6">
-            <label for="stateId" class="form-label">State :</label>
-            <select id="stateId" formControlName="stateId" class="form-select">
-              <option *ngFor="let state of states" [value]="state.stateId">
-                {{ state.stateName }}
-              </option>
-            </select>
-            <div *ngIf="registerForm.controls['stateId'].invalid && 
-            registerForm.controls['stateId'].touched" class="text-danger">
-            State is required. </div>
-          </div>
           <div class="col-md-6">
             <label for="countryId" class="form-label">Country :</label>
             <select id="countryId" formControlName="countryId" class="form-select">
@@ -125,6 +121,18 @@
             registerForm.controls['countryId'].touched" class="text-danger">
             Country is required. </div>
           </div>
+          <div class="col-md-6">
+            <label for="stateId" class="form-label">State :</label>
+            <select id="stateId" formControlName="stateId" class="form-select">
+              <option *ngFor="let state of states" [value]="state.stateId">
+                {{ state.stateName }}
+              </option>
+            </select>
+            <div *ngIf="registerForm.controls['stateId'].invalid && 
+            registerForm.controls['stateId'].touched" class="text-danger">
+            State is required. </div>
+          </div>
+          
         </div>
         <div class="row mb-3">
           <div class="col-md-6">
@@ -134,6 +142,7 @@
               type="file"
               class="form-control"
               formControlName="imageFile"
+              accept=".jpg, .jpeg, .png"
               (change)="onFileChange($event)"
             />
             <div *ngIf="registerForm.controls['imageFile'].invalid && 

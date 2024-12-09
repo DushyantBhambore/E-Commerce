@@ -500,7 +500,7 @@
   {
     "ContainingType": "WebAPI.Controllers.UserController",
     "Method": "GetUserById",
-    "RelativePath": "api/User/GetUserById",
+    "RelativePath": "api/User/GetUserById/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -508,7 +508,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -602,8 +602,79 @@
   },
   {
     "ContainingType": "WebAPI.Controllers.UserController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/User/UpdatedProfile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Mobile",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DOB",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "RoleId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Zipcode",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "StateId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CountryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.UserController",
     "Method": "VerifyOtp",
-    "RelativePath": "api/User/VerifyOtp",
+    "RelativePath": "api/User/VerifyOTP",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

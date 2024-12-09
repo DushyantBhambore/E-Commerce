@@ -46,7 +46,6 @@ namespace App.Core.Apps.User.Command
             {
                 return new JSonModel((int)HttpStatusCode.BadRequest, "Email already exists", null);
             }
-
             var imageFile = request.registerDto.ImageFile;
 
             var allowedFileExtensions = new string[] { ".jpg", ".jpeg", ".png" };
@@ -88,10 +87,13 @@ namespace App.Core.Apps.User.Command
 
             await _appDbContext.Set<Domain.User>().AddAsync(user);
             await _appDbContext.SaveChangesAsync();
-            await _emailService.SendEmailAsync(request.registerDto.Email,
+
+           await _emailService.SendEmailAsync(request.registerDto.Email,
                 "Welcome to Our Application", $"Hello {request.registerDto.FirstName}" +
                 $",\n\nYour account has been created successfully.\n\nUsername: " +
                 $"{username}\nPassword: {password}\n\nRegards,\nTeam");
+
+           
             return new JSonModel((int)HttpStatusCode.OK, "User Added Successfully", user);
         }
     }

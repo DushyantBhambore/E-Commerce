@@ -30,12 +30,14 @@ export class ChangePassowrdComponent {
 
   service = inject(LoginService)
 
+   usernamedata =  JSON.parse(sessionStorage.getItem('logindata') || '{}')
   toastr = inject(ToastrService)
   router = inject(Router)
   
   changePaswordForm ={
-    username :'',
+    username :this.usernamedata.username,
     newPassword: '',
+    confirmPassword: ''
   }
   // changePaswordForm = new FormGroup({
   //   username : new FormControl('', [Validators.required,]),
@@ -44,10 +46,19 @@ export class ChangePassowrdComponent {
 
   changePassword() {
     debugger
+    if (this.changePaswordForm.newPassword !== this.changePaswordForm.confirmPassword) {
+      this.toastr.error("New password and confirm password do not match", "Error");
+    }
     this.service.onChangePassword(this.changePaswordForm).subscribe(
       {
-        
-        next: (res) => {
+        next: (res : any) => {
+          debugger
+          if(res.status === 400)
+          {
+            this.toastr.error("Passsword is not Matched  data", res.message);
+          }
+          else{
+            debugger
           console.log(res);
           this.toastr.success('Password Changed Successfully', 'Success', {
             timeOut: 3000,
@@ -55,7 +66,7 @@ export class ChangePassowrdComponent {
             progressAnimation: 'increasing',
             positionClass: 'toast-top-right'
           });
-          this.router.navigateByUrl('/login');
+        }
         },
         error: (err) => {
           console.log(err);

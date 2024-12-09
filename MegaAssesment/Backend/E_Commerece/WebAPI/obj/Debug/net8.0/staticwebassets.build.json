@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+vTj7HYaq+8K54DuTqu3tpEjYZcDOu14D8z3ZP/SFHw=",
+  "Hash": "9JNgq9iiXr9tF/hzecnRZtWKB66b3SK6F40OreqN3Uc=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\0b3fa0c0-a94f-469c-959e-2e39675b09b1.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Uploads/0b3fa0c0-a94f-469c-959e-2e39675b09b1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\0b3fa0c0-a94f-469c-959e-2e39675b09b1.jpg"
+    },
     {
       "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\10041aea-86b4-4cb4-ba8c-e8c02475a0b1.jpg",
       "SourceId": "WebAPI",
@@ -34,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\10041aea-86b4-4cb4-ba8c-e8c02475a0b1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\11d189e5-a760-48b4-a691-feb4ca66c90c.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Uploads/11d189e5-a760-48b4-a691-feb4ca66c90c.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\11d189e5-a760-48b4-a691-feb4ca66c90c.jpg"
     },
     {
       "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\1239fbdb-17b3-42b9-8d6f-b8f1e2998f31.png",
@@ -207,6 +245,25 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\23d0a337-b98e-4732-8d72-e6118ceb5e43.jpg"
     },
     {
+      "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\2862033b-750c-4137-a541-165e97e12a78.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Uploads/2862033b-750c-4137-a541-165e97e12a78.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\2862033b-750c-4137-a541-165e97e12a78.jpg"
+    },
+    {
       "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\423251b0-6ac0-4df2-9ba0-c391b9745acf.jpg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
@@ -302,6 +359,25 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\5891a51d-a3c1-42eb-8feb-97fa35887d50.jpg"
     },
     {
+      "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\5c9a689e-a764-425b-8af0-797c376c04a1.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Uploads/5c9a689e-a764-425b-8af0-797c376c04a1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\5c9a689e-a764-425b-8af0-797c376c04a1.jpg"
+    },
+    {
       "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\5caad46b-6bcd-4571-901d-0409bfa911dd.jpg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
@@ -357,6 +433,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\6e79d69a-fcb5-4fb5-92a5-30c1b30c2b2b.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\6f5b712c-ba60-4b22-b3b2-9354ad0dd4c1.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Uploads/6f5b712c-ba60-4b22-b3b2-9354ad0dd4c1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\6f5b712c-ba60-4b22-b3b2-9354ad0dd4c1.jpg"
     },
     {
       "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\71ac907e-76d4-406d-8eb6-04fd320ba0ec.jpg",
@@ -606,6 +701,25 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\b787a8b1-5946-4106-9000-258128ba2958.jpg"
     },
     {
+      "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\bfc14af0-ae02-4ef4-95e1-9736e4340579.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Uploads/bfc14af0-ae02-4ef4-95e1-9736e4340579.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\bfc14af0-ae02-4ef4-95e1-9736e4340579.jpg"
+    },
+    {
       "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\bfcfa8c9-c05c-434a-839b-6c2bbfec8a40.jpg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
@@ -661,6 +775,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\ca9d2fb9-00f2-4834-9b02-df3ab6e52c2b.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\dd6096c1-f846-4ae8-aac3-040fb6f8e938.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Uploads/dd6096c1-f846-4ae8-aac3-040fb6f8e938.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\dd6096c1-f846-4ae8-aac3-040fb6f8e938.jpg"
     },
     {
       "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\e32208a1-68d0-4dbc-a142-f1b12fc1e006.jpg",
@@ -777,6 +910,25 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\f3f906e0-a602-412f-aeee-dd075fa715e7.png"
     },
     {
+      "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\f543aff8-643d-403c-a0c4-cadbb9e9bc27.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Uploads/f543aff8-643d-403c-a0c4-cadbb9e9bc27.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\f543aff8-643d-403c-a0c4-cadbb9e9bc27.jpg"
+    },
+    {
       "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\f717e0bc-1c10-4d09-94c8-c3e9964a95a6.jpg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
@@ -794,6 +946,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\f717e0bc-1c10-4d09-94c8-c3e9964a95a6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\f79554e2-940b-46f0-b23f-dfd4d9b7960d.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Uploads/f79554e2-940b-46f0-b23f-dfd4d9b7960d.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\f79554e2-940b-46f0-b23f-dfd4d9b7960d.jpg"
     },
     {
       "Identity": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\f9bc54f9-4fd5-41a3-acde-2b63be0065a1.jpg",

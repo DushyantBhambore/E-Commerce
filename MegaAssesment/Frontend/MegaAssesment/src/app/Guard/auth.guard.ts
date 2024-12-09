@@ -11,14 +11,14 @@ export const authGuard: CanActivateFn = (route, state) => {
 
     if(role === '4')
     {
-      router.navigateByUrl('/product');
+      router.navigateByUrl('/profile');
     }
     return true;
   }
 
   if(token)
   {
-    router.navigateByUrl('/dashboard');1
+    router.navigateByUrl('/profile');
     return true;
   }
 
