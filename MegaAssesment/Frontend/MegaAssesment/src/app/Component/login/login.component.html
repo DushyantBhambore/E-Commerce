@@ -21,7 +21,7 @@
             </button>
           </mat-form-field>
           <div class="mb-4 example-button-row d-flex justify-content-center">
-            <button mat-raised-button color="primary" (click)="onLogin()">Login</button>
+            <button mat-raised-button color="primary"  [disabled]="loginform.invalid" (click)="onLogin()">Login</button>
           </div>
           <div class="">
             <a  color="primary" routerLink="/forgotpassword">Forgot Password</a>

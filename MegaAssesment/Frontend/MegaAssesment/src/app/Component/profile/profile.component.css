@@ -72,3 +72,9 @@
       opacity: 1;
     }
   }
+
+
+  .close{
+     position: absolute;
+    right: 0;
+  }

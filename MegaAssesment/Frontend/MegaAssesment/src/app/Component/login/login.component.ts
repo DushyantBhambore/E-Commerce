@@ -26,7 +26,7 @@ import { T } from '@angular/cdk/keycodes';
   ],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+
 })
 export class LoginComponent implements OnInit {
 
@@ -42,11 +42,12 @@ export class LoginComponent implements OnInit {
   constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {
+    this.setOtpForm();
     this.setForm();
-    this.sanitizeField("username")
-    this.sanitizeField("password")
+  //   this.sanitizeField("username")
+  //   this.sanitizeField("password")
+  // }
   }
-
   setForm() {
     this.loginform = this.fb.group({
       username: [''],
@@ -119,11 +120,20 @@ export class LoginComponent implements OnInit {
 
   onLogin() {
 
+    debugger
+    if(this.loginform.invalid){
+      this.loginform.markAllAsTouched();
+      this.toastr.error('Please enter valid data', 'error')
+      return;
+    }
+
+
     this.service.onLogin(this.loginform.value).subscribe({
       next: (res :any) => {
-
+debugger
         if(res.statusCode == 200)
-        {
+        { this.isLoginSuccessful=true
+          debugger
           this.toastr.success('OTP sent successfully', 'Success', {
             timeOut: 3000,
             progressBar: true,
@@ -131,7 +141,7 @@ export class LoginComponent implements OnInit {
             positionClass: 'toast-top-right',
           });
           sessionStorage.setItem('loginuser', JSON.stringify(res.data));
-          this.isLoginSuccessful=true
+         
           this.setOtpForm()
         }
         else{
@@ -168,7 +178,7 @@ export class LoginComponent implements OnInit {
         localStorage.setItem('profileimage', res.data.imageFile);
         sessionStorage.setItem('logindata', JSON.stringify(res.data));
         sessionStorage.setItem('role',JSON.stringify(res.data.roleId))
-        this.router.navigateByUrl('/dashboard');
+        this.router.navigateByUrl('/profile');
         this.toastr.success('Login successful', 'Success', {
           timeOut: 3000,
           progressBar: true,

@@ -1,27 +1,36 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { CartService } from '../../Service/cart.service';
 import { FormArray, FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { CommonModule, JsonPipe } from '@angular/common';
+import { CommonModule, DatePipe, JsonPipe } from '@angular/common';
+import { jsPDF } from "jspdf";
+import html2canvas from 'html2canvas';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-invoice',
   standalone: true,
-  imports: [ReactiveFormsModule,CommonModule],
+  imports: [ReactiveFormsModule,CommonModule,DatePipe],
   templateUrl: './invoice.component.html',
   styleUrl: './invoice.component.css'
 })
 export class InvoiceComponent implements OnInit{
 
   invoiceForm: FormGroup;
-  userid = JSON.parse(sessionStorage.getItem('logindata') || '{}');
-  id : number = this.userid.userId
+  // userid = JSON.parse(sessionStorage.getItem('logindata') || '{}');
+  // id : number = this.userid.userId
 
   getrecipt :any
   service = inject(CartService)
   getinvoice :any
   invoiceItems = JSON.parse(sessionStorage.getItem('invoce') || '')
   Sales = JSON.parse(sessionStorage.getItem('sales') || '')
-Total :any
+  Total :any
+
+  id! : number
+  userlogindata: any | null = null;  
+  
+ router = inject(Router)
+  
 
 
   getinvoicetable(id : number)
@@ -35,8 +44,23 @@ Total :any
 
   ngOnInit(): void {
     
+    debugger
     // this.getinvoice = this.invoiceItems
     // console.log(this.getinvoice);
+
+    const storedData = sessionStorage.getItem('logindata');
+    if (storedData) {
+      this.userlogindata = JSON.parse(storedData);
+      if (this.userlogindata) {
+        this.id = this.userlogindata.userId;
+      }
+    }
+
+    if (!this.userlogindata) {
+      // Redirect to login if no user data is found
+      this.router.navigate(['/dashboard']);
+    }
+  
     this.getinvoicetable(this.id)
 
   }
@@ -110,6 +134,42 @@ Total :any
         console.error(error);
       }
     });
+  }
+
+
+  downloadPDF(): void {
+    const invoiceElement = document.getElementById('myModal'); 
+
+    if (invoiceElement) {
+      
+      const printButton = document.querySelector('.btn-danger');
+      const exportButton = document.querySelector('.btn-success');
+      const invocetext = document.querySelector('.modal-title');
+      const close = document.querySelector('.close');
+      const footer = document.querySelector('.modal-footer');
+      if (printButton) printButton.setAttribute('style', 'display: none');
+      if (exportButton) exportButton.setAttribute('style', 'display: none');
+      if (invocetext) invocetext.setAttribute('style', 'display: none');
+      if (close) close.setAttribute('style', 'display: none');
+      if (footer) footer.setAttribute('style', 'display: none');
+
+
+      html2canvas(invoiceElement, { scale: 2 }).then((canvas) => {
+        
+        if (printButton) printButton.removeAttribute('style');
+        if (exportButton) exportButton.removeAttribute('style');
+
+        const imgData = canvas.toDataURL('image/png'); 
+        const doc = new jsPDF('p', 'mm', 'a4'); 
+
+        const imgWidth = 190; 
+        const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+        doc.addImage(imgData, 'PNG', 10, 10, imgWidth, imgHeight); 
+        doc.save('invoice.pdf');
+        this.CloseModal(); 
+      });
+    }
   }
  
 }

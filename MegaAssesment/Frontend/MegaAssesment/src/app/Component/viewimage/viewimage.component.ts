@@ -12,10 +12,18 @@ export class ViewimageComponent  implements OnInit{
  
  
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.viewProductImage();
   }
 
   viewimg = JSON.parse(sessionStorage.getItem('productlist')!);
+
+
+  image = this.viewimg.productImage
+
+
+  viewProductImage() {
+    console.log(this.viewimg);
+  }
 
 
   

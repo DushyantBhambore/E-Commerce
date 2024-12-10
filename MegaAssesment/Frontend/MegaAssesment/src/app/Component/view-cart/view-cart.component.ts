@@ -205,7 +205,6 @@ removeFromCart(productId: number)
 
     this.cartdata = [];
     this.calculateSubtotal();
-
      this.router.navigateByUrl('/invoice')
     },
     error: (err) => {

@@ -36,15 +36,15 @@ export class ProfileComponent implements OnInit {
     this.loadCountries();
     this.loadRoles();
     this.loadStates();
-
   }
 setform()
 {
   this.registerForm = this.fb.group({
+    userId:[''],
     firstName: ['',],
     lastName: ['',],
     email: ['', ],
-    mobile: ['', ],
+    mobile: ['',  Validators.pattern('^[0-9]{10}$')],
     dob: [new Date().toISOString(),],
     roleId: ['', ],
     address: ['', ],
@@ -55,6 +55,16 @@ setform()
 
 })
 }
+onKeyPress(event: KeyboardEvent) {
+  const charCode = event.which ? event.which : event.keyCode;
+  // Allow only numeric characters (keycodes for 0-9)
+  if (charCode < 48 || charCode > 57) {
+    event.preventDefault(); // Block non-numeric characters
+  }
+}
+
+
+
 onFileChange(event: any): void {
   if (event.target.files.length > 0) {
     this.imageFile = event.target.files[0];
@@ -69,7 +79,6 @@ onFileChange(event: any): void {
   
   onEdit(id:number)
   {debugger
-    debugger
     this.service.getuserbyid(id).subscribe({
       
       next:(res :any)=>{
@@ -90,8 +99,21 @@ onFileChange(event: any): void {
         // })
         this.OpneModal()
         this.setform()
-        const { imageFile, ...userData } = res; // Destructure to avoid setting `imageFile`
-        this.registerForm.patchValue(userData); 
+        debugger
+        // const { imageFile, ...userData } = res; // Destructure to avoid setting `imageFile`
+        this.registerForm.patchValue({
+          userId : res.userId,
+          firstName : res.firstName,
+          lastName : res.lastName,
+          email:res.email,
+          mobile : res.mobile,
+          dob : res.dob,
+          roleId : res.roleId,
+          address : res.address,
+          zipcode: res.zipcode,
+          countryId: res.countryId,
+          stateId: res.stateId
+        }); 
 
       },
       error:(err)=>{
@@ -107,14 +129,25 @@ onFileChange(event: any): void {
     const formValues = this.registerForm.getRawValue();
     Object.keys(formValues).forEach(key => {
       const value = formValues[key];
-      if (key === 'imageFile' && this.imageFile) {
+         // If imageFile exists, append it to formData, otherwise append null
+    if (key === 'imageFile') {
+      if (this.imageFile) {
         formData.append(key, this.imageFile);
-      } else if (value) {
-        formData.append(key, value);
-      } else if (key === 'imageFile' && !this.imageFile) {
-        formData.append(key, '');
+      } else {
+        formData.append(key, ''); // Add empty string if no image selected
       }
-    });
+    } else if (value) {
+      formData.append(key, value);
+    }
+  });
+      // if (key === 'imageFile' && this.imageFile) {
+      //   formData.append(key, this.imageFile);
+      // } else if (value) {
+      //   formData.append(key, value);
+      // } else if (key === 'imageFile' && !this.imageFile) {
+      //   formData.append(key, '');
+      // }
+
 
     debugger
     this.service.onUpdateuser(formData).subscribe(
@@ -132,6 +165,9 @@ onFileChange(event: any): void {
           })
           console.log(res.data);
           sessionStorage.setItem("logindata", JSON.stringify(res.data));
+          this.CloseModal();
+          window.location.reload();
+
         },
         error: (err) => {
           console.log(err);
@@ -165,8 +201,6 @@ onFileChange(event: any): void {
       modal.style.display = "none";
     }
   }
-
-
 
   private loadCountries(): void {
     this.service.getAllCountry().subscribe({

@@ -36,8 +36,8 @@ namespace App.Core.Apps.User.Command
         public async Task<UserResponseModel> Handle(UpdateUserCommand request, CancellationToken cancellationToken)
         {
 
-            var finduserid = await _appDbContext.Set<Domain.User>().FirstOrDefaultAsync(a => a.UserId == request.registerDto.UserId);
-
+            var finduserid = await _appDbContext.Set<Domain.User>().
+                FirstOrDefaultAsync(a => a.UserId == request.registerDto.UserId);
 
             if(finduserid == null)
             {

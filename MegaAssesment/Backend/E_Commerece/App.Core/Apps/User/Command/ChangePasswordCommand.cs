@@ -34,15 +34,19 @@ namespace App.Core.Apps.User.Command
                 return new UserResponseModel((int)HttpStatusCode.BadRequest, "Username is Invalid", request.ChangePasswordDto.UserName);
             }
 
-           var newpassword  = BCrypt.Net.BCrypt.HashPassword(request.ChangePasswordDto.NewPassword);
-            request.ChangePasswordDto.ConfirmPassword =request.ChangePasswordDto.NewPassword;
-            if(request.ChangePasswordDto.ConfirmPassword != request.ChangePasswordDto.NewPassword)
+           
+
+            if (request.ChangePasswordDto.ConfirmPassword != request.ChangePasswordDto.NewPassword)
             {
                 return new UserResponseModel((int)HttpStatusCode.BadRequest, "Password is not Matched ", null);
             }
+            var hashedPassword = BCrypt.Net.BCrypt.HashPassword(model.NewPassword);
+
+            user.Password = hashedPassword;
+            await _context.SaveChangesAsync();
+
             //_context.Set<Domain.User>().Update(user);
-            await _context.SaveChangesAsync(cancellationToken);
-            return new UserResponseModel((int)HttpStatusCode.OK, "Password Changes SuccessFully", newpassword);
+            return new UserResponseModel((int)HttpStatusCode.OK, "Password Changes SuccessFully",null);
         }
 
     }

@@ -33,5 +33,5 @@ namespace App.Core.Apps.Product.Query
             return data.Adapt<Domain.Product>();
         }
     }
-
+        
 }

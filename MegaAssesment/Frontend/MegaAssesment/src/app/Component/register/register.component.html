@@ -13,15 +13,12 @@
             <input
               id="firstName"
               class="alphaonly"
+              minlength="2"
               formControlName="firstName"
               type="text"
               class="form-control"
-              maxlength="10" 
-              [ngClass]="{
-                'is-invalid':
-                  registerForm.controls['firstName'].invalid && 
-                  registerForm.controls['firstName'].touched 
-              }"
+              pattern="^[A-Za-z\s]+$"
+              maxlength="20"
             />
             <div *ngIf="registerForm.controls['firstName'].invalid && 
             registerForm.controls['firstName'].touched" class="text-danger"> 
@@ -56,15 +53,18 @@
             registerForm.controls['email'].touched" class="text-danger">
             Email is required. </div>
           </div>
+
+
           <div class="col-md-6">
             <label for="mobile" class="form-label">Mobile:</label>
             <input
               id="mobile"
               formControlName="mobile"
               type="tel"
-              (input)="onInput($event)"
+              (keypress)="onKeyPress($event)"
             maxlength="10"
               class="form-control"
+              pattern="^[0-9]{10}$"
               data-bind="value:replyNumber"
               required
             />
@@ -73,6 +73,8 @@
             Mobile is required. </div>
           </div>
         </div>
+
+
         <div class="row mb-3">
           <div class="col-md-6">
             <label for="dob" class="form-label">Date of Birth:</label>
@@ -151,7 +153,7 @@
           
           </div>
         </div>
-        <button type="submit" class="btn btn-primary w-100">Register</button>
+        <button type="submit" class="btn btn-primary w-100" [disabled]="registerForm.invalid">Register</button>
         <a type="submit" routerLink="/login" class="">Go to Login</a>
 
       </form>

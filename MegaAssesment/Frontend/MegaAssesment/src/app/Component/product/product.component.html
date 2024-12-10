@@ -1,7 +1,7 @@
 
 
 <div class="container">
-    <button type="button" class="btn btn-primary" data-toggle="modal" (click)="OpneModal()" data-target="#myModal">
+    <button type="button" class="btn btn-primary mt-4 mb-4" data-toggle="modal" (click)="OpneModal()" data-target="#myModal">
         Add Product
       </button>
     <div class="container">
@@ -44,7 +44,7 @@
             <!-- Modal Header -->
             <div class="modal-header">
               <h4 class="modal-title">Add Product</h4>
-              <button type="button" class="close" data-dismiss="modal" (click)="CloseModal()">&times;</button>
+              <button type="button" class="close mx-2" data-dismiss="modal" (click)="CloseModal()">&times;</button>
             </div>
       
             <!-- Modal body -->
@@ -61,6 +61,9 @@
                   formControlName="productName"
                   type="text"
                   minlength="3"
+                  maxlength="15"
+              
+                  pattern="^[a-zA-Z]+([a-zA-Z ]*[a-zA-Z]+)*$"
                   class="form-control"
                   [ngClass]="{
                     'is-invalid':
@@ -81,6 +84,7 @@
                 <input
                   id="category"
                   formControlName="category"
+                  maxlength="10"
                   type="text"
                   class="form-control"
                   [ngClass]="{
@@ -102,6 +106,7 @@
                   id="brand"
                   formControlName="brand"
                   type="text"
+                  maxlength="10"
                   class="form-control"
                   [ngClass]="{
                     'is-invalid':
@@ -129,6 +134,12 @@
                 <div *ngIf="productform.controls['sellingPrice'].invalid && 
                 productform.controls['sellingPrice'].touched" class="text-danger">
                 sellingPrice is required. </div>
+                <div *ngIf="productform.hasError('sellingPriceGreaterThanPurchasePrice') && productform.controls['sellingPrice'].touched" class="text-danger">
+                  Selling Price must be greater than Purchase Price.
+                </div>
+                <div *ngIf="productform.controls['sellingPrice'].invalid && productform.controls['sellingPrice'].touched" class="text-danger">
+                  Selling Price is required.
+                </div>
               </div>
             </div>
             <div class="row mb-3">
@@ -155,6 +166,7 @@
                   id="purchaseDate"
                   formControlName="purchaseDate"
                   type="datetime-local"
+                  [max]="todayDate" 
                   class="form-control"
                   [ngClass]="{
                     'is-invalid':
@@ -192,6 +204,7 @@
                       formControlName="productImage"
                       type="file"
                       class="form-control"
+                      accept=".jpg, .jpeg, .png"
                       (change)="onFileChange($event)"
                     />
                     <div *ngIf="productform.controls['productImage'].invalid && 
@@ -202,7 +215,7 @@
         </form>
             <!-- Modal footer -->
             <div class="modal-footer">
-                <button type="button" (click)="onSubmit()" class="btn btn-success" data-dismiss="modal" >Submit </button>
+                <button type="button" (click)="onSubmit()"  class="btn btn-success" data-dismiss="modal" >Submit </button>
               <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="CloseModal()">Close</button>
             </div>
           </div>

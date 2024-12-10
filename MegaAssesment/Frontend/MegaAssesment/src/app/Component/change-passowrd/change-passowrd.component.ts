@@ -36,7 +36,7 @@ export class ChangePassowrdComponent {
   
   changePaswordForm ={
     username :this.usernamedata.username,
-    newPassword: '',
+    newPassword:  '',
     confirmPassword: ''
   }
   // changePaswordForm = new FormGroup({
@@ -53,7 +53,7 @@ export class ChangePassowrdComponent {
       {
         next: (res : any) => {
           debugger
-          if(res.status === 400)
+          if(res.statusCode === 400)
           {
             this.toastr.error("Passsword is not Matched  data", res.message);
           }

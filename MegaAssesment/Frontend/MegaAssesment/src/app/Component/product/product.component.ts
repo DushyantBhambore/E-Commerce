@@ -1,14 +1,18 @@
+import Swal from 'sweetalert2';
 import { Component, inject, OnInit } from '@angular/core';
 import { ProductService } from '../../Service/product.service';
 import { Router } from '@angular/router';
-import { Form, FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { AbstractControl, Form, FormBuilder, FormControl, FormGroup, ReactiveFormsModule, ValidationErrors, Validators } from '@angular/forms';
 import { CommonModule, DatePipe } from '@angular/common';
 import { ToastrService } from 'ngx-toastr';
+import { sellingPriceGreaterThanPurchasePrice } from '../CustomeValidaors/sellingPriceGreaterThanPurchasePrice';
 
 @Component({
   selector: 'app-product',
   standalone: true,
-  imports: [ReactiveFormsModule,CommonModule,DatePipe],
+  imports: [ReactiveFormsModule,CommonModule,
+    DatePipe,
+  ],
   templateUrl: './product.component.html',
   styleUrl: './product.component.css'
 })
@@ -20,16 +24,16 @@ export class ProductComponent implements OnInit {
   service = inject(ProductService)
   route = inject(Router)
   toastr = inject(ToastrService)
+  todayDate=new Date().toISOString().split('T')[0];
 
 
-  ngOnInit(): void {
-    this.getProduct();
-  }
+
+
 
   constructor(private fb: FormBuilder) {
     this.productform = this.fb.group({
-      prodcutId: ['', [Validators.required]],
-      productName: ['', [Validators.required]],
+      prodcutId: ['', [Validators.required,]],
+    productName: ['', [Validators.required, Validators.pattern(/^[A-Za-z]+(?: [A-Za-z]+)*\s*$/)]],
       productImage: [null, [Validators.required,]],
       category: ['', [Validators.required, ]],
       purchaseDate: [new Date().toISOString(), Validators.required],
@@ -38,10 +42,20 @@ export class ProductComponent implements OnInit {
       brand: ['', [Validators.required]],
       stock: ['', [Validators.required]],
     
-    });
+    },{validators: sellingPriceGreaterThanPurchasePrice } );
   }
   productImage: File | null = null;
   productform : FormGroup = new FormGroup({})
+
+
+
+  ngOnInit(): void {
+    this.getProduct();
+    this.sanitizeField('productName');
+    this.sanitizeField('category');
+    this.sanitizeField('brand');
+
+  }
 
   // modal open 
   OpneModal(){
@@ -60,6 +74,27 @@ export class ProductComponent implements OnInit {
       modal.style.display = "none";
     }
   }
+
+  sanitizeField(fieldName: string): void {
+    this.productform.get(fieldName)?.valueChanges.subscribe((value) => {
+      if (value) {
+        // Allow trailing spaces, but clean invalid characters and reduce multiple spaces
+        const sanitizedValue = value
+          .replace(/[^A-Za-z\s]/g, '') // Remove non-letters and non-spaces
+          .replace(/\s{2,}/g, ' '); 
+          
+          // Replace multiple spaces with a single space (excluding trailing)
+        if (value !== sanitizedValue) {
+          this.productform.get(fieldName)?.setValue(sanitizedValue, {
+            emitEvent: false, // Avoid recursive calls
+          });
+        }
+      }
+    });
+  }
+
+
+
 
   // image upload
   onFileChange(event: any): void {
@@ -252,28 +287,74 @@ export class ProductComponent implements OnInit {
       })
     }
 
-    deleteProduct(id:number)
-    {
-      const data = confirm('Are you sure do you want delete this Id ');
-      if (data == true) {
-        this.service.deleteProduct(id).subscribe({
-          next: (res) => {
-            console.log('deleted', res);
-            this.toastr.error('Product Deleted successfully', 'Error', {
-              timeOut: 3000,
-              progressBar: true,
-              progressAnimation: 'increasing',
-              positionClass: 'toast-top-right'
-            })
-          },
-          error: (error) => {
-            alert('I am error in delete');
-            console.log('I am error in delete',error);
-          },
-        });
-      }
 
+    deleteProduct(id: number) {
+      // Using SweetAlert2 for confirmation
+      Swal.fire({
+        title: 'Are you sure?',
+        text: `Do you want to delete the product with ID ${id}?`,
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Yes, delete it!',
+        cancelButtonText: 'Cancel',
+        reverseButtons: true
+      }).then((result : any) => {
+        if (result.isConfirmed) {
+          this.service.deleteProduct(id).subscribe({
+            next: (res : any) => {
+              console.log('Deleted', res);
+              this.getProduct();
+              this.toastr.success('Product Deleted successfully', 'Success', {
+                timeOut: 3000,
+                progressBar: true,
+                progressAnimation: 'increasing',
+                positionClass: 'toast-top-right'
+              });
+            },
+            error: (error) => {
+              console.error('Error in delete:', error);
+              this.toastr.error('Failed to delete product. Please try again.', 'Error', {
+                timeOut: 3000,
+                progressBar: true,
+                progressAnimation: 'increasing',
+                positionClass: 'toast-top-right'
+              });
+            }
+          });
+        } else {
+          // If user cancels, do nothing
+          console.log('Product deletion canceled');
+        }
+      });
     }
+    
+
+
+    // deleteProduct(id:number)
+    // {
+
+      
+    //   const data = confirm('Are you sure do you want delete this Id ');
+    //   if (data == true) {
+    //     this.service.deleteProduct(id).subscribe({
+    //       next: (res) => {
+    //         console.log('deleted', res);
+    //         this.toastr.error('Product Deleted successfully', 'Error', {
+    //           timeOut: 3000,
+    //           progressBar: true,
+    //           progressAnimation: 'increasing',
+    //           positionClass: 'toast-top-right'
+    //         })
+    //       },
+    //       error: (error) => {
+    //         alert('I am error in delete');
+    //         console.log('I am error in delete',error);
+    //       },
+    //     });
+    //   }
+
+    // }
+
 
 
    

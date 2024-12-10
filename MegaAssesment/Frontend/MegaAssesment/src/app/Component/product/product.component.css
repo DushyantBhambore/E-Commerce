@@ -1,28 +1,56 @@
-.modal-content {
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-  }
+.parent {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa; /* Light background */
+}
 
-  .modal-header {
-    background-color: #f0f0f0;
-    border-bottom: 1px solid #ddd;
-  }
+.navbar-container {
+  background-color: #e3f2fd; /* Light blue */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #dee2e6;
+}
 
-  .form-control {
-    border-radius: 5px;
-    border-color: #ccc;
-  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .is-invalid {
-    border-color: #dc3545;
-  }
+.logo-container {
+  display: flex;
+  align-items: center;
+}
 
-  .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-  }
+.profile-circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 2px solid #90caf9; /* Light blue border */
+}
 
-  .btn-danger {
-    background-color: #dc3545;
-    border-color: #dc3545;
-  }
+.navbar-links {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-links button {
+  transition: transform 0.2s ease-in-out;
+}
+.navbar-links li {
+  list-style: none;
+}
+.navbar-links button:hover {
+  transform: scale(1.1);
+}
+
+.navbar-links button:active {
+  transform: scale(0.9);
+}
+
+
+.close{
+  position: absolute;
+  right: 0;
+}

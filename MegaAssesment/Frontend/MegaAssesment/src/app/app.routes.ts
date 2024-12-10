@@ -12,6 +12,7 @@ import { PaymentComponent } from './Component/payment/payment.component';
 import { InvoiceComponent } from './Component/invoice/invoice.component';
 import { ForgotPasswordComponent } from './Component/forgot-password/forgot-password.component';
 import { authGuard } from './Guard/auth.guard';
+import { ViewimageComponent } from './Component/viewimage/viewimage.component';
 
 export const routes: Routes = [
     {
@@ -74,6 +75,11 @@ export const routes: Routes = [
                     component:ChangePassowrdComponent,
                     canActivate:[authGuard]
                 
+            },
+            {
+                path:'viewimg',
+                component:ViewimageComponent,
+                canActivate:[authGuard]
             }
         ]
     },

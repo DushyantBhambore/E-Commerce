@@ -14,15 +14,14 @@
           <tr>
               <th>Order Id</th>
               <th>invoiceDate</th>
-              <th>Total</th>
+              <th>Total Price</th>
               <th>Action</th>
           </tr>
         </thead>
         <tbody>      
-        
               <tr *ngFor="let item of getinvoice">
               <td>{{ item.invoiceId }}</td>              
-              <td>{{ item.invoiceDate}}</td>
+              <td>{{ item.invoiceDate |date :'dd/MM/yyyy'}}</td>
               <td>{{ item.subtotal }}</td>
               <td><button class="btn btn-danger" (click)="getinvoceRecipt(item.invoiceId)">View</button></td>
           </tr>
@@ -47,10 +46,10 @@
           <form *ngFor="let getrecipt of getrecipt" class="form-container">
             <div class="row mb-3">
               <div class="col-md-12">
-                <label for="invoiceId" class="form-label">
+                <label for="invoiceId" class="form-label ">
                   Invoice ID:
                 </label>
-                <label for="invoiceId" class="form-value">
+                <label for="invoiceId" class="form-value mt-5">
                   {{getrecipt.invoiceId}}
                 </label>
               </div>
@@ -96,6 +95,7 @@
         <!-- Modal footer -->
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="CloseModal()">Close</button>
+          <button type="button"   class="btn btn-success" data-dismiss="modal" (click)="downloadPDF()">Download</button>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@
       <div class="col-md-8">
         <div class="card border-0 shadow-sm animate__animated animate__fadeInUp">
           <div class="card-header bg-primary text-white">
-            <h2 class="text-center">Profile Details</h2>
+            <h2 class="text-center">Welcome {{userdata.firstName}}</h2>
           </div>
           <div class="card-body">
             <div class="text-center">
@@ -42,7 +42,10 @@
                   <label for="phoneNumber" class="form-label text-primary">{{userdata.mobile}}</label>
                 </div>
               </div>
-              <button class="btn btn-warning " (click)="onEdit(userdata.userId)">Edit </button>
+             <div class=" d-block text-center ">
+              <button class="btn btn-warning btn-md " style="width: 20%"  (click)="onEdit(userdata.userId)">Edit </button>
+             </div>
+
             </form>
           </div>
         </div>
@@ -61,7 +64,7 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" (click)="CloseModal()">&times;</button>
+        <button type="button" class="close mx-3" data-dismiss="modal" (click)="CloseModal()">&times;</button>
         <h4 class="modal-title">Update Profile </h4>
       </div>
       <div class="modal-body">
@@ -113,8 +116,10 @@
             <input
               id="mobile"
               formControlName="mobile"
-              type="number"
+              type="tel"
+              (keypress)="onKeyPress($event)"
             maxlength="10"
+            pattern="^[0-9]{10}$"
               class="form-control"
               data-bind="value:replyNumber"
             />
@@ -182,7 +187,7 @@
       </form>
       </div>
       <div class="modal-footer">
-        <button type="submit" class="btn btn-primary w-50" (click)="onSubmit()">Update </button>
+        <button type="submit" class="btn btn-primary btn-md"  (click)="onSubmit()">Update </button>
 
         <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="CloseModal()">Close</button>
       </div>

@@ -33,8 +33,6 @@ namespace App.Core.Apps.User.Command
 
         public async Task<JSonModel> Handle(LoginUserCommand request, CancellationToken cancellationToken)
         {
-
-
             var checkuser = await _appDbContext.Set<Domain.User>().Where(x => x.Username == request.LoginDto.Username).FirstOrDefaultAsync();
             if (checkuser == null)
             {

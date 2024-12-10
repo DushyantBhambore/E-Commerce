@@ -5,6 +5,8 @@ import {MatCardModule} from '@angular/material/card';
 import { CommonModule, JsonPipe } from '@angular/common';
 import { CartService } from '../../Service/cart.service';
 import { ToastrService } from 'ngx-toastr';
+import { routes } from '../../app.routes';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -20,6 +22,8 @@ export class DashboardComponent implements OnInit {
   cartservice = inject(CartService)
   userdata  = JSON.parse(sessionStorage.getItem('logindata') || '{}')
   userId = this.userdata.userId
+
+  router = inject(Router)
   toastr=inject(ToastrService)
   
   
@@ -128,8 +132,39 @@ export class DashboardComponent implements OnInit {
     }
     
 
+    // modal open 
+  OpneModal(){
+    debugger
+    const modal = document.getElementById("myModal");
+    if (modal) {
+      modal.style.display = "block";
+
+    }
+  }
+
+  // modal close
+  CloseModal()
+  {
+    const modal = document.getElementById("myModal");
+    if (modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  image :any
 
 
+    ViewImgae(id:number)
+    {
+
+      debugger
+      this.service.getproductbyid(id).subscribe((res:any)=>{
+        console.log(res);
+        this.image = res.data
+        console.log(this.image);
+      })
+      this.OpneModal();
+    }
 
 }
 

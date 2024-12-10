@@ -9,7 +9,11 @@
               </mat-form-field> -->
               <mat-form-field appearance="outline" class="mb-4 example-full-width" >
                 <mat-label>Enter New password</mat-label>
-                <input matInput [(ngModel)]="changePaswordForm.newPassword" name="newPassword" [type]="hide() ? 'password' : 'text'" required />
+                <input matInput [(ngModel)]="changePaswordForm.newPassword" 
+                name="newPassword" 
+                minlength="8" 
+                maxlength="15"
+                [type]="hide() ? 'password' : 'text'" required />
                 <button
                   mat-icon-button
                   matSuffix
@@ -34,7 +38,7 @@
                 </button>
               </mat-form-field>
               <div class="mb-4 example-button-row d-flex justify-content-center">
-                <button mat-raised-button color="primary" (click)="changePassword()">Change Password</button>
+                <button mat-raised-button color="primary"  (click)="changePassword()">Change Password</button>
               </div>
         </form>
       </mat-card>

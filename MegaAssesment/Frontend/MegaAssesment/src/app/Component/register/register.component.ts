@@ -47,7 +47,8 @@ export class RegisterComponent implements OnInit {
 
   constructor(private fb: FormBuilder) {
     this.registerForm = this.fb.group({
-      firstName: ['', [Validators.required,Validators.minLength(3)]],
+      firstName: ['', [Validators.required,Validators.minLength(2), 
+        Validators.maxLength(20),Validators.pattern(/^[A-Za-z]+(?: [A-Za-z]+)*\s*$/)]],
       lastName: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
       mobile: ['', [Validators.required, Validators.pattern('^[0-9]{10}$'),]],
@@ -62,9 +63,14 @@ export class RegisterComponent implements OnInit {
   }
 
 
-  onInput(event:any){
-
+  onKeyPress(event: KeyboardEvent) {
+    const charCode = event.which ? event.which : event.keyCode;
+    // Allow only numeric characters (keycodes for 0-9)
+    if (charCode < 48 || charCode > 57) {
+      event.preventDefault(); // Block non-numeric characters
+    }
   }
+
 
   ngOnInit(): void {
     this.loadCountries();
