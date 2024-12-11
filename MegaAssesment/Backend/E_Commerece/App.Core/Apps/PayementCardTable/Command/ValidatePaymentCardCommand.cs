@@ -23,7 +23,6 @@ namespace App.Core.Apps.PayementCardTable.Command
         {
             _appDbContext = appDbContext;
         }
-
         public async Task<PaymentResponseModel> Handle(ValidatePaymentCardCommand request, CancellationToken cancellationToken)
         {
             // Validate payment details

@@ -22,8 +22,6 @@ export class InvoiceComponent implements OnInit{
   getrecipt :any
   service = inject(CartService)
   getinvoice :any
-  invoiceItems = JSON.parse(sessionStorage.getItem('invoce') || '')
-  Sales = JSON.parse(sessionStorage.getItem('sales') || '')
   Total :any
 
   id! : number

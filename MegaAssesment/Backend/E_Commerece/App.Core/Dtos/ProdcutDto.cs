@@ -10,6 +10,7 @@ namespace App.Core.Dtos
     public class ProdcutDto
     {
         public int ProdcutId { get; set; }
+        public int UserId { get; set; }
 
         public string ProductName { get; set; }
 

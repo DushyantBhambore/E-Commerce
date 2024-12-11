@@ -29,13 +29,11 @@ namespace App.Core.Apps.PayementCardTable.Command
         {
 
             var user = await _appDbContext.Set<Domain.User>().FirstOrDefaultAsync(u => u.UserId == request.UserId, cancellationToken);
-
             if (user == null)
             {
 
                 return new PaymentResponseModel((int)HttpStatusCode.BadRequest, "User not found.", null);
             }
-
             user.Address = request.Address;
             await _appDbContext.SaveChangesAsync(cancellationToken);
 

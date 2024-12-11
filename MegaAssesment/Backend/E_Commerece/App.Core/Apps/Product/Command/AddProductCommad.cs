@@ -43,6 +43,7 @@ namespace App.Core.Apps.Product.Command
             var product = new Domain.Product
             {
                 ProductName = request.prodcutDto.ProductName,
+                UserId = request.prodcutDto.UserId,
                 ProductCode = prodcutcode,
                 ProductImage = fileUrl,
                 Category = request.prodcutDto.Category,

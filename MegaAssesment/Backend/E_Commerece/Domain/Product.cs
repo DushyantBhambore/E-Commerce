@@ -12,6 +12,7 @@ namespace Domain
         [Key]
         public int ProdcutId { get; set; }
 
+        public int UserId { get; set; }
         public string ProductName { get; set; }
 
         public string ProductCode { get; set; }

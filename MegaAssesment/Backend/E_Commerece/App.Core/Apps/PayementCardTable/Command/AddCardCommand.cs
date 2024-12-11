@@ -27,9 +27,6 @@ namespace App.Core.Apps.PayementCardTable.Command
         public async Task<string> Handle(AddCardCommand request, CancellationToken cancellationToken)
         {
 
-
-          
-            
                 var addcard = new Domain.Card
                 {
                     CardNumber = request.cardDto.CardNumber,

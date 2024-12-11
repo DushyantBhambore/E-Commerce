@@ -156,6 +156,11 @@
         "IsRequired": false
       },
       {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
         "Name": "ProductName",
         "Type": "System.String",
         "IsRequired": false
@@ -242,6 +247,22 @@
   },
   {
     "ContainingType": "WebAPI.Controllers.ProductController",
+    "Method": "GetProuctByUserid",
+    "RelativePath": "api/Product/GetProuctByUserid/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.ProductController",
     "Method": "UpdateProduct",
     "RelativePath": "api/Product/UpdateProduct",
     "HttpMethod": "PUT",
@@ -250,6 +271,11 @@
     "Parameters": [
       {
         "Name": "ProdcutId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
         "Type": "System.Int32",
         "IsRequired": false
       },
