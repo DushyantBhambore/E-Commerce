@@ -16,6 +16,8 @@ export class ProductService {
 
   getproductbyidurl ='https://localhost:7295/api/Product/GetProductByid'
 
+  getproductbyuseridurl ='https://localhost:7295/api/Product/GetProuctByUserid'
+
   http = inject(HttpClient)
 
 
@@ -45,5 +47,10 @@ export class ProductService {
   getproductbyid(id:number)
   {
     return this.http.get(this.getproductbyidurl+"/"+id)
+  }
+
+  getproductbyuserid(id:number)
+  {
+    return this.http.get(this.getproductbyuseridurl+"/"+id)
   }
 }

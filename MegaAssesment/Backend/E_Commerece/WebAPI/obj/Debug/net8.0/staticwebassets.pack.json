@@ -1,12 +1,20 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\05bd6755-5327-4439-84b2-c48021a3017b.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\05bd6755-5327-4439-84b2-c48021a3017b.jpg"
+    },
+    {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\0b3fa0c0-a94f-469c-959e-2e39675b09b1.jpg",
       "PackagePath": "staticwebassets\\Uploads\\0b3fa0c0-a94f-469c-959e-2e39675b09b1.jpg"
     },
     {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\10041aea-86b4-4cb4-ba8c-e8c02475a0b1.jpg",
       "PackagePath": "staticwebassets\\Uploads\\10041aea-86b4-4cb4-ba8c-e8c02475a0b1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\110ee7ca-cc48-4ae2-b54a-d38dec25195f.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\110ee7ca-cc48-4ae2-b54a-d38dec25195f.jpg"
     },
     {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\11d189e5-a760-48b4-a691-feb4ca66c90c.jpg",
@@ -19,6 +27,10 @@
     {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\12835009-273f-49f5-bcc2-6e5d9fdbc9da.png",
       "PackagePath": "staticwebassets\\Uploads\\12835009-273f-49f5-bcc2-6e5d9fdbc9da.png"
+    },
+    {
+      "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\13726d8e-926f-42c5-9786-bbde8abf468b.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\13726d8e-926f-42c5-9786-bbde8abf468b.jpg"
     },
     {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\14977e1b-5852-4202-a5da-41044026c7d9.png",
@@ -35,6 +47,10 @@
     {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\19885442-2e20-43fb-8738-8c2abe122a5e.jpg",
       "PackagePath": "staticwebassets\\Uploads\\19885442-2e20-43fb-8738-8c2abe122a5e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\1b1a8912-bc95-41d0-a898-99b4d22159ca.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\1b1a8912-bc95-41d0-a898-99b4d22159ca.jpg"
     },
     {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\1c074995-f727-488a-864d-d77bc8ebab08.jpg",
@@ -73,6 +89,10 @@
       "PackagePath": "staticwebassets\\Uploads\\495c8c7a-1f9d-4f31-825e-90d06b9b57ce.jpg"
     },
     {
+      "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\4ab4bee9-9e0d-4580-add2-92724d2ec7d3.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\4ab4bee9-9e0d-4580-add2-92724d2ec7d3.jpg"
+    },
+    {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\4c3a7a07-cc89-48b7-a399-8143c0fb4872.png",
       "PackagePath": "staticwebassets\\Uploads\\4c3a7a07-cc89-48b7-a399-8143c0fb4872.png"
     },
@@ -93,12 +113,24 @@
       "PackagePath": "staticwebassets\\Uploads\\5891a51d-a3c1-42eb-8feb-97fa35887d50.jpg"
     },
     {
+      "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\5a3059a9-0c0c-4d54-a0f5-d72dbe2df9b5.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\5a3059a9-0c0c-4d54-a0f5-d72dbe2df9b5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\5c7927cc-5ff1-465a-bd59-bef6107e2b60.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\5c7927cc-5ff1-465a-bd59-bef6107e2b60.jpg"
+    },
+    {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\5c9a689e-a764-425b-8af0-797c376c04a1.jpg",
       "PackagePath": "staticwebassets\\Uploads\\5c9a689e-a764-425b-8af0-797c376c04a1.jpg"
     },
     {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\5caad46b-6bcd-4571-901d-0409bfa911dd.jpg",
       "PackagePath": "staticwebassets\\Uploads\\5caad46b-6bcd-4571-901d-0409bfa911dd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\6a07a8ce-f763-4630-858c-985b360351ee.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\6a07a8ce-f763-4630-858c-985b360351ee.jpg"
     },
     {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\6a0ea28e-efd7-4c46-9685-89d666992d20.jpg",
@@ -109,12 +141,20 @@
       "PackagePath": "staticwebassets\\Uploads\\6b539a4f-641c-4e2c-9d7a-a20c6808cc04.jpg"
     },
     {
+      "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\6d88a3db-46b1-4b93-a037-3646d4a5bf45.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\6d88a3db-46b1-4b93-a037-3646d4a5bf45.jpg"
+    },
+    {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\6e79d69a-fcb5-4fb5-92a5-30c1b30c2b2b.jpg",
       "PackagePath": "staticwebassets\\Uploads\\6e79d69a-fcb5-4fb5-92a5-30c1b30c2b2b.jpg"
     },
     {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\6f5b712c-ba60-4b22-b3b2-9354ad0dd4c1.jpg",
       "PackagePath": "staticwebassets\\Uploads\\6f5b712c-ba60-4b22-b3b2-9354ad0dd4c1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\7131abda-b55d-4fac-8a89-4e422115a23c.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\7131abda-b55d-4fac-8a89-4e422115a23c.jpg"
     },
     {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\71ac907e-76d4-406d-8eb6-04fd320ba0ec.jpg",
@@ -133,8 +173,16 @@
       "PackagePath": "staticwebassets\\Uploads\\74fe6430-7664-486b-b062-401b04713e43.png"
     },
     {
+      "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\799bae17-4828-464b-a863-7e200ec498c0.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\799bae17-4828-464b-a863-7e200ec498c0.jpg"
+    },
+    {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\7e5230c0-d860-42f2-9a56-a2c330916b9c.jpg",
       "PackagePath": "staticwebassets\\Uploads\\7e5230c0-d860-42f2-9a56-a2c330916b9c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\888e6c5f-c604-44aa-be76-13d6136c0bb2.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\888e6c5f-c604-44aa-be76-13d6136c0bb2.jpg"
     },
     {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\8cbd56f2-6b47-4b70-890d-413324b2f3c3.jpg",
@@ -161,6 +209,10 @@
       "PackagePath": "staticwebassets\\Uploads\\96a334d0-e6f3-49b1-aa2c-05f1ac2d1665.jpg"
     },
     {
+      "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\9b5881ce-7454-40bf-a998-78044484cd81.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\9b5881ce-7454-40bf-a998-78044484cd81.jpg"
+    },
+    {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\9f6eb5f8-c84c-4122-9793-bbdd6705994b.jpg",
       "PackagePath": "staticwebassets\\Uploads\\9f6eb5f8-c84c-4122-9793-bbdd6705994b.jpg"
     },
@@ -169,8 +221,16 @@
       "PackagePath": "staticwebassets\\Uploads\\a9ad4922-cd32-4560-b6b8-737cd52b61dc.jpg"
     },
     {
+      "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\ac7c4982-45a6-4255-8ff3-552e2c38e95c.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\ac7c4982-45a6-4255-8ff3-552e2c38e95c.jpg"
+    },
+    {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\ae43f43b-85d9-4289-a542-1dfbe2e88dd3.jpg",
       "PackagePath": "staticwebassets\\Uploads\\ae43f43b-85d9-4289-a542-1dfbe2e88dd3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\b04d6b17-fed5-4614-bae1-c05a37e0fab7.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\b04d6b17-fed5-4614-bae1-c05a37e0fab7.jpg"
     },
     {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\b4059e71-e430-4722-8618-4df88d161b30.jpg",
@@ -199,6 +259,10 @@
     {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\c2fe62bf-591d-4400-9214-0235f2329712.jpg",
       "PackagePath": "staticwebassets\\Uploads\\c2fe62bf-591d-4400-9214-0235f2329712.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\c32f024c-cf2d-4901-88eb-3d8c5daf8c09.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\c32f024c-cf2d-4901-88eb-3d8c5daf8c09.jpg"
     },
     {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\c6e44a6f-4019-4df4-942f-4f33f711b618.jpg",
@@ -237,12 +301,24 @@
       "PackagePath": "staticwebassets\\Uploads\\e9960759-e6c6-423a-a37c-8ae148ec0365.jpg"
     },
     {
+      "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\ec22760f-77ac-466d-83fe-04830a29d4e0.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\ec22760f-77ac-466d-83fe-04830a29d4e0.jpg"
+    },
+    {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\ecefefb0-f760-4e6f-9616-ca84a0ae10da.jpg",
       "PackagePath": "staticwebassets\\Uploads\\ecefefb0-f760-4e6f-9616-ca84a0ae10da.jpg"
     },
     {
+      "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\f1bea459-923b-481a-b3bc-ad2cde03431e.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\f1bea459-923b-481a-b3bc-ad2cde03431e.jpg"
+    },
+    {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\f1f37293-54e0-4436-9f24-75bdfc3bb4b0.jpg",
       "PackagePath": "staticwebassets\\Uploads\\f1f37293-54e0-4436-9f24-75bdfc3bb4b0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\f22ff027-283d-4da5-8fbb-dcb6475e5d63.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\f22ff027-283d-4da5-8fbb-dcb6475e5d63.jpg"
     },
     {
       "Id": "C:\\Users\\dushyantbhambore\\Desktop\\E-Commerce\\MegaAssesment\\Backend\\E_Commerece\\WebAPI\\wwwroot\\Uploads\\f2d8ce29-1536-4989-92b1-fb9402416914.jpg",

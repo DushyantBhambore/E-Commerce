@@ -3,8 +3,8 @@
     <nav class="navbar">
       <div class="logo-container">
        <img  src="/assests/logo.png" alt="Logo" class="logo me-3" width="100" height="30" >
-        <h1 class="navbar-title">E-Commerce</h1>
-        <span class="welcome-text text-dark">Welcome {{name}}</span>
+        <!-- <h1 class="navbar-title">E-Commerce</h1> -->
+        <!-- <span class="welcome-text text-dark">Welcome {{name}}</span>  -->
       </div>
 
       <div class="navbar-right">
@@ -17,19 +17,19 @@
             <button mat-menu-item routerLink="/changepassword">Change Password</button>
             <button mat-menu-item (click)="onLogOut()">Log Off</button>
           </mat-menu>
-        </div>
+        </div>  
 
         <ul class="navbar-links">
-          <li *ngIf="userid.roleId === 4">
+          <li *ngIf="userid.roleId === 1">
             <button class="btn btn-primary mt-3" routerLink="/product">Product</button>
           </li>
-          <li *ngIf="userid.roleId !== 4">
+          <li *ngIf="userid.roleId !== 1">
             <button class="btn btn-primary mt-3" routerLink="/dashboard">Dashboard</button>
           </li>
-          <li *ngIf="userid.roleId !== 4">
+          <li *ngIf="userid.roleId !== 1">
             <button class="btn btn-primary mt-3" routerLink="/invoice">Orders</button>
           </li>
-          <li *ngIf="userid.roleId !== 4">
+          <li *ngIf="userid.roleId !== 1">
             <button class="btn btn-success mt-3 " routerLink="/viewcart">
               <mat-icon>shopping_cart</mat-icon>
               <span class="cart-count" *ngIf="cartCount > 0">{{ cartCount }}</span>

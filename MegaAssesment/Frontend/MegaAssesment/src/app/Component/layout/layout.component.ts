@@ -24,6 +24,7 @@ export class LayoutComponent {
   userid = JSON.parse(sessionStorage.getItem('logindata') || '{}');
   id : number = this.userid.userId
   name :string = this.userid.firstName
+  profile = this.userid.imageFile
 
 
   constructor(private cartService: CartService,) {
@@ -32,7 +33,7 @@ export class LayoutComponent {
     });
   }
   dropdownOpen = false;
-  profile = localStorage.getItem('profileimage');
+  // profile = localStorage.getItem('profileimage');
   onLogOut(){
     localStorage.removeItem('token');
     this.router.navigateByUrl('login');

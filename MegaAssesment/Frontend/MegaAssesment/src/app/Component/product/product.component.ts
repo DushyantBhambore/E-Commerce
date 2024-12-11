@@ -25,6 +25,8 @@ export class ProductComponent implements OnInit {
   route = inject(Router)
   toastr = inject(ToastrService)
   todayDate=new Date().toISOString().split('T')[0];
+  userid = JSON.parse(sessionStorage.getItem('logindata') || '{}');
+  id : number = this.userid.userId
 
 
 
@@ -33,6 +35,7 @@ export class ProductComponent implements OnInit {
   constructor(private fb: FormBuilder) {
     this.productform = this.fb.group({
       prodcutId: ['', [Validators.required,]],
+      userId :[this.id,Validators.required],
     productName: ['', [Validators.required, Validators.pattern(/^[A-Za-z]+(?: [A-Za-z]+)*\s*$/)]],
       productImage: [null, [Validators.required,]],
       category: ['', [Validators.required, ]],
@@ -50,7 +53,8 @@ export class ProductComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.getProduct();
+    // this.getProduct();
+    this.prodcutbyuserid()
     this.sanitizeField('productName');
     this.sanitizeField('category');
     this.sanitizeField('brand');
@@ -129,7 +133,7 @@ export class ProductComponent implements OnInit {
           console.log(res.data);
           this.toastr.success('Product Updated successfully!');
           this.CloseModal();
-          this.getProduct();
+          this.prodcutbyuserid()
           const updatedProduct = res; // Assuming the service returns the updated product
           const index = this.productlist.findIndex((p: any) => p.productId === updatedProduct.productId);
           if (index !== -1) {
@@ -148,7 +152,7 @@ export class ProductComponent implements OnInit {
           this.toastr.success('Product Added successfully!');
           this.CloseModal();
           this.productform.reset();
-          this.getProduct();
+          this.prodcutbyuserid()
           this.productlist.push(res); // Assuming the service returns the added product
         },
         error: (err) => {
@@ -227,22 +231,45 @@ export class ProductComponent implements OnInit {
 
     // getAll Product 
 
-    getProduct()
-    {
-      this.service.getAllProduct().subscribe({
-        next:(res)=>
-        {
-          console.log(res);
-          this.productlist = res;
-          console.log(this.productlist);
-        },
-        error:(err)=>
+
+     // get product by userid 
+
+  prodcutbyuserid()
+  {
+    console.log("Usrdata")
+    debugger
+    const userId = this.id
+    this.service.getproductbyuserid(userId).subscribe({
+      next:(res)=>{
+        console.log(res);
+        this.productlist = res;
+        console.log(this.productlist);
+      },
+      error:(err)=>
         {
           console.log(err);
         }
-      })
+
+    })
+
+  }
+
+    // getProduct()
+    // {
+    //   this.service.getAllProduct().subscribe({
+    //     next:(res)=>
+    //     {
+    //       console.log(res);
+    //       this.productlist = res;
+    //       console.log(this.productlist);
+    //     },
+    //     error:(err)=>
+    //     {
+    //       console.log(err);
+    //     }
+    //   })
       
-    }
+    // }
 
     editProduct(id:number)
     {
@@ -303,7 +330,7 @@ export class ProductComponent implements OnInit {
           this.service.deleteProduct(id).subscribe({
             next: (res : any) => {
               console.log('Deleted', res);
-              this.getProduct();
+              this.prodcutbyuserid()
               this.toastr.success('Product Deleted successfully', 'Success', {
                 timeOut: 3000,
                 progressBar: true,

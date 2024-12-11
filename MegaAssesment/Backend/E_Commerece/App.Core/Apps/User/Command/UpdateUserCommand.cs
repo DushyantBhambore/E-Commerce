@@ -47,9 +47,13 @@ namespace App.Core.Apps.User.Command
 
             var imageFile = request.registerDto.ImageFile;
 
-            var allowedFileExtensions = new string[] { ".jpg", ".jpeg", ".png" };
-            var filePath = await _fileservice.SaveFileAsync(imageFile, allowedFileExtensions);
-            var fileUrl = $"https://localhost:7295/Uploads/{Path.GetFileName(filePath)}";
+            if (imageFile != null)
+            {
+                var allowedFileExtensions = new string[] { ".jpg", ".jpeg", ".png" };
+                var filePath = await _fileservice.SaveFileAsync(imageFile, allowedFileExtensions);
+                var fileUrl = $"https://localhost:7295/Uploads/{Path.GetFileName(filePath)}";
+                finduserid.ImageFile = fileUrl;
+            }
 
             finduserid.FirstName = request.registerDto.FirstName;
             finduserid.LastName = request.registerDto.LastName;
@@ -57,7 +61,6 @@ namespace App.Core.Apps.User.Command
             finduserid.Address = request.registerDto.Address;
             finduserid.Email = request.registerDto.Email;
             finduserid.CountryId = request.registerDto.CountryId;
-            finduserid.ImageFile = fileUrl;
             finduserid.Mobile = request.registerDto.Mobile;
             finduserid.DOB = request.registerDto.DOB;   
             finduserid.RoleId = request.registerDto.RoleId;

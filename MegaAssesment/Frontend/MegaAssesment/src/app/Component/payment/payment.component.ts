@@ -19,6 +19,11 @@ export class PaymentComponent {
   expiryDate = '';
   cvv = '';
 
+  get minDate(): string {
+    const date = new Date();
+    return date.toISOString().split('T')[0];
+  }
+
   constructor(
     public dialogRef: MatDialogRef<PaymentComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any

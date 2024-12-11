@@ -64,6 +64,8 @@ export class ViewCartComponent implements OnInit {
 }
 
 cartid! : number
+
+// remove by id
 removeFromCart(productId: number)
   {
     
@@ -94,6 +96,37 @@ removeFromCart(productId: number)
 
   }
 
+
+// remove all 
+removeallfromcart(productId: number)
+  {
+    
+    var cartobj ={
+      productId : productId,
+      userid : this.id
+    }
+
+    debugger
+    this.cartservice.removeallitem(cartobj).subscribe({
+      next: (response) => {
+        console.log('Product removed from cart:', response);
+      this.toastr.success('Product removed from cart.', 'Success', {
+        timeOut: 3000,
+        progressBar: true,
+        progressAnimation: 'increasing',
+        positionClass: 'toast-top-right'
+        
+      });
+        this.gotocart(this.id);
+       
+      },
+      error: (err) => {
+        console.error('Error removing from cart:', err);
+        alert('Failed to remove product from cart.');
+      }
+    });
+
+  }
   calculateSubtotal() {
     this.subtotal = this.cartdata.reduce
     ((t : any, i: any) => t + i.sellingPrice * i.qty, 0);
@@ -185,7 +218,9 @@ removeFromCart(productId: number)
       SellingPrice: item.sellingPrice 
     }))
   }
+  debugger
   this.cartservice.getinvoice(invoiceRequest).subscribe({
+    
     next: (response) => {
       this.invoiceResponse = response;
     
@@ -199,10 +234,10 @@ removeFromCart(productId: number)
       })
       sessionStorage.setItem('invoce', JSON.stringify(this.invoiceResponse.data)); 
       sessionStorage.setItem('sales', JSON.stringify(this.invoiceResponse.salesDetails)); 
-     this.cartdata.forEach((item: any) => {
-      this.removeFromCart(item.productId);
+     debugger
+      this.cartdata.forEach((item: any) => {
+      this.removeallfromcart(item.productId);
     });
-
     this.cartdata = [];
     this.calculateSubtotal();
      this.router.navigateByUrl('/invoice')

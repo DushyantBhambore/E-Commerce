@@ -34,6 +34,13 @@ namespace WebAPI.Controllers
             return Ok(result);
         }
 
+        [HttpDelete("RemoveAllItem")]
+        public async Task<IActionResult> RemoveAllItem(RemoverCartDto removerCartDto)
+        {
+            var result = await _mediator.Send(new RemoveAllietmCommand { removerCartDto = removerCartDto });
+            return Ok(result);
+        }
+
         [HttpGet("GetCartById/{id}")]
         public async Task<IActionResult> GetCartById(int id)
         {

@@ -21,8 +21,9 @@
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let product of productlist">
-                <td>{{ product.prodcutId }}</td>
+              <tr *ngFor="let product of productlist; let i = index" >
+                <!-- <td>{{ product.prodcutId }}</td> -->
+                <td>{{ i+1 }}</td>
                 <td>{{ product.productName }}</td>
                 <td>{{ product.category }}</td> 
                 <td>{{ product.brand }}</td>

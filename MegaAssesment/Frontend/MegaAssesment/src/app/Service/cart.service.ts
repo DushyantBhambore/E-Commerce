@@ -26,6 +26,8 @@
 
     getrecieptbyidurl = 'https://localhost:7295/api/Sales/GetReciptByidQuery'
 
+    removeallitemurl = 'https://localhost:7295/api/Cart/RemoveAllItem'
+
 
     http = inject(HttpClient)
 
@@ -92,6 +94,18 @@
     getrecieptbyid(id : number)
     {
       return this.http.get(`${this.getrecieptbyidurl}/${id}`)
+    }
+
+
+    removeallitem(data : any)
+    {
+      return this.http.delete(this.removeallitemurl, { body: data }).pipe(
+        tap(() => {
+          // Decrement the count after a successful API call
+          const currentCount = this.cartCount$.value;
+          this.cartCount$.next(currentCount > 0 ? currentCount - 1 : 0);
+        })
+      );
     }
 
   }

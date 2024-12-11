@@ -1,7 +1,7 @@
 import { Component, inject, model, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoginService } from '../../Service/login.service';
-import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule, JsonPipe } from '@angular/common';
 import { ToastrService } from 'ngx-toastr';
 
@@ -14,7 +14,9 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class ProfileComponent implements OnInit {
 
-  registerForm: FormGroup = new FormGroup({})
+  registerForm: FormGroup = new FormGroup({
+    
+  })
   imageFile: File | null = null;
   service = inject(LoginService)
   router = inject(Router)
@@ -51,7 +53,7 @@ setform()
     stateId: ['', ],
     countryId: ['', ],
     zipcode: ['', ],
-    imageFile: [null,]
+    imageFile: [null,Validators.nullValidator]
 
 })
 }
@@ -123,61 +125,107 @@ onFileChange(event: any): void {
 
   }
 
- 
+
   onSubmit(){
     const formData = new FormData();
     const formValues = this.registerForm.getRawValue();
+    // Append all fields to FormData except imageFile if it's not selected
     Object.keys(formValues).forEach(key => {
       const value = formValues[key];
-         // If imageFile exists, append it to formData, otherwise append null
-    if (key === 'imageFile') {
-      if (this.imageFile) {
-        formData.append(key, this.imageFile);
-      } else {
-        formData.append(key, ''); // Add empty string if no image selected
+      
+      if (key === 'imageFile' && this.imageFile) {
+        formData.append(key, this.imageFile);  // Append image only if selected
+      } else if (value !== null) {
+        formData.append(key, value);
       }
-    } else if (value) {
-      formData.append(key, value);
-    }
-  });
-      // if (key === 'imageFile' && this.imageFile) {
-      //   formData.append(key, this.imageFile);
-      // } else if (value) {
-      //   formData.append(key, value);
-      // } else if (key === 'imageFile' && !this.imageFile) {
-      //   formData.append(key, '');
-      // }
-
-
-    debugger
-    this.service.onUpdateuser(formData).subscribe(
-      {
-        
-        next:(res: any)=>{
-          console.log(res);
-          this.toastr.success("Profile Updted Successfully",'sucess',{
-            
-            timeOut: 3000,
-            progressBar: true,
-            progressAnimation: 'increasing',
-            positionClass: 'toast-top-right'
-          
-          })
-          console.log(res.data);
-          sessionStorage.setItem("logindata", JSON.stringify(res.data));
-          this.CloseModal();
-          window.location.reload();
-
-        },
-        error: (err) => {
-          console.log(err);
-          this.toastr.error('Failed to register user. Please check the data and try again.');
-        }
-        
-
-      })
-
+    });
+  
+    this.service.onUpdateuser(formData).subscribe({
+      next: (res: any) => {
+        console.log(res);
+        this.toastr.success("Profile Updated Successfully", 'Success', {
+          timeOut: 3000,
+          progressBar: true,
+          progressAnimation: 'increasing',
+          positionClass: 'toast-top-right'
+        });
+        sessionStorage.setItem("logindata", JSON.stringify(res.data));
+        this.CloseModal();
+        window.location.reload();
+      },
+      error: (err) => {
+        console.log(err);
+        this.toastr.error('Failed to update profile. Please check the data and try again.');
+      }
+    });
   }
+ 
+  // onSubmit(){
+
+  //   debugger
+  //   const formData = new FormData();
+  //   const formValues = this.registerForm.getRawValue();
+  //   Object.keys(formValues).forEach(key => {
+  //     const value = formValues[key];
+  //     if (value) {
+  //       formData.append(key, value);
+  //     } else if (this.registerForm.get('imageFile')) {
+  //       formData.append(key, this.registerForm.get('imageFile')?.value);
+  //     }
+  //   });
+  // //   const formData = new FormData();
+  // //   const formValues = this.registerForm.getRawValue();
+  // //   Object.keys(formValues).forEach(key => {
+  // //     const value = formValues[key];
+  // //        // If imageFile exists, append it to formData, otherwise append null
+  // //   if (key === 'imageFile') {
+  // //     if (this.imageFile) {
+  // //       formData.append(key, this.imageFile);
+  // //     } else {
+  // //       formData.append(key, ''); // Add empty string if no image selected
+  // //     }
+  // //   } else if (value) {
+  // //     formData.append(key, value);
+  // //   }
+  // // });
+  //     // if (key === 'imageFile' && this.imageFile) {
+  //     //   formData.append(key, this.imageFile);
+  //     // } else if (value) {
+  //     //   formData.append(key, value);
+  //     // } else if (key === 'imageFile' && !this.imageFile) {
+  //     //   formData.append(key, '');
+  //     // }
+
+
+  //   debugger
+  //   this.service.onUpdateuser(formData).subscribe(
+  //     {
+        
+  //       next:(res: any)=>{
+  //         console.log(res);
+  //         this.toastr.success("Profile Updted Successfully",'sucess',{
+            
+  //           timeOut: 3000,
+  //           progressBar: true,
+  //           progressAnimation: 'increasing',
+  //           positionClass: 'toast-top-right'
+          
+  //         })
+  //         console.log(res.data);
+  //         sessionStorage.setItem("logindata", JSON.stringify(res.data));
+  //         this.CloseModal();
+  //         window.location.reload();
+
+  //       },
+  //       error: (err) => {
+  //         console.log(err);
+  //         this.toastr.error('Failed to register user. Please check the data and try again.');
+  //       }
+        
+
+  //     })
+
+  // }
     // Modal open handler
    
    

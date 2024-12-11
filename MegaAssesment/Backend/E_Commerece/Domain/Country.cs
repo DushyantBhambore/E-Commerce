@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class Country :AuditableEntity
+    public class Country 
     {
         [Key]
         public int CountryId { get; set; }

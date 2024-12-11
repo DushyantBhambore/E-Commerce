@@ -102,6 +102,22 @@
   },
   {
     "ContainingType": "WebAPI.Controllers.CartController",
+    "Method": "RemoveAllItem",
+    "RelativePath": "api/Cart/RemoveAllItem",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "removerCartDto",
+        "Type": "App.Core.Dtos.RemoverCartDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.CartController",
     "Method": "UpdateCart",
     "RelativePath": "api/Cart/UpdateCart",
     "HttpMethod": "PUT",
