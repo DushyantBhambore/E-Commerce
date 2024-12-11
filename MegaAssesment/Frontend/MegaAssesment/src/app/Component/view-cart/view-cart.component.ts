@@ -10,6 +10,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { state } from '@angular/animations';
 import { count } from 'rxjs';
 import { ToastrService } from 'ngx-toastr';
+import { RazorService } from '../../Service/razor.service';
+declare var Razorpay: any; // Add this line if Razorpay is not globally available
 
 @Component({
   selector: 'app-view-cart',
@@ -42,7 +44,7 @@ export class ViewCartComponent implements OnInit {
   cartCount = 0
  
 
-  constructor(private dialog: MatDialog, private cartService : CartService) { }
+  constructor(private dialog: MatDialog, private cartService : CartService,private paymentService: RazorService) { }
   ngOnInit(): void {
     this.gotocart(this.id)
     this.cartService.getCartCount().subscribe((count) => {
@@ -135,45 +137,72 @@ removeallfromcart(productId: number)
   router = inject(Router)
   onPay() {
        
-    this.openPaymentDialog();
+    this.onPayNow(this.subtotal);
+    // this.openPaymentDialog();
       }
     
   
-
-
-
-  openPaymentDialog() {
-    debugger
-    const dialogRef = this.dialog.open(PaymentComponent, {
-      data: { subtotal: this.subtotal }
-    });
-
-    debugger
-    dialogRef.afterClosed().subscribe((paymentDetails) => {
-      debugger
-      if (paymentDetails) {
-        this.cartservice.paymentcard(paymentDetails).subscribe((isValid) => {
-          if (isValid) {
-            this.toastr.success('Payment successful', 'Success', {
-              timeOut: 3000,
-              progressBar: true,
-              progressAnimation: 'increasing',
-              positionClass: 'toast-top-right'
-            })
-            this.generateInvoice();
-
-          } else {
-            this.toastr.error('Payment failed', 'Error', {
-              timeOut: 3000,
-              progressBar: true,
-              progressAnimation: 'increasing',
-              positionClass: 'toast-top-right'
-            })
-          }
+      onPayNow(amount: number) {
+        debugger;
+        this.paymentService.createOrder(amount).subscribe((order:any) => {
+          const options: any = {
+            key:'rzp_test_KMY5pBLSVhJH3u', // Replace with your Razorpay Key ID
+            amount: amount * 100, // Amount in paise
+            currency: 'INR',
+            name: 'SDN Company',
+            description: 'Payment for Order',
+            order_id: order.orderId,
+            handler: (response: any) => {
+              // this.verifyPayment(response);
+            },
+            prefill: {
+              name: 'Customer Name',
+              email: 'customer@example.com',
+            },
+            theme: {
+              color: '#F37254'
+            }
+          };
+          
+          const rzp1 :any = new Razorpay(options);
+          rzp1.open();
         });
+        this.generateInvoice();
       }
-    });
-  }
+
+
+  // openPaymentDialog() {
+  //   debugger
+  //   const dialogRef = this.dialog.open(PaymentComponent, {
+  //     data: { subtotal: this.subtotal }
+  //   });
+
+  //   debugger
+  //   dialogRef.afterClosed().subscribe((paymentDetails) => {
+  //     debugger
+  //     if (paymentDetails) {
+  //       this.cartservice.paymentcard(paymentDetails).subscribe((isValid) => {
+  //         if (isValid) {
+  //           this.toastr.success('Payment successful', 'Success', {
+  //             timeOut: 3000,
+  //             progressBar: true,
+  //             progressAnimation: 'increasing',
+  //             positionClass: 'toast-top-right'
+  //           })
+  //           this.generateInvoice();
+
+  //         } else {
+  //           this.toastr.error('Payment failed', 'Error', {
+  //             timeOut: 3000,
+  //             progressBar: true,
+  //             progressAnimation: 'increasing',
+  //             positionClass: 'toast-top-right'
+  //           })
+  //         }
+  //       });
+  //     }
+  //   });
+  // }
 
 
   // generateInvoice()

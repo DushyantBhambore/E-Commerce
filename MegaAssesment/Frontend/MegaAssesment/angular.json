@@ -92,7 +92,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "https://checkout.razorpay.com/v1/checkout.js"
+            ]
           }
         }
       }

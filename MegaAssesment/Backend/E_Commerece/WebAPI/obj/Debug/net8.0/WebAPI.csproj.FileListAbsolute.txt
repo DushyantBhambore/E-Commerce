@@ -483,3 +483,5 @@ C:\Users\dushyantbhambore\Desktop\E-Commerce\MegaAssesment\Backend\E_Commerece\W
 C:\Users\dushyantbhambore\Desktop\E-Commerce\MegaAssesment\Backend\E_Commerece\WebAPI\obj\Debug\net8.0\WebAPI.pdb
 C:\Users\dushyantbhambore\Desktop\E-Commerce\MegaAssesment\Backend\E_Commerece\WebAPI\obj\Debug\net8.0\WebAPI.genruntimeconfig.cache
 C:\Users\dushyantbhambore\Desktop\E-Commerce\MegaAssesment\Backend\E_Commerece\WebAPI\obj\Debug\net8.0\ref\WebAPI.dll
+D:\Sdfolder\SdPractice\ECommerece\E-Commerce\MegaAssesment\Backend\E_Commerece\WebAPI\bin\Debug\net8.0\BouncyCastle.Crypto.dll
+D:\Sdfolder\SdPractice\ECommerece\E-Commerce\MegaAssesment\Backend\E_Commerece\WebAPI\bin\Debug\net8.0\Razorpay.dll

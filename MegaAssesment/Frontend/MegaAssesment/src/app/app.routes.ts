@@ -13,6 +13,7 @@ import { InvoiceComponent } from './Component/invoice/invoice.component';
 import { ForgotPasswordComponent } from './Component/forgot-password/forgot-password.component';
 import { authGuard } from './Guard/auth.guard';
 import { ViewimageComponent } from './Component/viewimage/viewimage.component';
+import { RazorPayComponent } from './Component/razor-pay/razor-pay.component';
 
 export const routes: Routes = [
     {
@@ -91,6 +92,10 @@ export const routes: Routes = [
         path:'forgotpassword',
         component:ForgotPasswordComponent
     },
+    {
+        path:'razorpay',
+        component:RazorPayComponent
+    }
     
     
 ];
